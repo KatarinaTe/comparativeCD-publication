@@ -1,0 +1,40 @@
+term
+DNA strand elongation
+cell communication involved in cardiac conduction
+cell-cell signaling involved in cardiac conduction
+cellular respiration
+chromosome segregation
+electron transport chain
+energy derivation by oxidation of organic compounds
+glycerolipid biosynthetic process
+glycerophospholipid biosynthetic process
+interstrand cross-link repair
+intracellular signal transduction
+lipid catabolic process
+lipid metabolic process
+maintenance of location in cell
+mitochondrial respiratory chain complex assembly
+negative regulation of sequestering of calcium ion
+neuroblast proliferation
+organelle organization
+oxidative phosphorylation
+phosphate-containing compound metabolic process
+phospholipase C-activating G protein-coupled acetylcholine receptor signaling pathway
+phospholipid biosynthetic process
+phosphorus metabolic process
+phosphorylation
+positive regulation of DNA repair
+positive regulation of neural precursor cell proliferation
+positive regulation of neuroblast proliferation
+positive regulation of telomere maintenance in response to DNA damage
+protein phosphorylation
+regulation of DNA strand elongation
+regulation of neuroblast proliferation
+regulation of response to stimulus
+regulation of sequestering of calcium ion
+regulation of telomere maintenance in response to DNA damage
+release of sequestered calcium ion into cytosol
+respiratory electron transport chain
+response to xenobiotic stimulus
+sequestering of calcium ion
+telomere maintenance in response to DNA damage

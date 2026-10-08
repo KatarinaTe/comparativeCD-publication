@@ -1,0 +1,360 @@
+reported_trait,pubmed_id,n,is_pure_psychiatric,is_neuropsych
+Insomnia,35835914,65,False,False
+Externalizing behaviour (multivariate analysis),34446935,33,False,False
+Vertex-wise sulcal depth,34910505,29,False,False
+Cognitive performance (MTAG),30038396,27,False,False
+Cortical surface area,34560273,26,False,False
+Substance use disorder,41057643,26,True,False
+Personality traits or cognitive traits (multivariate analysis),37365406,22,False,False
+Restless legs syndrome,38839884,19,False,False
+Depression,37464041,16,True,True
+Vertex-wise cortical surface area,34910505,16,False,False
+Insomnia,30804565,15,False,False
+General risk tolerance (MTAG),30643258,13,False,False
+Subcortical volume (MOSTest),32665545,13,False,False
+Schizophrenia,39753749,12,True,True
+Alzheimer's disease or family history of Alzheimer's disease,39998322,11,False,True
+Attention deficit hyperactivity disorder or autism spectrum disorder or intelligence (pleiotropy),35764056,11,False,False
+"Cognitive ability, years of educational attainment or schizophrenia (pleiotropy)",31374203,11,False,False
+Intelligence,29942086,11,False,False
+Intelligence,36378351,11,False,False
+Major depressive disorder (broad),38177345,11,True,True
+White matter microstructure (fractional anisotropy),31666681,11,False,False
+Depression,34924174,10,True,True
+IDP dMRI TBSS FA Posterior limb of internal capsule R,33875891,10,False,False
+Neuroticism,29942085,10,False,False
+Neuroticism,30643256,10,False,False
+Post-traumatic stress disorder,38637617,10,True,False
+Schizophrenia,35396580,10,True,True
+Smoking cessation,36477530,10,False,False
+White matter microstructure (axial diusivities),31666681,10,False,False
+White matter microstructure (mode of anisotropy),31666681,10,False,False
+wg lh intensity-contrast cuneus,33875891,10,False,False
+wg lh intensity-contrast lingual,33875891,10,False,False
+wg rh intensity-contrast cuneus,33875891,10,False,False
+Adventurousness,30643258,9,False,False
+Alzheimer’s disease polygenic risk score (upper quantile vs lower quantile),35589863,9,False,True
+Depression,30718901,9,True,True
+Depressive symptoms,30643256,9,True,False
+Frailty (Factor 5 - Poorer Cognition),40759756,9,False,False
+Lifetime major depressive disorder (MTAG),37985818,9,True,True
+Neurociticism,29500382,9,False,False
+Neuroticism,30595370,9,False,False
+Well-being spectrum (multivariate analysis),30643256,9,False,False
+"Anorexia nervosa, attention-deficit/hyperactivity disorder, autism spectrum disorder, bipolar disorder, major depression, obsessive-compulsive disorder, schizophrenia, or Tourette syndrome (pleiotropy)",31835028,8,True,False
+Depressive symptoms (MTAG),29292387,8,True,False
+IDP dMRI TBSS FA Posterior limb of internal capsule L,33875891,8,False,False
+IDP dMRI TBSS L2 Posterior limb of internal capsule L,33875891,8,False,False
+IDP dMRI TBSS L2 Posterior limb of internal capsule R,33875891,8,False,False
+Regional cortical thickness (superiorfrontal),38890310,8,False,False
+Risk-taking behavior (multivariate analysis),36324656,8,False,False
+Subjective well-being (MTAG),29292387,8,False,False
+Cognitive function (baseline),40374629,7,False,False
+Corpus callosum fractional anisotropy (MOSTest),37164063,7,False,False
+Corpus callosum fractional anisotropy (body),37164063,7,False,False
+Corpus callosum fractional anisotropy (genu),37164063,7,False,False
+Depression,34586374,7,True,True
+Life satisfaction,30643256,7,False,False
+Major depressive disorder,34045744,7,True,True
+Neuroticism conditioned on Townsend deprivation index (multi-trait conditioning and joint analysis),33349686,7,False,False
+Positive affect,30643256,7,False,False
+Schizophrenia,30285260,7,True,True
+Schizophrenia (MTAG),32606422,7,True,True
+Sensitivity to environmental stress and adversity,31972866,7,False,False
+Common executive function,36150907,6,False,False
+Depression,29942085,6,True,True
+Depressive symptoms,32606422,6,True,False
+Depressive symptoms (MTAG),32606422,6,True,False
+Leisure sedentary behaviour (television watching),32317632,6,False,False
+Major depressive disorder (MTAG),33479212,6,True,True
+Neuroticism,29255261,6,False,False
+Total protein levels x insomnia interaction,34343768,6,False,False
+Attention deficit hyperactivity disorder or risk-taking behavior (pleiotropy),38565336,5,False,False
+Cognitive processing accuracy,39242605,5,False,False
+Depressed affect,29942085,5,True,False
+Depressive symptoms,29292387,5,True,False
+General factor of neuroticism,30867560,5,False,False
+Major depressive disorder,41233554,5,True,True
+Neuroticism conditioned on average household income before tax (multi-trait conditioning and joint analysis),33349686,5,False,False
+Neuroticism conditioned on cognitive performance (multi-trait conditioning and joint analysis),33349686,5,False,False
+Neuroticism conditioned on educational attainment (multi-trait conditioning and joint analysis),33349686,5,False,False
+Risk-taking tendency (4-domain principal component model),30643258,5,False,False
+Schizophrenia,25056061,5,True,True
+Schizophrenia,26198764,5,True,True
+Schizophrenia,28991256,5,True,True
+Schizophrenia,31740837,5,True,True
+Alzheimer's disease or educational attainment (pleiotropy),34743297,4,False,False
+Autism spectrum disorder or schizophrenia,28540026,4,True,True
+Bipolar disorder or major depressive disorder,31926635,4,True,True
+Cannabis use disorder (MTAG),37156939,4,True,False
+Daytime nap,33568662,4,False,False
+Experiencing mood swings,29500382,4,False,False
+Multisite chronic pain,31194737,4,False,False
+Multisite chronic pain,33830993,4,False,False
+Neuroticism,32231276,4,False,False
+Neuroticism conditioned on highest math class (multi-trait conditioning and joint analysis),33349686,4,False,False
+Neuroticism conditioned on self-rated math ability (multi-trait conditioning and joint analysis),33349686,4,False,False
+Noncognitive aspects of educational attainment,33414549,4,False,False
+Post-traumatic stress disorder symptom severity (total),33510476,4,False,False
+Problematic alcohol use (MTAG),32451486,4,True,False
+Schizophrenia,29483656,4,True,True
+Schizophrenia,31268507,4,True,True
+Schizophrenia (MTAG),33479212,4,True,True
+Schizophrenia (MTAG),34159505,4,True,True
+Sleep duration,30804565,4,False,False
+Sleep duration,30846698,4,False,False
+Sleep duration,37384397,4,False,False
+Subjective well-being,35589828,4,False,False
+Tics and stuttering (PheCode 313.2),39024449,4,True,False
+Tobacco use disorder,38632388,4,True,False
+"Alcohol consumption (drinks per month) (UKB data field 1578, 4424)",32193382,3,False,False
+Alcohol consumption x traumatic event in childhood (felt hated by family member) interaction,34417442,3,False,False
+Alcohol use disorder,37282553,3,True,False
+Alzheimer disease and age of onset,26830138,3,False,False
+Anxiety,33859377,3,True,True
+Anxiety disorder,39294497,3,True,True
+Attention deficit hyperactivity disorder,40962958,3,True,True
+Automobile speeding propensity,30643258,3,False,False
+Bipolar disorder,34002096,3,True,True
+Bipolar disorder (MTAG),32606422,3,True,True
+Bipolar disorder (MTAG),33479212,3,True,True
+Cannabis smoking or cigarette smoking or schizophrenia,35235886,3,False,False
+Cognitive traits (MTAG),32895543,3,False,False
+Depression,33859377,3,True,True
+Depression (broad),36750733,3,True,True
+Ebbinghaus illusion (underestimation),32939015,3,False,False
+Endometriosis or depression (pleiotropy),32959083,3,False,False
+Feeling guilty,29500382,3,False,False
+Feeling worry,29500382,3,False,False
+Insomnia symptoms (never/rarely vs. usually),30804566,3,False,False
+Juvenile myoclonic epilepsy,37653029,3,True,True
+Lifetime major depressive disorder (AutoComplete Impute),37985818,3,True,True
+Neuroticism (MTAG),29292387,3,False,False
+Obesity class II and Attention deficit hyperactivity disorder or Anorexia nervosa or Major depressive disorder or Obsesive-compulsive disorder or Schizophrenia,36137488,3,False,False
+Parkinson's disease,28892059,3,False,True
+Parkinson's disease,38155330,3,False,True
+Parkinson's disease or first degree relation to individual with Parkinson's disease,31701892,3,False,False
+Problematic alcohol use (MTAG),36301540,3,True,False
+Putamen iron levels (R2* MRI),38789058,3,False,False
+Schizophrenia vs ADHD (ordinary least squares (OLS)),33686288,3,True,True
+Schizophrenia vs anorexia nervosa (ordinary least squares (OLS)),33686288,3,True,True
+Subjective well-being,29292387,3,False,False
+Total amyloid (SNP x SNP interaction),32450446,3,False,False
+Triglycerides x anxiety interaction (2df test),40537477,3,False,True
+Worry,29942085,3,False,False
+Worry too long after an embarrassing experience,29500382,3,False,False
+Alcohol use disorder,32451486,2,True,False
+Alcohol use disorder (MTAG),37156939,2,True,False
+Alcohol use disorder (consumption score),37282553,2,True,False
+Anxiety severity x playing computer games interaction,34877740,2,False,True
+Attention deficit hyperactivity disorder or intracranial volume (pleiotropy),30818988,2,False,False
+Basal ganglia structure,39353893,2,False,False
+Bipolar disorder,31043756,2,True,True
+Bipolar disorder,33263727,2,True,True
+Bipolar disorder (MTAG),34159505,2,True,True
+Brain shape (segment 1),33821002,2,False,False
+Cognitive decline rate in late mild cognitive impairment,26252872,2,False,False
+Cognitive function (executive function) x major depressive disorder interaction (2df),34782712,2,False,True
+Cognitive function and pulse pressure,35364053,2,False,False
+Common executive function,39891803,2,False,False
+Cortical surface area (MOSTest),32665545,2,False,False
+Decaffeinated coffee consumption and/or neuroticism,35898629,2,False,False
+Decaffeinated coffee consumption or major depression disorder,35898629,2,False,False
+Disruptive behavior (multivariate analysis),36324656,2,False,False
+Duration to complete alphanumeric path task (baseline),40374629,2,False,False
+Feeling fed-up,29500382,2,False,False
+Feeling miserable,29500382,2,False,False
+Generalized epilepsy,30531953,2,True,True
+Internet addiction disorder,36566681,2,False,False
+Left-hemisphere default mode network to right-hemisphere control network white-matter structural connectivity,38438384,2,False,False
+Lifetime major depressive disorder (AutoComplete Impute and observed),37985818,2,True,False
+Loneliness (MTAG),29970889,2,False,False
+Major depressive disorder vs ADHD (ordinary least squares (OLS)),33686288,2,True,True
+Migraine,35115687,2,False,True
+Mood instability,31168069,2,False,False
+Neuroticism,36244801,2,False,False
+Neuroticism general factor,37783279,2,False,False
+Obesity class II and Attention deficit hyperactivity disorder or Major depressive disorder,36137488,2,False,False
+Obesity class II and Attention deficit hyperactivity disorder or Major depressive disorder or Schizophrenia,36137488,2,False,False
+Opioid use disorder (MTAG),37156939,2,True,False
+Parkinson's disease,32310270,2,False,True
+Post-traumatic stress disorder (mental health questionnaire or predicted),35181757,2,False,False
+Post-traumatic stress disorder symptom severity (avoidance),33510476,2,False,False
+Post-traumatic stress disorder symptom severity (hyperarousal),33510476,2,False,False
+Regional cortical thickness (bankssts),38890310,2,False,False
+Sleep medication purchases,37982563,2,False,False
+Substance use disorders (time to event),35017462,2,True,False
+Tobacco use disorder (PheCode 318),39024449,2,True,False
+Triglycerides x low social support interaction (2df test),40537477,2,False,False
+ADHD vs Tourette's syndrome and other tic disorders (ordinary least squares (OLS)),33686288,1,True,False
+Accumbens iron levels (R2* MRI),38789058,1,False,False
+Adjustment reaction (PheCode 304),40465716,1,False,False
+Alcohol dependence (age at onset),24962325,1,True,False
+Alcohol-related disorders (PheCode 317),39024449,1,True,False
+Alcoholism (PheCode 317.1),39024449,1,True,False
+Alzheimer's disease (APOE e4 interaction),28183528,1,False,True
+Alzheimer's disease (PheCode 290.11),39024449,1,False,True
+Anxiety disorder (PheCode 300.1),39024449,1,True,True
+Anxiety disorders (PheCode 300),39024449,1,True,True
+Anxiety severity x hours spent watching television interaction,34877740,1,False,True
+Attention deficit hyperactivity disorder,29325848,1,True,True
+Attention deficit hyperactivity disorder,32606422,1,True,True
+Attention deficit hyperactivity disorder,36702997,1,True,True
+Attention deficit hyperactivity disorder (ADuLT model adjusted for sex),37689771,1,True,True
+Attention deficit hyperactivity disorder (MTAG),32606422,1,True,True
+Attention deficit hyperactivity disorder (MTAG),33479212,1,True,True
+Attention deficit hyperactivity disorder or cannabis use,30610198,1,False,False
+Attention deficit hyperactivity disorder or putamen volume (pleiotropy),30818988,1,False,False
+Autism spectrum disorder (MTAG),32606422,1,True,True
+Baseline memory in normal cognition,37984853,1,False,False
+Bipolar I disorder,34002096,1,True,True
+Bipolar disorder,24618891,1,True,True
+Bipolar disorder,33169155,1,True,True
+Bipolar disorder (age of onset <21) or attention deficit hyperactivity disorder,27890468,1,True,True
+Bipolar disorder or inflammatory bowel disease (MTAG),38154582,1,False,False
+Bipolar disorder vs ADHD (ordinary least squares (OLS)),33686288,1,True,True
+Bipolar disorder vs major depressive disorder (ordinary least squares (OLS)),33686288,1,True,True
+Brain shape (segment 117),33821002,1,False,False
+Brain shape (segment 15),33821002,1,False,False
+Brain shape (segment 62),33821002,1,False,False
+Cannabis use cessation (current vs former) in HIV,37796845,1,False,False
+Cannabis use disorder,37985822,1,True,False
+Cannabis use disorder (MTAG),37985822,1,True,False
+Cerebrospinal fluid t-tau:AB1-42 ratio,28641921,1,False,False
+Chronic fatigue syndrome (PheCode 798.1),40465716,1,False,False
+Chronic lymphocytic leukemia or multiple sclerosis,31407831,1,False,False
+Cognition and processing speed (confirmatory factor analysis Factor 34),38965376,1,False,False
+Cognitive ability,29186694,1,False,False
+Cognitive decline (residual change score),40374629,1,False,False
+Cognitive domain scores for language or memory (pleiotropy),37349795,1,False,False
+Cognitive empathy,28584286,1,False,False
+Cognitive function,25644384,1,False,False
+Cognitive function (processing speed) x major depressive disorder interaction (2df),34782712,1,False,True
+Corpus callosum central posterior subregion volume,37612147,1,False,False
+Cortical surface area,32193296,1,False,False
+Cortical thickness (MOSTest),32665545,1,False,False
+Daytime sleep phenotypes,27126917,1,False,False
+Depression,29700475,1,True,True
+Depression (broad),29662059,1,True,True
+Depression severity  x hours spent watching television interaction,34877740,1,False,True
+Depression severity  x playing computer games interaction,34877740,1,False,True
+Early onset major depressive disorder,41233554,1,True,True
+Early response to risperidone in schizophrenia,26856250,1,False,True
+Education attainment or alcohol use disorders,38250258,1,False,False
+Education attainment or anorexia nervosa,38250258,1,False,False
+Epilepsy,34456681,1,True,True
+Episodic memory (pairs-matching),32895543,1,False,False
+FEV1 or irritable bowel syndrome (pleiotropy),38102678,1,False,False
+FEV1/FVC or irritable bowel syndrome (pleiotropy),38102678,1,False,False
+Feeling hurt,29500382,1,False,False
+Feeling lonely,29500382,1,False,False
+Feeling nervous,29500382,1,False,False
+GAD score x Polysocial risk score (PsRS) interaction,38063329,1,False,False
+Genetically independent pain phenotypes (GIP1),32587327,1,False,False
+Headache or HbA1c levels,36808568,1,False,False
+Hippocampal subfield left CA1 volume (body),37337106,1,False,False
+Hippocampal subfield left CA3 volume (body),37337106,1,False,False
+Hippocampal subfield left CA4 volume (body),37337106,1,False,False
+Insomnia,29520036,1,False,False
+Insomnia,32332799,1,False,False
+Insomnia (standard GWA),37106081,1,False,False
+Insomnia symptoms (never/rarely vs. sometimes/usually),30804566,1,False,False
+Intelligence,28530673,1,False,False
+Irritable bowel syndrome or schizophrenia (pleiotropy),36753304,1,False,False
+Irritable mood,29500382,1,False,False
+LDL x anxiety interaction (2df test),40537477,1,False,True
+Late onset major depressive disorder,41233554,1,True,True
+Late postpartum perinatal depression,40226751,1,True,True
+Left subiculum volume (body),37337106,1,False,False
+Left-hemisphere control network to putamen white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere dorsal attention network to right-hemisphere control network white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere dorsal attention network to right-hemisphere default mode network white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere dorsal attention network to right-hemisphere dorsal attention network white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere limbic network to thalamus white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere somatomotor network to left-hemisphere control network white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere somatomotor network to right-hemisphere dorsal attention network white-matter structural connectivity,38438384,1,False,False
+Left-hemisphere somatomotor network to right-hemisphere somatomotor network white-matter structural connectivity,38438384,1,False,False
+Life satisfaction,27089181,1,False,False
+Lifetime anxiety disorder,31748690,1,True,True
+Lifetime major depressive disorder (SoftImpute and observed),37985818,1,True,False
+Loneliness,29970889,1,False,False
+Loneliness,31518406,1,False,False
+Longitudinal brain connectivity change (global efficiency),31996736,1,False,False
+Major depressive disorder,27479909,1,True,True
+Major depressive disorder,29728651,1,True,True
+Major depressive disorder or COVID-19 infection (pleiotropy),37426090,1,False,False
+Mean arterial pressure x depressive symptoms interaction (2df test),34734193,1,False,False
+Memory decline,37984853,1,False,False
+Migraine without aura,28952330,1,False,True
+Motor premotor area,35113692,1,False,False
+Neurological blood protein biomarker levels,31320639,1,False,True
+Neuropsychiatric disorders,33479212,1,False,False
+Neuroticism,27067015,1,False,False
+Neuroticism,27089181,1,False,False
+Nicotine dependence and major depression (severity of comorbidity),30287806,1,False,False
+Obesity class II and Anorexia nervosa or Schizophrenia,36137488,1,False,False
+Obesity class II and Attention deficit hyperactivity disorder or Schizophrenia,36137488,1,False,False
+Obesity class II and Major depressive disorder,36137488,1,False,False
+Obesity class II and Schizophrenia,36137488,1,False,False
+Occupational creativity,38335777,1,False,False
+Occupational creativity,39237691,1,False,False
+Opioid use disorder (MTAG),35879402,1,True,False
+Orbitofrontal area,35113692,1,False,False
+Parkinson's disease,22451204,1,False,True
+Parkinson's disease,24842889,1,False,True
+Parkinson's disease,25064009,1,False,True
+Parkinson's disease,27182965,1,False,True
+Parkinson's disease,32201043,1,False,True
+Parkinson's disease,41810385,1,False,True
+Perisylvian thickness (unadjusted for global measures),36893272,1,False,False
+Physical activity,34753499,1,False,False
+Post-traumatic stress disorder (phenotype risk score),35181757,1,False,False
+Precuneus area,35113692,1,False,False
+Psychosis in Alzheimer's disease,34112972,1,False,True
+Putamen volume,29147026,1,False,False
+Putamen volume,31636452,1,False,False
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 1),38184787,1,False,True
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 2),38184787,1,False,True
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 3),38184787,1,False,True
+Rapidly progressive Alzheimer's disease (clinical) (case-control set 3),38184787,1,False,True
+Rate of cognitive decline in Alzheimer's disease,32573913,1,False,True
+Remission after SSRI treatment in MDD or neuroticism,29559929,1,False,False
+Response to antipsychotic treatment in schizophrenia,39562719,1,False,True
+Response to paliperidone in schizophrenia (positive Marder score),27846195,1,False,True
+Resting-state network 12 amplitude (Motor),36462729,1,False,False
+Resting-state network 15 amplitude (Cerebellum),36462729,1,False,False
+Restless legs syndrome,29029846,1,False,False
+Restless legs syndrome,33239738,1,False,False
+Right hippocampal volume (tail),37337106,1,False,False
+Right subiculum volume (body),37337106,1,False,False
+Right-hemisphere control network to right-hemisphere default mode network white-matter structural connectivity,38438384,1,False,False
+Right-hemisphere dorsal attention network to right-hemisphere control network white-matter structural connectivity,38438384,1,False,False
+Risky sexual behaviors in alcohol dependence,28990359,1,False,False
+Schizophrenia,19571808,1,True,True
+Schizophrenia,23974872,1,True,True
+Schizophrenia,33169155,1,True,True
+Schizophrenia,34380480,1,True,True
+Self-harm x Caesarean-section interaction,37029353,1,False,False
+Severe depressive disorders in coronary artery disease,30563176,1,False,False
+Sleep (1/3-day periodicity),33075057,1,False,False
+Sleep duration (short sleep),30846698,1,False,False
+Smoking cessation,30643251,1,False,False
+Smoking cessation,33082346,1,False,False
+Sociability score,34054130,1,False,False
+Stuttering,40721530,1,True,False
+Subcortical brain region volumes,25607358,1,False,False
+Subjective well-being,27089181,1,False,False
+Substance use disorder (pleiotropy),37250466,1,False,False
+Suffering from nerves,29500382,1,False,False
+Suicide,36253440,1,True,False
+Suicide attempt,37777856,1,True,False
+Systemising,31508503,1,False,False
+ThalamNuclei lh volume MDl,33875891,1,False,False
+ThalamNuclei rh volume MDl,33875891,1,False,False
+Triglyceride levels x SSRI defined daily dose interaction in schizophrenia or bipolar disorder,33824429,1,False,False
+Type 2 diabetes and Anorexia nervosa or schyzophrenia or obsessive compulsive disorder,36738649,1,False,False
+Type 2 diabetes and Attention deficit hiperactivty disorder,36738649,1,False,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or Anorexia nervosa or Major depressive disorder or schyzophrenia,36738649,1,False,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or Major depressive disorder,36738649,1,False,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or obsessive compulsive disorder,36738649,1,False,False
+Volume of right cortico-amygdaloid transition area,40097784,1,False,False

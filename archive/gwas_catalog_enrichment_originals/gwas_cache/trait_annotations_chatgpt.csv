@@ -1,0 +1,210 @@
+trait,is_psychiatric,disorder
+Spermatogenesis-associated protein 20 levels,FALSE,NA
+Bone mineral density mean,FALSE,NA
+Serum levels of protein SPATA20,FALSE,NA
+Blood protein levels,FALSE,NA
+PODXL2 protein levels,FALSE,NA
+Height,FALSE,NA
+WFIKKN2 protein levels,FALSE,NA
+NCAN protein levels,FALSE,NA
+Spermatogenesis-associated protein 20 levels (SPATA20.11117.2.3),FALSE,NA
+Sex hormone-binding globulin levels adjusted for BMI and heel estimated bone mineral density,FALSE,NA
+Sex hormone-binding globulin levels and heel estimated bone mineral density,FALSE,NA
+Regulator of G-protein signaling 7 protein levels (SomaScan ID:11117-2),FALSE,NA
+Chondroadherin levels,FALSE,NA
+Creatinine levels,FALSE,NA
+Glycine levels,FALSE,NA
+PTPRZ1 protein levels,FALSE,NA
+"Carbonic anhydrase 5B, mitochondrial levels",FALSE,NA
+Thyroid stimulating hormone levels,FALSE,NA
+Heel bone mineral density,FALSE,NA
+"Estimated glomerular filtration rate (creatinine, cystatin c)",FALSE,NA
+Estimated glomerular filtration rate (creatinine),FALSE,NA
+Omega-6 fatty acids to total fatty acids percentage,FALSE,NA
+Triglycerides in small HDL,FALSE,NA
+Free Cholesterol to Total Lipids in Medium LDL percentage,FALSE,NA
+Cholesteryl Esters to Total Lipids in Very Large VLDL percentage,FALSE,NA
+Triglycerides in HDL,FALSE,NA
+Triglycerides to Total Lipids in Very Large HDL percentage,FALSE,NA
+Triglycerides to Total Lipids in Small LDL percentage,FALSE,NA
+Sex hormone-binding globulin levels adjusted for BMI,FALSE,NA
+Triglycerides in medium HDL,FALSE,NA
+Cholesterol to Total Lipids in Very Large VLDL percentage,FALSE,NA
+Triglyceride levels,FALSE,NA
+Triglycerides in small VLDL,FALSE,NA
+Adventurousness,TRUE,other_psychiatric
+Serum creatinine levels,FALSE,NA
+Triglyceride levels in non-type 2 diabetes,FALSE,NA
+Gamma glutamyl transferase levels,FALSE,NA
+Reticulocyte count,FALSE,NA
+High light scatter reticulocyte count,FALSE,NA
+Sex hormone-binding globulin levels,FALSE,NA
+Hip index,FALSE,NA
+Body shape phenotype PC4,FALSE,NA
+Estimated glomerular filtration rate,FALSE,NA
+Reticulocyte fraction of red cells,FALSE,NA
+Phosphatidylglycerol (36:2) levels,FALSE,NA
+Body mass index,FALSE,NA
+Hematological traits (multi-trait analysis),FALSE,NA
+"eosinophil (fraction, mean, inv-norm transformed)",FALSE,NA
+Eosinophil count,FALSE,NA
+Eosinophill percentage (UKB data field 30210),FALSE,NA
+Eosinophil percentage of white cells,FALSE,NA
+Depression,TRUE,depression
+"eosinophil (absolute count, mean, inv-norm transformed)",FALSE,NA
+"eosinophil (fraction, maximum, inv-norm transformed)",FALSE,NA
+Anxiety,TRUE,other_psychiatric
+"eosinophil (absolute count, maximum, inv-norm transformed)",FALSE,NA
+Eosinophill count (UKB data field 30150),FALSE,NA
+Refractive error,FALSE,NA
+Surgical hip osteoarthritis,FALSE,NA
+Osteoarthritis (hip),FALSE,NA
+TNFRSF13C protein levels,FALSE,NA
+Smoking cessation,FALSE,NA
+Neutrophil side fluorescence,FALSE,NA
+Red cell distribution width,FALSE,NA
+C-reactive protein levels,FALSE,NA
+Insomnia,TRUE,other_psychiatric
+Eosinophil percentage of granulocytes,FALSE,NA
+Blood cell traits latent factor 22 (white cell),FALSE,NA
+Neuroticism,TRUE,other_psychiatric
+Alzheimer’s disease polygenic risk score (upper quantile vs lower quantile),TRUE,other_psychiatric
+"monocyte (fraction, mean, inv-norm transformed)",FALSE,NA
+Osteoarthritis (with total hip replacement),FALSE,NA
+Basophil count,FALSE,NA
+C-reactive protein levels (UKB data field 30710),FALSE,NA
+"eosinophil (fraction, minimum, inv-norm transformed)",FALSE,NA
+Personality traits or cognitive traits (multivariate analysis),TRUE,other_psychiatric
+Basophil percentage of white cells,FALSE,NA
+"red cell diameter width (RDW, mean, inv-norm transformed)",FALSE,NA
+Red blood cell erythrocyte distribution width (UKB data field 30070),FALSE,NA
+Caffeine consumption from coffee or tea,FALSE,NA
+Well-being spectrum (multivariate analysis),TRUE,other_psychiatric
+F-capsicum liking (derived food-liking factor),FALSE,NA
+"monocyte (fraction, maximum, inv-norm transformed)",FALSE,NA
+Schizophrenia,TRUE,schizophrenia
+Major depressive disorder (broad),TRUE,depression
+Depressive symptoms,TRUE,depression
+"Anorexia nervosa, attention-deficit/hyperactivity disorder, autism spectrum disorder, bipolar disorder, major depression, obsessive-compulsive disorder, schizophrenia, or Tourette syndrome (pleiotropy)",TRUE,other_psychiatric
+Neutrophil forward scatter,FALSE,NA
+General risk tolerance (MTAG),TRUE,other_psychiatric
+"Medication use (adrenergics, inhalants)",FALSE,NA
+Aspartate aminotransferase levels,FALSE,NA
+GLIPR1 protein levels,FALSE,NA
+Surgical knee osteoarthritis,FALSE,NA
+Irritable bowel syndrome (MTAG),FALSE,NA
+Metabolic syndrome,FALSE,NA
+Major depressive disorder,TRUE,depression
+Neutrophil side scatter,FALSE,NA
+Neurociticism,TRUE,other_psychiatric
+DBI/TMSB10 protein level ratio,FALSE,NA
+"red cell diameter width (RDW, maximum, inv-norm transformed)",FALSE,NA
+Bone density (confirmatory factor analysis Factor 19),FALSE,NA
+Bipolar disorder or major depressive disorder,TRUE,depression
+Neutrophil percentage of granulocytes,FALSE,NA
+Eosinophil side scatter,FALSE,NA
+Monocyte percentage (UKB data field 30190),FALSE,NA
+Alanine aminotransferase levels,FALSE,NA
+Platelet distribution width (UKB data field 30110),FALSE,NA
+"high density lipoprotein cholesterol (HDLC, mean, inv-norm transformed)",FALSE,NA
+CLEC5A protein levels,FALSE,NA
+Pulse pressure,FALSE,NA
+Cognitive performance (MTAG),TRUE,other_psychiatric
+Irritable bowel syndrome or schizophrenia (pleiotropy),TRUE,schizophrenia
+Common executive function,TRUE,other_psychiatric
+Mood instability,TRUE,other_psychiatric
+"Cognitive ability, years of educational attainment or schizophrenia (pleiotropy)",TRUE,schizophrenia
+Experiencing mood swings,TRUE,other_psychiatric
+Ventral frontal thickness,FALSE,NA
+Worry,TRUE,other_psychiatric
+Intelligence,TRUE,other_psychiatric
+Positive affect,TRUE,other_psychiatric
+Uterine fibroids,FALSE,NA
+Sum eosinophil basophil counts,FALSE,NA
+Depressive symptoms (MTAG),TRUE,depression
+Schizophrenia (MTAG),TRUE,schizophrenia
+Type 2 diabetes,FALSE,NA
+Telomere length (principal component 1),FALSE,NA
+LDL cholesterol levels,FALSE,NA
+Breast cancer,FALSE,NA
+Fluid intelligence score (baseline),TRUE,other_psychiatric
+Spicy food liking,FALSE,NA
+Self-reported math ability (MTAG),TRUE,other_psychiatric
+Bitter beverage consumption,FALSE,NA
+Serum 25-Hydroxyvitamin D levels,FALSE,NA
+Cognitive aspects of educational attainment,TRUE,other_psychiatric
+Eosinophil side fluorescence,FALSE,NA
+Adiposity (multivariate analysis),FALSE,NA
+Executive function (trail making test B),TRUE,other_psychiatric
+Neuroticism (MTAG),TRUE,other_psychiatric
+Duration to complete alphanumeric path task (baseline),TRUE,other_psychiatric
+Neuroticism conditioned on average household income before tax (multi-trait conditioning and joint analysis),TRUE,other_psychiatric
+Frailty (Factor 3 - Multimorbidity),FALSE,NA
+Irritable mood,TRUE,other_psychiatric
+Autism spectrum disorder or schizophrenia,TRUE,schizophrenia
+Appendicular lean mass,FALSE,NA
+Problematic alcohol use (MTAG),TRUE,other_psychiatric
+Alcohol use disorder (consumption score),TRUE,other_psychiatric
+Migraine,FALSE,NA
+F-burn/spicy liking (derived food-liking factor),FALSE,NA
+Migraine or type 2 diabetes,FALSE,NA
+Feeling nervous,TRUE,other_psychiatric
+Feeling worry,TRUE,other_psychiatric
+Feeling tense,TRUE,other_psychiatric
+Waist-to-hip ratio adjusted for BMI,FALSE,NA
+Waist-hip index,FALSE,NA
+Neuroticism conditioned on educational attainment (multi-trait conditioning and joint analysis),TRUE,other_psychiatric
+Crohn's disease,FALSE,NA
+Neuroticism conditioned on Townsend deprivation index (multi-trait conditioning and joint analysis),TRUE,other_psychiatric
+Lifetime major depressive disorder (SoftImpute),TRUE,depression
+Lymphocyte-to-monocyte ratio,FALSE,NA
+Free Cholesterol to Cholesteryl Esters in Small HDL ratio,FALSE,NA
+Educational attainment,FALSE,NA
+FAM171B protein levels,FALSE,NA
+Drinks per week,FALSE,NA
+Broad depression or schizophrenia,TRUE,other_psychiatric
+Cigarettes smoked per day,FALSE,NA
+Leisure sedentary behaviour (television watching),FALSE,NA
+Educational attainment (MTAG),FALSE,NA
+Bipolar disorder (MTAG),TRUE,other_psychiatric
+Substance use disorder,TRUE,other_psychiatric
+Educational attainment (years of education),FALSE,NA
+Life satisfaction,TRUE,other_psychiatric
+CAMSIS occupational score (MTAG),FALSE,NA
+Atopobiaceae abundance in stool,FALSE,NA
+Post-traumatic stress disorder (mental health questionnaire or predicted),TRUE,other_psychiatric
+Schizophrenia vs ADHD (ordinary least squares (OLS)),TRUE,schizophrenia
+Symptomatic extra- and intra-cranial atherosclerotic stenosis,FALSE,NA
+SIOPS occupational score (MTAG),FALSE,NA
+Diabetes or abnormal glucose tolerance complicating pregnancy (PheCode 649.1),FALSE,NA
+Schizophrenia vs autism spectrum disorder (ordinary least squares (OLS)),TRUE,schizophrenia
+Triglyceride levels x short total sleep time interaction (1df test),FALSE,NA
+Chronotype,FALSE,NA
+ISEI occupational score (MTAG),FALSE,NA
+Obesity class II and Anorexia nervosa or Major depressive disorder or Obsesive-compulsive disorder or Schizophrenia,TRUE,other_psychiatric
+Rotator cuff injury,FALSE,NA
+Protein quantitative trait loci (liver),FALSE,NA
+Cognitive performance,TRUE,other_psychiatric
+Age at first sexual intercourse,FALSE,NA
+"Number of decayed, missing and filled tooth surfaces or use of dentures",FALSE,NA
+Hemoglobin A1c levels,FALSE,NA
+Breakfast cereal skipping frequency,FALSE,NA
+Breakfast skipping,FALSE,NA
+Attention deficit hyperactivity disorder or autism spectrum disorder or intelligence (pleiotropy),TRUE,other_psychiatric
+Income (MTAG),FALSE,NA
+Cigarettes smoked per day (MTAG),FALSE,NA
+Neuroticism general factor,TRUE,other_psychiatric
+Cannabis use disorder (MTAG),TRUE,other_psychiatric
+Bipolar disorder lithium response (continuous) or schizophrenia,TRUE,other_psychiatric
+Sensitivity to environmental stress and adversity,TRUE,other_psychiatric
+Shoulder impingement or rotator cuff tear,FALSE,NA
+Dentures,FALSE,NA
+Alcohol use disorder (MTAG),TRUE,other_psychiatric
+Feeling hurt,TRUE,other_psychiatric
+"Sib-shared facial trait 132; Facial segment 3; 3D morphology of the upper and lower face, excluding the nose",FALSE,NA
+Bone mineral density variability,FALSE,NA
+Height (baseline),FALSE,NA
+Alcohol use disorder,TRUE,other_psychiatric
+Highest math class taken (MTAG),FALSE,NA
+Internet addiction disorder,TRUE,other_psychiatric
+Gut microbiome abundance (class Clostridium sensu stricto sp. (at 3 months) x Household furry pet cat (3 Months) interaction,FALSE,NA

@@ -1,0 +1,188 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "03_qc pipeline parameters",
+    "description": "Three independent genotype-concordance validation studies for the dog10k mapping pipeline: HighPass-vs-LowPass, Axiom-vs-LowPass, and a downsampling study. Reuses reference files and several processes from 01_mapping.",
+    "type": "object",
+    "$defs": {
+        "reference_genome": {
+            "title": "Reference genome",
+            "type": "object",
+            "fa_icon": "fas fa-dna",
+            "description": "Same UU_Cfam_GSD_1.0 reference files used by 01_mapping.",
+            "properties": {
+                "assembly_ref": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.fa(sta)?$",
+                    "description": "Path to the reference genome FASTA (UU_Cfam_GSD_1.0_ROSY.fa).",
+                    "help_text": "Associated index files (.fai, .dict) must be co-located in the same directory as this FASTA.",
+                    "fa_icon": "fas fa-font"
+                },
+                "known_variants": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.bed\\.gz$",
+                    "description": "Known variant sites for BQSR (UU_Cfam_GSD_1.0.BQSR.DB.bed.gz).",
+                    "help_text": "A tabix-indexed BED.gz file. The .tbi index must exist at ${known_variants}.tbi.",
+                    "fa_icon": "fas fa-database"
+                },
+                "chunks_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "exists": true,
+                    "description": "Directory containing BED files that split the genome into processing chunks (chunks_10/).",
+                    "help_text": "Same chunk set used by 01_mapping's mapping/BQSR/gVCF step, reused here for re-mapping downsampled BAMs.",
+                    "fa_icon": "fas fa-puzzle-piece"
+                }
+            },
+            "required": ["assembly_ref", "known_variants", "chunks_dir"]
+        },
+        "glimpse_imputation": {
+            "title": "GLIMPSE imputation",
+            "type": "object",
+            "fa_icon": "fas fa-magic",
+            "description": "Same Dog10K phased reference panel used by 01_mapping, needed to re-impute the downsampled BAMs.",
+            "properties": {
+                "glimpse_ref_panel": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.bcf$",
+                    "description": "Dog10K phased imputation panel (AutoAndXPAR.Dog10K.Phased.bcf).",
+                    "help_text": "The .csi index must exist at ${glimpse_ref_panel}.csi.",
+                    "fa_icon": "fas fa-layer-group"
+                }
+            },
+            "required": ["glimpse_ref_panel"]
+        },
+        "highpass_cohort": {
+            "title": "HighPass cohort inputs",
+            "type": "object",
+            "fa_icon": "fas fa-vial",
+            "description": "Outputs of 01_mapping's HighPass track, consumed by studies 1 and 3.",
+            "properties": {
+                "highpass_snp_vcf": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.vcf\\.gz$",
+                    "description": "Jointly-called, hard-filtered HighPass SNP VCF (published by 01_mapping as highpass/snp_vcf/SNP.HF.ann.id.vcf.gz).",
+                    "help_text": "The .tbi index must exist at ${highpass_snp_vcf}.tbi.",
+                    "fa_icon": "fas fa-file-medical"
+                },
+                "highpass_bam_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "exists": true,
+                    "description": "Directory of per-sample HighPass BAMs (published by 01_mapping as highpass/bam/).",
+                    "help_text": "Expected filenames: <sample_id>.sorted.merged.MarkDups.BQSR.bam(.bai). Only used by the downsampling study (study 3).",
+                    "fa_icon": "fas fa-folder-open"
+                }
+            },
+            "required": ["highpass_snp_vcf", "highpass_bam_dir"]
+        },
+        "lowpass_cohort": {
+            "title": "LowPass cohort inputs",
+            "type": "object",
+            "fa_icon": "fas fa-vials",
+            "description": "Output of 01_mapping's LowPass track, consumed by studies 1 and 2.",
+            "properties": {
+                "lowpass_qc_vcf_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "exists": true,
+                    "description": "Directory of per-chromosome, QC-filtered LowPass VCFs (published by 01_mapping as lowpass/vcf/).",
+                    "help_text": "Expected filenames: DA.<chr>.merged.qc_modi.vcf.gz.",
+                    "fa_icon": "fas fa-folder-open"
+                }
+            },
+            "required": ["lowpass_qc_vcf_dir"]
+        },
+        "axiom_cohort": {
+            "title": "Axiom-array cohort input",
+            "type": "object",
+            "fa_icon": "fas fa-microchip",
+            "description": "Output of 02_data_processing's Axiom liftover/imputation stage, consumed by study 2.",
+            "properties": {
+                "axiom_lowpass_vcf_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "exists": true,
+                    "description": "Directory of per-chromosome Axiom-imputed VCFs.",
+                    "help_text": "02_data_processing/2_Axiom_imputation's published vcf/ output (QC_AND_CONVERT_CHR's per-chr DA_AFFYimp_<chr>.qc.modi.vcf.gz) — run that pipeline first.",
+                    "fa_icon": "fas fa-folder-open"
+                }
+            },
+            "required": ["axiom_lowpass_vcf_dir"]
+        },
+        "sample_lists_and_pairs": {
+            "title": "Sample lists and concordance pair samplesheets",
+            "type": "object",
+            "fa_icon": "fas fa-list",
+            "description": "Fixed sample lists and call/truth sample-pair tables driving the three concordance studies.",
+            "properties": {
+                "samples_highpass_11": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.txt$",
+                    "description": "One SRR accession per line: the 11 HighPass dogs also sequenced LowPass (study 1).",
+                    "fa_icon": "fas fa-file-lines"
+                },
+                "samples_downsampling_10": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.txt$",
+                    "description": "One SRR accession per line: the 10 HighPass dogs included in the downsampling study.",
+                    "help_text": "Deliberately 10, not 11 — SRR13340529 was excluded from the original analysis. See the stage README for provenance.",
+                    "fa_icon": "fas fa-file-lines"
+                },
+                "downsample_p_at_1x": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.csv$",
+                    "schema": "assets/schemas/schema_downsample_p_at_1x.json",
+                    "description": "CSV of sample_id,p_at_1x — the per-sample Picard DownsampleSam probability at 1x target coverage.",
+                    "fa_icon": "fas fa-file-csv"
+                },
+                "concordance_highpass_lowpass_pairs": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.csv$",
+                    "schema": "assets/schemas/schema_concordance_pairs.json",
+                    "description": "CSV of pair_id,call_sample,truth_sample for study 1 (call_sample = LowPass SRR, truth_sample = HighPass SRR).",
+                    "fa_icon": "fas fa-file-csv"
+                },
+                "concordance_axiom_lowpass_pairs": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.csv$",
+                    "schema": "assets/schemas/schema_concordance_pairs.json",
+                    "description": "CSV of pair_id,call_sample,truth_sample for study 2 (call_sample = LowPass SRR, truth_sample = Axiom sample ID).",
+                    "fa_icon": "fas fa-file-csv"
+                }
+            },
+            "required": [
+                "samples_highpass_11",
+                "samples_downsampling_10",
+                "downsample_p_at_1x",
+                "concordance_highpass_lowpass_pairs",
+                "concordance_axiom_lowpass_pairs"
+            ]
+        }
+    },
+    "allOf": [
+        { "$ref": "#/$defs/reference_genome" },
+        { "$ref": "#/$defs/glimpse_imputation" },
+        { "$ref": "#/$defs/highpass_cohort" },
+        { "$ref": "#/$defs/lowpass_cohort" },
+        { "$ref": "#/$defs/axiom_cohort" },
+        { "$ref": "#/$defs/sample_lists_and_pairs" }
+    ]
+}

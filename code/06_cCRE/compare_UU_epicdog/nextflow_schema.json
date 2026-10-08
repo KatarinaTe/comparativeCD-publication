@@ -1,0 +1,80 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "06_cCRE/compare_UU_epicdog pipeline parameters",
+    "description": "UU vs. EpicDog cCRE element-count comparison (Fig. 4d).",
+    "type": "object",
+    "properties": {
+        "epic_cerebellum_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "cerebellum_13_dense.bed (data/06_cCRE/epicdog_chromatin_states_bed_canfam4/), fetched by analyses/06_cCRE/fetch-epicdog-chromatin-states-bed.sh."
+        },
+        "epic_cerebrum_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "cerebrum_13_dense.bed (data/06_cCRE/epicdog_chromatin_states_bed_canfam4/), fetched by analyses/06_cCRE/fetch-epicdog-chromatin-states-bed.sh."
+        },
+        "uu_acg_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "ACG_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_cerebellum_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "cerebellum_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_frontal_lobe_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "frontal_lobe_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_hypothalamus_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "hypothalamus_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_occipital_cortex_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "occipital_cortex_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_striatum_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "striatum_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_temporal_cortex_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "temporal_cortex_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        },
+        "uu_thalamus_bed": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "thalamus_9_dense.bed (data/06_cCRE/chromatin_states_bed/), fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh."
+        }
+    },
+    "required": [
+        "epic_cerebellum_bed",
+        "epic_cerebrum_bed",
+        "uu_acg_bed",
+        "uu_cerebellum_bed",
+        "uu_frontal_lobe_bed",
+        "uu_hypothalamus_bed",
+        "uu_occipital_cortex_bed",
+        "uu_striatum_bed",
+        "uu_temporal_cortex_bed",
+        "uu_thalamus_bed"
+    ]
+}

@@ -1,0 +1,4 @@
+project: uppmax2025-2-420
+
+# ── Deposited input, fetched by fetch-siletti-subset.sh ──
+siletti_rds: ../../../data/07_additional_plots_and_analyses/Siletti_human_subset_normalised.rds

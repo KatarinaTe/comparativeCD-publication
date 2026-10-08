@@ -1,0 +1,85 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "05_network 5_GO_semantic_clustering pipeline parameters",
+    "description": "GO semantic clustering (Fig 2c/2e), OCD 'NA' detail (Fig 2d), GO fold-enrichment barchart (Fig 3b), and community gene-enrichment tileplots (Fig 3d/e).",
+    "type": "object",
+    "properties": {
+        "dep_only_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "DEP_ONLY_hierarchy_full_GO_enrichment.tsv (data/05_network/) — run1 (human-only) GO enrichment for depression."
+        },
+        "dep_ccd_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "DEP_CCD_hierachy_full_GO_enrichment.tsv (data/05_network/) — run2 (human+dogCD) GO enrichment for depression."
+        },
+        "ocd_only_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCD_ONLY_hierachy_full_GO_enrichment.tsv (data/05_network/) — run1 (human-only) GO enrichment for OCD."
+        },
+        "ocd_ccd_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Compulsive_hierachy_full_GO_enrichment_251023.tsv (data/05_network/) — run2 (human+dogCD) GO enrichment for OCD/compulsivity."
+        },
+        "sch_only_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "SCH_ONLY_hierachy_full_GO_enrichment.tsv (data/05_network/) — run1 (human-only) GO enrichment for schizophrenia."
+        },
+        "sch_ccd_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "SCH_CCD_hierachy_full_GO_enrichment.tsv (data/05_network/) — run2 (human+dogCD) GO enrichment for schizophrenia."
+        },
+        "dogcd_go": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "CCD_ONLY_hierachy_full_GO_enrichment.tsv (data/05_network/) — single-species, dog-only GO enrichment for dogCD (no run1/run2 pair). Feeds the semantic clustering's dogCD group and, downstream, Fig. 2e's semantic-similarity panel."
+        },
+        "cache_gpt_labels": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "cache_gpt_labels.top_community.cut60.txt (data/05_network/5_GO_semantic_clustering/) — frozen GPT cluster-label cache; not regenerated."
+        },
+        "goa_human_gaf": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "goa_human.gaf.gz (data/05_network/5_GO_semantic_clustering/) — frozen GO Consortium human annotation file."
+        },
+        "seed_genes_csv": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "gene_list_gwas_catalog_overlap_with_region.csv (data/07_additional_plots_and_analyses/) — frozen export of the seed-gene Google Sheet tab (gene, dog seed, human seed, dogCD P columns)."
+        },
+        "openai_api_key": {
+            "type": "string",
+            "default": "unused-frozen-cache-only",
+            "description": "Passed as OPENAI_API_KEY to 01_semantic_clustering.R, which requires this env var to be non-empty unconditionally even when the frozen GPT-label cache already covers every cluster. Only needs to be a real key if semantic re-clustering produces cluster IDs absent from that cache."
+        }
+    },
+    "required": [
+        "dep_only_go",
+        "dep_ccd_go",
+        "ocd_only_go",
+        "ocd_ccd_go",
+        "sch_only_go",
+        "sch_ccd_go",
+        "dogcd_go",
+        "cache_gpt_labels",
+        "goa_human_gaf",
+        "seed_genes_csv"
+    ]
+}

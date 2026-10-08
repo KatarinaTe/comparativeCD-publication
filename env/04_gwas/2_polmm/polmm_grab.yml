@@ -1,0 +1,9 @@
+name: polmm_grab
+channels:
+  - conda-forge
+  - bioconda
+platforms:
+  - linux-64
+dependencies:
+  - r-base==4.5.3
+  - r-grab==0.2.5

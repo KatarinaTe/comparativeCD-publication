@@ -1,0 +1,387 @@
+[workspace]
+name = "comparativeCD"
+description = "Analysis pipelines for: Dog-human gene network colocalization links synaptic signalling and ubiquitination to compulsive disorders"
+authors = [
+    "Katarina Tengvall <katarina.tengvall@imbim.uu.se>",
+    "Vista Sohrab",
+    "Elinor K. Karlsson",
+    "Mahesh Binzer-Panchal <mahesh.binzer-panchal@nbis.se>",
+]
+license = "Apache-2.0"
+license-file = "LICENSE"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64", "osx-arm64"]
+version = "1.0.0"
+
+# Task names are prefixed `<stage><letter>-`, matching the analyses/<stage>_* folder each
+# task's script lives in (00-07, same numbering as code/, analyses/, and data/) plus a
+# letter ordering tasks within that stage. `pixi task list` sorts alphabetically, so this
+# makes that output double as an ordered run list. See README.md's "3. Execution Order"
+# section for the full walkthrough with dependency notes. A task with `depends-on` needs
+# everything it names to have already run. Unprefixed tasks (`clean-nextflow`,
+# `manual-fetch-sequence-data`) are NOT part of the numbered pipeline run — the first is a
+# housekeeping utility, the second is an explicitly manual/small-scale-testing-only tool
+# (see its own description) — both are left unprefixed and sort after everything numbered
+# specifically so they don't read as pipeline steps.
+
+[tasks]
+
+# ── 00 — fetch raw/reference data (analyses/00_fetch-raw-data) ──────────────
+
+[tasks."00a-fetch-reference-data"]
+description = "Fetches reference data (genome, BQSR sites, Dog10K panel and gene models) and derives the GWAS clumping gene-range file"
+cmd = "./fetch-reference-data.sh"
+cwd = "analyses/00_fetch-raw-data"
+
+[tasks."00b-mapping-batched"]
+description = "Full-cohort fetch+map, batched to bound disk usage -- run 01b-cohort-genotyping yourself once all batches are done"
+cmd = "sbatch run_batched.sh"
+cwd = "analyses/00_fetch-raw-data"
+
+# ── 01 — fetch+map+cohort-genotype, manual/building-block alternative to 00b (analyses/01_mapping) ──
+
+[tasks."00c-fetch-scilifelab-deposit"]
+description = "Fetches the pipeline inputs deposited on SciLifeLab (Axiom genotypes, survey responses, breed/sex metadata), checksum-verified"
+cmd = "./fetch-scilifelab-deposit.sh"
+cwd = "analyses/00_fetch-raw-data"
+
+[tasks."01a-fetch-map"]
+description = "Maps one batch of FASTQ reads to BAM/gVCF/depth-stats"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/01_mapping/1_fetch_map"
+
+[tasks."01b-cohort-genotyping"]
+description = "Joint SNP calling (HighPass) + GLIMPSE imputation (LowPass) - run once, after all fetch-map batches"
+# Deliberately manual, not chained after 00b-mapping-batched (run_batched.sh used to auto-run this
+# at its own end; removed 2026-10-05 -- see that script's header for why). No depends-on either:
+# its real prerequisite is 00b-mapping-batched, which submits an async SLURM job (sbatch) and
+# returns immediately - pixi would consider it "done" the moment the job is merely queued, long
+# before the cohort is actually complete. If the samplesheets below are missing, run
+# `pixi run 00b-mapping-batched` (or 01a-fetch-map batches manually) first - nextflow_schema.json's
+# exists:true check fails clearly either way.
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/01_mapping/2_cohort_genotyping"
+inputs = [
+    "data/raw-data/mapped/high_pass_cohort_samplesheet.csv",
+    "data/raw-data/mapped/low_pass_cohort_samplesheet.csv",
+]
+outputs = ["data/results/01_mapping/2_cohort_genotyping/**"]
+
+# ── 02 — survey factor analysis, Axiom imputation, then merge + plot (analyses/02_data_processing) ──
+
+[tasks."02a-fetch-axiom-jars"]
+description = "Downloads the conform-gt and beagle jars for Axiom imputation"
+cmd = "./fetch-jars.sh"
+cwd = "code/02_data_processing/2_Axiom_imputation"
+
+[tasks."02b-axiom-imputation"]
+description = "Lifts Axiom genotypes to canFam4, imputes against the Dog10K panel"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/02_data_processing/2_Axiom_imputation"
+
+[tasks."02c-survey-data"]
+description = "EFA/IRT factor analysis of the 14-item dogCD survey"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/02_data_processing/1_Survey_data"
+
+[tasks."02d-merging-filtering"]
+description = "Merges 01b (LowPass/GENCOVE) + 02b (Axiom) genotypes, filters, builds GWAS-ready datasets"
+depends-on = ["01b-cohort-genotyping", "02b-axiom-imputation"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/02_data_processing/3_Merging_filtering"
+inputs = [
+    "data/results/01_mapping/2_cohort_genotyping/lowpass/plink/**",
+    "data/results/02_data_processing/2_Axiom_imputation/plink/**",
+]
+outputs = ["data/results/02_data_processing/3_Merging_filtering/**"]
+
+[tasks."02e-plotting"]
+description = "Diagnostic plots: PCA by breed, factor-score and item-response distributions"
+depends-on = ["02d-merging-filtering"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/02_data_processing/4_Plotting"
+inputs = [
+    "data/results/02_data_processing/3_Merging_filtering/population_structure/**",
+    "data/results/02_data_processing/3_Merging_filtering/plink/**",
+]
+outputs = ["data/results/02_data_processing/4_Plotting/**"]
+
+# ── 03 — genotype-concordance QC (analyses/03_qc) ────────────────────────────
+
+[tasks."03a-qc"]
+description = "Genotype-concordance QC studies"
+depends-on = ["01b-cohort-genotyping", "02b-axiom-imputation"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/03_qc"
+inputs = [
+    "data/results/01_mapping/2_cohort_genotyping/highpass/snp_vcf/**",
+    "data/results/01_mapping/2_cohort_genotyping/lowpass/vcf/**",
+    "data/results/02_data_processing/2_Axiom_imputation/vcf/**",
+    # Not published by 01b-cohort-genotyping (see its own header comment) - only
+    # 00b-mapping-batched (async sbatch) produces this, so it's a plain caching input, not a
+    # depends-on.
+    "data/raw-data/mapped/high/**",
+]
+outputs = ["data/results/03_qc/**"]
+
+# ── 04 — GWAS, fine-mapping, and downstream region work (analyses/04_gwas) ──
+
+[tasks."04a-mlma-loco"]
+description = "mlma-loco GWAS for F1/F2/F3/SIZE, plus clumping/sumstats export"
+depends-on = ["02d-merging-filtering"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/04_gwas/1_mlma-loco"
+inputs = [
+    "data/results/02_data_processing/3_Merging_filtering/plink/**",
+    "data/results/02_data_processing/3_Merging_filtering/phenotypes/**",
+]
+outputs = ["data/results/04_gwas/1_mlma-loco/**"]
+
+[tasks."04b-polmm"]
+description = "POLMM GWAS for all 14 survey items, plus clumping/sumstats export"
+depends-on = ["02d-merging-filtering"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/04_gwas/2_polmm"
+inputs = [
+    "data/results/02_data_processing/3_Merging_filtering/plink/**",
+    "data/results/02_data_processing/3_Merging_filtering/phenotypes/**",
+]
+outputs = ["data/results/04_gwas/2_polmm/**"]
+
+[tasks."04c-finemap-susie"]
+description = "Genofile prep, sumstats harmonize/munge, SuSiE finemapping (17 dogCD phenotypes plus SIZE)"
+depends-on = ["02d-merging-filtering", "04a-mlma-loco", "04b-polmm"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/04_gwas/3_finemap_susie"
+inputs = [
+    "data/results/02_data_processing/3_Merging_filtering/plink/**",
+    "data/results/04_gwas/1_mlma-loco/sumstats/**",
+    "data/results/04_gwas/2_polmm/sumstats/**",
+]
+outputs = ["data/results/04_gwas/3_finemap_susie/**"]
+
+[tasks."04d-qc-signals-igv"]
+description = "Prep for manual IGV signal QC: SNP/BAM/genotype extraction, individual selection"
+depends-on = ["04c-finemap-susie", "02d-merging-filtering"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/04_gwas/4_qc_signals_IGV"
+inputs = [
+    "data/results/04_gwas/3_finemap_susie/finemap/**",
+    "data/results/02_data_processing/3_Merging_filtering/plink/**",
+    # Not published by 01b-cohort-genotyping (see its own header comment) - only
+    # 00b-mapping-batched (async sbatch) produces this, so it's a plain caching input, not a
+    # depends-on.
+    "data/raw-data/mapped/low/**",
+]
+outputs = ["data/results/04_gwas/4_qc_signals_IGV/**"]
+
+[tasks."04e-gwas-plotting"]
+description = "Fig 1c, plus all Manhattan + QQ plots (mlma-loco + polmm)"
+depends-on = ["04a-mlma-loco", "04b-polmm"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/04_gwas/5_plotting"
+inputs = [
+    "data/results/04_gwas/1_mlma-loco/gwas/**",
+    "data/results/04_gwas/2_polmm/gwas/**",
+]
+outputs = ["data/results/04_gwas/5_plotting/**"]
+
+# ── 05 — network propagation, cross-species colocalization, GO clustering (analyses/05_network) ──
+
+[tasks."05a-netcoloc"]
+description = "NetColoc z-scores for 4 gene sets, combined into 3 dogCD-vs-human cross-species files, plus Fig 1g"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/05_network/1_NetColoc"
+
+[tasks."05b-cross-species-bmi"]
+description = "Conserved dogCD/OCD network (Fig 1f), colocalization-size permutation test (Fig 1h), control comparisons (Fig 1i)"
+depends-on = ["05a-netcoloc"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/05_network/2_CrossSpeciesBMI"
+inputs = ["data/results/05_network/1_NetColoc/**"]
+outputs = ["data/results/05_network/2_CrossSpeciesBMI/**"]
+
+[tasks."05c-go-semantic-clustering"]
+description = "GO semantic clustering, fold-enrichment barchart, gene-enrichment tileplots (Fig 2c-e, 3b)"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/05_network/5_GO_semantic_clustering"
+
+[tasks."05d-network-overlap"]
+description = "Genes captured per network hierarchy, unique/shared genes across networks (Fig 2a-b)"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/05_network/4_Plotting"
+
+# ── 06 — chromatin-state annotation, independent of the GWAS/network chain (analyses/06_cCRE) ──
+
+[tasks."06a-emission-state-plot"]
+description = "Chromatin-state emission-probability / annotation-enrichment plot (Fig 4c)"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/06_cCRE"
+
+[tasks."06b-clump-regions-100kb"]
+description = "100kb-padded GWAS clump regions per phenotype group — feeds 06c-cre-overlap"
+depends-on = ["04a-mlma-loco", "04b-polmm"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/06_cCRE/clump_regions_100kb"
+inputs = ["data/results/04_gwas/1_mlma-loco/**", "data/results/04_gwas/2_polmm/**"]
+outputs = ["data/results/06_cCRE/clump_regions_100kb/**"]
+
+[tasks."06c-cre-overlap"]
+description = "GWAS-region overlap with cCREs: UU per-region (Fig 4e), EpicDog tissue-specificity (Results text)"
+depends-on = ["06b-clump-regions-100kb", "06d-fetch-epicdog-bed", "06e-fetch-chromatin-states-bed"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/06_cCRE/cre_overlap"
+inputs = ["data/results/06_cCRE/clump_regions_100kb/**"]
+
+[tasks."06d-fetch-epicdog-bed"]
+description = "Fetches the EpicDog 13-state chromatin BED files (CanFam4) needed for Fig 4d"
+cmd = "./fetch-epicdog-chromatin-states-bed.sh"
+cwd = "analyses/06_cCRE"
+
+[tasks."06e-fetch-chromatin-states-bed"]
+description = "Fetches the UU 9-state chromatin BED files (8 brain regions) needed for Fig 4d"
+cmd = "./fetch-chromatin-states-bed.sh"
+cwd = "analyses/06_cCRE"
+
+[tasks."06f-compare-uu-epicdog"]
+description = "UU vs. EpicDog cCRE element-count comparison (Fig 4d)"
+depends-on = ["06d-fetch-epicdog-bed", "06e-fetch-chromatin-states-bed"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/06_cCRE/compare_UU_epicdog"
+
+# ── 07 — additional plots and analyses, each independent (analyses/07_additional_plots_and_analyses) ──
+
+[tasks."07a-heritability-plot"]
+description = "Heritability boxplot by dogCD factor (Fig 1b)"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/07_additional_plots_and_analyses/1_heritability_plot"
+
+[tasks."07b-gwas-catalog-overlap"]
+description = "GWAS-catalog hit-count join behind the '12 of 27' claim"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/07_additional_plots_and_analyses/2_gwas_catalog_overlap"
+
+[tasks."07c-fetch-siletti-subset"]
+description = "Fetches the deposited Siletti human brain snRNA-seq subset (Figshare, 2.58 GB, md5-verified)"
+cmd = "./fetch-siletti-subset.sh"
+cwd = "analyses/07_additional_plots_and_analyses/3_cross_species_expression"
+
+[tasks."07d-cross-species-expression"]
+description = "dogCD/OCD network gene-set enrichment in Siletti human brain snRNA-seq atlas, by region and cell type (Fig 4a-b)"
+depends-on = ["07c-fetch-siletti-subset"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/07_additional_plots_and_analyses/3_cross_species_expression"
+
+[tasks."07e-power-analysis"]
+description = "Fig 1d; statistical power comparison, dogCD GWAS vs. human OCD GWAS (Strom et al. 2025)"
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/07_additional_plots_and_analyses/4_power_analysis"
+
+[tasks."07f-fetch-human-dog-5regions"]
+description = "Fetches human_dog_5regions.rds from Figshare (10.6084/m9.figshare.33787129)"
+cmd = "./fetch-human-dog-5regions.sh"
+cwd = "analyses/07_additional_plots_and_analyses/5_cross_species_transcriptomic_heatmap"
+
+[tasks."07g-cross-species-transcriptomic-heatmap"]
+description = "Extended Data Fig. 3; cross-species transcriptomic concordance heatmap, 165 OCD/dogCD network genes"
+depends-on = ["07f-fetch-human-dog-5regions"]
+args = [
+    { arg = "cli_opts", default = "" }
+]
+cmd = "CLI_OPTS='{{ cli_opts }}' ./run_nextflow.sh"
+cwd = "analyses/07_additional_plots_and_analyses/5_cross_species_transcriptomic_heatmap"
+
+# ── utility / manual-only — NOT part of the numbered pipeline run ───────────
+
+[tasks."manual-fetch-sequence-data"]
+description = "NOT part of the pipeline run - manual/small-scale fetches only. Use 00b-mapping-batched for the real run."
+cmd = "sbatch run_nextflow.sh"
+cwd = "analyses/00_fetch-raw-data"
+
+[tasks.clean-nextflow]
+description = "Cleans Nextflow work directories, logs, and caches"
+args = [
+    { arg = "find_dir", default = "." }
+]
+cmd = """
+find {{ find_dir }} \\( \
+  -name ".nextflow" -type d \
+  -o -name ".nextflow.log*" -type f \
+  -o -name "work" -type d \
+\\) -print0 | xargs -0 rm -r
+"""
+
+[dependencies]
+nextflow = ">=26.4.2,<27"

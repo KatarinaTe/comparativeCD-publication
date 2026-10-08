@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Downsampling probability schema",
+    "description": "Schema for the CSV provided with params.downsample_p_at_1x. One row per HighPass sample included in the downsampling study (study 3). p_at_1x is the Picard DownsampleSam probability that yields ~1x coverage for that sample; DOWNSAMPLE_BAM scales it linearly per target fraction (P = fraction * p_at_1x). Values are taken verbatim from the original script's hardcoded per-sample table (03_qc/3_Downsampling/1_create_downsampled_bams.sh) — the depth measurement that originally produced them is not itself in the repo.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "sample_id": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample ID must be provided and cannot contain spaces."
+            },
+            "p_at_1x": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 1,
+                "errorMessage": "p_at_1x must be a number between 0 and 1."
+            }
+        },
+        "required": ["sample_id", "p_at_1x"]
+    }
+}

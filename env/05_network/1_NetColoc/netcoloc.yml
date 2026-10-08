@@ -1,0 +1,26 @@
+name: netcoloc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.13
+  - pip
+  - git
+  - pip:
+    - netcoloc==0.1.6.post1
+    - cdapsutil==0.2.0a1
+    - tulip-python==5.7.0
+    # ddot and ndex-dev's own setup.py both pin networkx==1.11 (stale — both are installed
+    # with --no-deps below to prevent that from winning). CrossSpeciesBMI's real historical
+    # environment explicitly overrode this to networkx==3.0; pinning it here directly so it's
+    # installed before the --no-deps ddot/ndex-dev steps run, and nothing downgrades it after.
+    - networkx==3.0
+    - gprofiler-official==1.0.0
+    - ndex2==3.5.0
+    - mygene==3.2.2
+    - numpy==1.24.2
+    - pandas==1.5.3
+    - scipy==1.10.1
+    - python-igraph==0.10.4
+    - statsmodels==0.13.5
+    - matplotlib==3.7.0
+    - seaborn==0.12.2

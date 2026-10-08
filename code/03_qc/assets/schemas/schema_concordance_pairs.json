@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Concordance sample-pair schema",
+    "description": "Schema for the CSVs provided with params.concordance_highpass_lowpass_pairs and params.concordance_axiom_lowpass_pairs. Each row is one Picard GenotypeConcordance comparison. Sample IDs allow both string and integer JSON types because nf-schema's CSV reader infers the type from content — an all-digit ID (e.g. an Axiom sample ID) is parsed as an integer regardless of quoting in the CSV.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "pair_id": {
+                "type": ["string", "integer"],
+                "pattern": "^\\S+$",
+                "errorMessage": "Pair ID must be provided and cannot contain spaces (used as the output file prefix)."
+            },
+            "call_sample": {
+                "type": ["string", "integer"],
+                "pattern": "^\\S+$",
+                "errorMessage": "Call sample ID must be provided and cannot contain spaces."
+            },
+            "truth_sample": {
+                "type": ["string", "integer"],
+                "pattern": "^\\S+$",
+                "errorMessage": "Truth sample ID must be provided and cannot contain spaces."
+            }
+        },
+        "required": ["pair_id", "call_sample", "truth_sample"]
+    }
+}

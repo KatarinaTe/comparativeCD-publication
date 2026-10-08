@@ -1,0 +1,129 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Axiom imputation pipeline parameters",
+    "description": "Lifts the Darwin's Ark Axiom array genotypes from canFam3 to canFam4, then imputes each chromosome against the Dog10K phased reference panel with conform-gt + beagle.",
+    "type": "object",
+    "$defs": {
+        "input_data": {
+            "title": "Input data",
+            "type": "object",
+            "fa_icon": "fas fa-terminal",
+            "description": "The raw Axiom array genotypes and the sample list to keep.",
+            "properties": {
+                "axiom_bfile_prefix": {
+                    "type": "string",
+                    "description": "Path prefix (no extension) of the Axiom array plink bfile (canFam3).",
+                    "help_text": "canFam3 Axiom array A+B genotypes. The public input is the SciLifeLab deposit's affy_round3 plinkset (411 dogs, fetched as axiom_411_canfam3.* by 00c-fetch-scilifelab-deposit), already restricted to ind_to_keep; the authors' original 804-dog Affy_merged plinkset also works, and is filtered to the same 411 dogs.",
+                    "fa_icon": "fas fa-file"
+                },
+                "ind_to_keep": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.txt$",
+                    "description": "FID/IID list of the 411 Axiom samples to keep (data/02_data_processing/ind_to_keep_round3.txt).",
+                    "fa_icon": "fas fa-file-csv"
+                }
+            },
+            "required": [
+                "axiom_bfile_prefix",
+                "ind_to_keep"
+            ]
+        },
+        "reference_data": {
+            "title": "Reference data",
+            "type": "object",
+            "fa_icon": "fas fa-dna",
+            "description": "Liftover chain, assembly reference, and imputation reference panel.",
+            "properties": {
+                "liftover_chain": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.chain(\\.gz)?$",
+                    "description": "UCSC liftOver chain, canFam3 -> canFam4 (canFam3ToCanFam4.over.chain.gz).",
+                    "help_text": "Fetched by analyses/00_fetch-raw-data/fetch-reference-data.sh from https://hgdownload.soe.ucsc.edu/goldenPath/canFam3/liftOver/canFam3ToCanFam4.over.chain.gz",
+                    "fa_icon": "fas fa-link"
+                },
+                "assembly_ref": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.fa(sta)?$",
+                    "description": "Path to the reference genome FASTA (UU_Cfam_GSD_1.0_ROSY.fa). The .fai must be co-located.",
+                    "fa_icon": "fas fa-font"
+                },
+                "glimpse_ref_panel": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.bcf$",
+                    "description": "Dog10K phased reference panel (AutoAndXPAR.Dog10K.phased.bcf). The .csi must be co-located.",
+                    "fa_icon": "fas fa-dna"
+                },
+                "chr_start_stop": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "description": "Per-chromosome [chr, start, stop] regions (data/02_data_processing/cf4_chr_start_stop.bed).",
+                    "fa_icon": "fas fa-list"
+                },
+                "chr_rename_map": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "description": "Numeric-to-\"chrN\" chromosome rename map for bcftools annotate --rename-chrs (data/02_data_processing/chromosomes.txt).",
+                    "fa_icon": "fas fa-list"
+                },
+                "genetic_maps_dir": {
+                    "type": "string",
+                    "format": "directory-path",
+                    "exists": true,
+                    "description": "Directory of per-chromosome beagle genetic maps, canFam4.cM.<chr>.map (data/02_data_processing/mapfiles).",
+                    "fa_icon": "fas fa-folder"
+                }
+            },
+            "required": [
+                "liftover_chain",
+                "assembly_ref",
+                "glimpse_ref_panel",
+                "chr_start_stop",
+                "chr_rename_map",
+                "genetic_maps_dir"
+            ]
+        },
+        "imputation_tools": {
+            "title": "Imputation tools",
+            "type": "object",
+            "fa_icon": "fas fa-toolbox",
+            "description": "conform-gt and beagle jars, pinned to the exact releases used in the original run. Fetch with: pixi run fetch-axiom-jars.",
+            "properties": {
+                "conform_gt_jar": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.jar$",
+                    "description": "conform-gt.24May16.cee.jar",
+                    "fa_icon": "fas fa-cog"
+                },
+                "beagle_jar": {
+                    "type": "string",
+                    "format": "file-path",
+                    "exists": true,
+                    "pattern": "^\\S+\\.jar$",
+                    "description": "beagle.22Jul22.46e.jar",
+                    "fa_icon": "fas fa-cog"
+                }
+            },
+            "required": [
+                "conform_gt_jar",
+                "beagle_jar"
+            ]
+        }
+    },
+    "allOf": [
+        { "$ref": "#/$defs/input_data" },
+        { "$ref": "#/$defs/reference_data" },
+        { "$ref": "#/$defs/imputation_tools" }
+    ]
+}

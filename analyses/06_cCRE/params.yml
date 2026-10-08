@@ -1,0 +1,5 @@
+project: uppmax2025-2-420
+
+# ── Deposited inputs (data/06_cCRE/), not built by any pipeline ──
+probabilities: ../../data/06_cCRE/emissions_state_probabilities.txt
+annotations: ../../data/06_cCRE/emissions_genome_annotations_enrichment.txt

@@ -1,0 +1,16 @@
+name: dog10k_mapping
+channels:
+  - conda-forge
+  - bioconda
+platforms:
+  - linux-64
+dependencies:
+  - bwa-mem2==2.1
+  - gatk4==4.4.0.0
+  - picard==3.1.1
+  - openjdk>=17,<18
+  - samtools==1.20
+  - htslib==1.20
+  - python>=3.10,<3.11
+  - numpy=*
+  - r-base==4.3.1

@@ -1,0 +1,19 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+@EXPLICIT
+https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2#d7c89558ba9fa0495403155b64376d81
+https://conda.anaconda.org/conda-forge/linux-64/libgomp-14.2.0-h767d61c_2.conda#06d02030237f4d5b3d9a7e7d348fe3c6
+https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2#73aaf86a425cc6e73fcf236a5a46396d
+https://conda.anaconda.org/conda-forge/linux-64/libgcc-14.2.0-h767d61c_2.conda#ef504d1acbd74b7cc6849ef8af47dd03
+https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-14.2.0-h69a702a_2.conda#a2222a6ada71fb478682efe483ce0f92
+https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-14.2.0-h8f9b012_2.conda#a78c856b6dc6bf4ea8daeb9beaaa3fb0
+https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-14.2.0-h4852527_2.conda#c75da67f045c2627f59e6fcb5f4e3a9b
+https://conda.anaconda.org/conda-forge/linux-64/gmp-6.3.0-hac33072_2.conda#c94a5994ef49749880a8139cf9afcbe1
+https://conda.anaconda.org/conda-forge/linux-64/libasprintf-0.23.1-h8e693c7_0.conda#988f4937281a66ca19d1adb3b5e3f859
+https://conda.anaconda.org/conda-forge/linux-64/libgettextpo-0.23.1-h5888daf_0.conda#a09ce5decdef385bcce78c32809fa794
+https://conda.anaconda.org/conda-forge/linux-64/mpfr-4.2.1-h90cbb55_3.conda#2eeb50cab6652538eee8fc0bc3340c81
+https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h2d0b736_3.conda#47e340acb35de30501a76c7c799c41d7
+https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda#283b96675859b20a825f8fa30f311446
+https://conda.anaconda.org/conda-forge/linux-64/gawk-5.3.1-hcd3d067_0.conda#91d4414ab699180b2b0b10b8112c5a2f
+https://conda.anaconda.org/conda-forge/linux-64/procps-ng-4.0.4-haa1a288_0.conda#df1234784d50c2133419dc695dc65f99

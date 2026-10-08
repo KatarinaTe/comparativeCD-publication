@@ -1,0 +1,32 @@
+term
+2-oxoglutarate metabolic process
+cell fate commitment
+cell junction maintenance
+cellular component maintenance
+cellular respiration
+cellular response to endogenous stimulus
+cellular response to growth factor stimulus
+chromatin organization
+chromatin remodeling
+dendrite self-avoidance
+dicarboxylic acid metabolic process
+energy derivation by oxidation of organic compounds
+glial cell fate commitment
+heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules
+macromolecule metabolic process
+maintenance of postsynaptic density structure
+maintenance of synapse structure
+positive regulation of DNA-templated transcription
+positive regulation of RNA biosynthetic process
+positive regulation of RNA metabolic process
+positive regulation of cellular component biogenesis
+positive regulation of macromolecule biosynthetic process
+positive regulation of nucleobase-containing compound metabolic process
+prepulse inhibition
+presynaptic membrane organization
+regulation of grooming behavior
+response to growth factor
+startle response
+stem cell differentiation
+synapse maturation
+tricarboxylic acid cycle

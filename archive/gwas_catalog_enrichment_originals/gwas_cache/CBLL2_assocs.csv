@@ -1,0 +1,5 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs113288656,15005871,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/15005871/study,2e-7,2,-7,NA,1.1184,unit,CBLL2
+rs148405753,93496804,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93496804/study,3.0000000000000004e-8,3,-8,NA,0.0112,unit,CBLL2
+rs3752433,41811,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/41811/study,3e-7,3,-7,NA,0.15,unit,CBLL2
+rs140326499,134268085,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/134268085/study,9e-6,9,-6,NA,0.639628,unit,CBLL2

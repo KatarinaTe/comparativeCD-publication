@@ -1,0 +1,28 @@
+project: uppmax2025-2-420
+
+# ── Deposited systems-map gene list (data/05_network/), not built by any pipeline ──
+ocd_ccd_genes: ../../../data/05_network/ocd_ccd_systemsmap_genes.txt
+
+# ── Fig. 2b: deposited gene-level network/hierarchy membership table ──
+gene_level_network_basis_table: ../../../data/05_network/gene_level_network_basis_table.csv
+
+# ── Fig. 2a: deposited z-score / seed-gene / systems-map files, single-species ──
+dogcd_z: ../../../data/05_network/z_D2_CCD_Oct25_z-scores_pcnet2_251022.csv
+dogcd_seeds: ../../../data/05_network/CCDgenes_Oct25.txt
+dogcd_hier: ../../../data/05_network/ccd_systemsmap_genes.txt
+ocd_z: ../../../data/05_network/z_D1_OCD_z-scores_pcnet2_251022.csv
+ocd_seeds: ../../../data/05_network/OCDgenes_v4.txt
+ocd_hier: ../../../data/05_network/ocd_systemsmap_genes.txt
+dep_z: ../../../data/05_network/z_D1_DEP_z-scores_pcnet2.csv
+dep_seeds: ../../../data/05_network/human_DEP_noMHC_seed_genes.txt
+dep_hier: ../../../data/05_network/dep_systemsmap_genes.txt
+sch_z: ../../../data/05_network/z_D1_SCH_z-scores_pcnet2.csv
+sch_seeds: ../../../data/05_network/human_schiz_seed_genes.txt
+sch_hier: ../../../data/05_network/sch_systemsmap_genes.txt
+
+# ── Fig. 2a: deposited combined z-scores / systems-map files, cross-species ──
+ocd_ccd_zcomb: ../../../data/05_network/ocd_ccd_zcomb_z12_251022.txt
+dep_ccd_zcomb: ../../../data/05_network/DEP_CCD_Oct25_zcomb_z12.txt
+dep_ccd_hier: ../../../data/05_network/dep_ccd_systemsmap_genes.txt
+sch_ccd_zcomb: ../../../data/05_network/SCH_CCD_zcomb_z12.txt
+sch_ccd_hier: ../../../data/05_network/sch_ccd_systemsmap_genes.txt

@@ -1,0 +1,8 @@
+project: uppmax2025-2-420
+
+# ── 3_Merging_filtering outputs (run that pipeline first) ──
+qc6_plink_dir: ../../../data/results/02_data_processing/3_Merging_filtering/plink
+phenotypes_dir: ../../../data/results/02_data_processing/3_Merging_filtering/phenotypes
+
+# ── Not in this repo — gene-range file for plink --clump-range ──
+gene_range_file: ../../../data/raw-data/genes6_UU_Cfam_GSD_1.0_ROSY.txt

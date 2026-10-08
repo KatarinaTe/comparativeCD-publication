@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dog10k cohort genotyping pipeline — samplesheet schema",
+    "description": "Schema for the samplesheet provided with params.high_pass_samplesheet and params.low_pass_samplesheet in 01_mapping/2_cohort_genotyping. Each row is one sample's already-mapped, merged, MarkDups/BQSR'd BAM, gVCF, and depth-stats file, as produced and materialized by 01_mapping/1_fetch_map (via analyses/00_fetch-raw-data/run_batched.sh). One row per sample — 1_fetch_map already merges multi-run samples before producing these files, so there is no run_id column here (contrast assets/schemas/schema_input.json in 1_fetch_map, which is per-run).",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "sample": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample ID must be provided and cannot contain spaces."
+            },
+            "bam": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.bam$",
+                "errorMessage": "BAM file must be provided, cannot contain spaces, and must have extension '.bam'."
+            },
+            "bai": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.bam\\.bai$",
+                "errorMessage": "BAM index must be provided, cannot contain spaces, and must have extension '.bam.bai'."
+            },
+            "gvcf": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.g\\.vcf\\.gz$",
+                "errorMessage": "gVCF file must be provided, cannot contain spaces, and must have extension '.g.vcf.gz'."
+            },
+            "gvcf_tbi": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.g\\.vcf\\.gz\\.tbi$",
+                "errorMessage": "gVCF index must be provided, cannot contain spaces, and must have extension '.g.vcf.gz.tbi'."
+            },
+            "depth_stats": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.knownsites\\.depth\\.txt$",
+                "errorMessage": "Depth-stats file must be provided, cannot contain spaces, and must have extension '.knownsites.depth.txt' (RUN_STATS' calc_effective_depth() output, see 1_fetch_map/process_definitions.nf)."
+            }
+        },
+        "required": ["sample", "bam", "bai", "gvcf", "gvcf_tbi", "depth_stats"]
+    }
+}

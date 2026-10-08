@@ -1,0 +1,35 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs79623278,131345268,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/131345268/study,5e-9,5,-9,NA,NA,NA,KLHL40
+rs145311353,92409735,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/92409735/study,2e-6,2,-6,3.59801,NA,NA,KLHL40
+rs6442057,131473659,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/131473659/study,6.000000000000001e-8,6,-8,NA,0.051394,unit,KLHL40
+rs339665,37507,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/37507/study,6e-6,6,-6,NA,0.4063,unit,KLHL40
+rs10865923,63370436,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/63370436/study,3e-11,3,-11,NA,0.0564,unit,KLHL40
+rs78114600,21540706,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/21540706/study,5e-9,5,-9,NA,0.215,SD units,KLHL40
+rs6805421,104108807,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/104108807/study,1e-8,1,-8,NA,0.0078,unit,KLHL40
+rs11129967,133181180,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/133181180/study,1e-8,1,-8,NA,NA,NA,KLHL40
+rs34004101,188085783,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188085783/study,2.9999999999999996e-24,3,-24,NA,0.030826023,unit,KLHL40
+rs34004101,188181349,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188181349/study,9e-32,9,-32,NA,0.10122112,unit,KLHL40
+rs34004101,188183248,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188183248/study,3e-22,3,-22,NA,0.055122167,unit,KLHL40
+rs34004101,188083341,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188083341/study,8.999999999999999e-36,9,-36,NA,0.03762718,unit,KLHL40
+rs339661,188132418,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188132418/study,8e-16,8,-16,NA,0.012121355,unit,KLHL40
+rs339661,188134476,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188134476/study,3e-16,3,-16,NA,0.013173274,unit,KLHL40
+rs339683,163427071,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/163427071/study,3e-11,3,-11,NA,0.02443,unit,KLHL40
+rs79650461,164760783,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/164760783/study,4.9999999999999997e-64,5,-64,NA,0.271748,NA,KLHL40
+rs115333627,21535439,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/21535439/study,8e-25,8,-25,NA,0.4251,SD units,KLHL40
+rs115333627,164760751,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/164760751/study,5e-82,5,-82,NA,0.325432,NA,KLHL40
+rs3888652,164733689,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/164733689/study,2e-10,2,-10,NA,0.0404684,unit,KLHL40
+rs74648342,188257472,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188257472/study,5e-48,5,-48,NA,0.30685294,unit,KLHL40
+rs11718476,191681633,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/191681633/study,8e-11,8,-11,NA,0.0217,unit,KLHL40
+rs9830553,191683003,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/191683003/study,8e-9,8,-9,NA,0.0204,unit,KLHL40
+rs73087348,164732536,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/164732536/study,3e-17,3,-17,NA,0.06707328,unit,KLHL40
+rs34801786,35616191,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/35616191/study,7e-6,7,-6,NA,2.644884,unit,KLHL40
+rs56978598,36472472,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/36472472/study,3.0000000000000004e-9,3,-9,NA,NA,NA,KLHL40
+rs123509,21403173,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/21403173/study,4.9999999999999996e-6,5,-6,1.3,NA,NA,KLHL40
+rs123509,188130521,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188130521/study,4e-18,4,-18,NA,0.013197365,unit,KLHL40
+rs123509,40901600,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/40901600/study,3.0000000000000004e-8,3,-8,NA,0.01004,unit,KLHL40
+rs123509,40901137,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/40901137/study,1e-6,1,-6,NA,0.01348,unit,KLHL40
+rs123509,40900360,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/40900360/study,3e-6,3,-6,NA,0.001909,unit,KLHL40
+rs112643080,131615867,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/131615867/study,2e-10,2,-10,NA,0.0346924,unit,KLHL40
+rs72865716,218073087,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/218073087/study,4e-57,4,-57,NA,NA,NA,KLHL40
+rs142035542,188257307,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188257307/study,3.0000000000000002e-18,3,-18,NA,0.54102045,unit,KLHL40
+rs4683332,216787541,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/216787541/study,1e-13,1,-13,NA,0.055,unit,KLHL40

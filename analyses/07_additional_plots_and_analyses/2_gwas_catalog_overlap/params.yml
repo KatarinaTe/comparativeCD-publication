@@ -1,0 +1,7 @@
+project: uppmax2025-2-420
+
+# ── Frozen inputs, not built by any pipeline ──
+catalog_hits_file: ../../../data/07_additional_plots_and_analyses/gwas_catalog_hits.csv
+name_conversion_file: ../../../data/07_additional_plots_and_analyses/name_conversion_v2.tsv
+frozen_overlap_file: ../../../data/07_additional_plots_and_analyses/gene_list_gwas_catalog_overlap_with_region.csv
+frozen_gene_list_file: ../../../data/07_additional_plots_and_analyses/gene_list_frozen.csv

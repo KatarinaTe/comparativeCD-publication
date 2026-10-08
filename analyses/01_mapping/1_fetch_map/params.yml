@@ -1,0 +1,12 @@
+project: uppmax2025-2-420
+
+# samplesheet is intentionally omitted here — analyses/00_fetch-raw-data/run_batched.sh
+# passes a fresh, per-batch samplesheet via `--samplesheet` on the command line for
+# every invocation (see run_batched.sh's BATCH_PARAMS handling). There is no single
+# "the" samplesheet for this pipeline the way there is for 2_cohort_genotyping.
+
+# ── Reference files (static — same for every batch) ──
+assembly_ref: ../../../data/raw-data/references/UU_Cfam_GSD_1.0_ROSY.fa
+known_variants: ../../../data/raw-data/references/UU_Cfam_GSD_1.0.BQSR.DB.bed.gz
+depth_sites: ../../../data/raw-data/references/SRZ189891_722g.simp.header.CanineHD.names.GSD_1.0.filter.vcf.gz
+chunks_dir: ../../../data/raw-data/references/chunks_10

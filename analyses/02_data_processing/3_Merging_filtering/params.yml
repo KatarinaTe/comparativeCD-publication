@@ -1,0 +1,23 @@
+project: uppmax2025-2-420
+
+# ── Upstream pipeline outputs (run these first) ──
+gencove_bfile_prefix: ../../../data/results/01_mapping/2_cohort_genotyping/lowpass/plink/DA_IMP_GENCOVE_ALLCHR
+axiom_bfile_prefix: ../../../data/results/02_data_processing/2_Axiom_imputation/plink/DA_AFFYimp_ALLCHR
+
+# ── Frozen inputs (data/02_data_processing) — see the pipeline README for what each preserves ──
+fam_qc3modi: ../../../data/02_data_processing/DA_MERGED_GENCOVE_AXIOM_QC3modi.fam
+depth_file: ../../../data/02_data_processing/DarwinsDogs_N-3285_bam_meandepths.txt
+duplicates_file: ../../../data/02_data_processing/Duplicates_to_keep_DarwinsDogs_N-9_21samples_bam_meandepths.txt
+exclude_list_round2: ../../../data/02_data_processing/list_exclude_secondexclusion.txt
+dogid_relabel_fam: ../../../data/02_data_processing/modi_DA_MERGED_GENCOVE_AXIOM_QC4C_forDogIDchange.fam
+exclude_list_round3: ../../../data/02_data_processing/list_exclude_thirdexclusion.txt
+covariates: ../../../data/02_data_processing/DarwinsDogs_Q121_height_age_sex_batch_GENCOVE_AXIOM_QC4.tsv
+fam_2584dogs: ../../../data/02_data_processing/fam_2584dogs.txt
+data6: ../../../data/02_data_processing/data6_2024-10-14.txt
+
+# ── Not part of the original script — see RELABEL_AND_EXCLUDE_ROUND3's header comment ──
+exclude_list_lowpass12: ../../../data/01_mapping/exclude_12_LowPass_samples.txt
+
+# ── Not part of the original 01/02/03/04 sources for this pipeline — see
+# process_definitions.nf's SIZE section header. ──
+size_pheno_file: ../../../data/02_data_processing/Q121A.pheno

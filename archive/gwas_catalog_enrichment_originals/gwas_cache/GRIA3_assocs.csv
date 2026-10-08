@@ -1,0 +1,2 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs524654,92411245,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/92411245/study,4.9999999999999996e-6,5,-6,0.946927,NA,NA,GRIA3

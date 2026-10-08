@@ -1,0 +1,141 @@
+GO_semantic_cluster	cluster_label	cluster_label_wrapped	cluster_description
+cluster_1	Trans-synaptic neurotransmission across modalities	Trans-synaptic__neurotransmission__across modalities	Trans-synaptic communication mediating excitatory, inhibitory, neuromuscular, and cholinergic neurotransmission.
+cluster_10	Synaptic structure and receptor regulation	Synaptic structure__& receptor__regulation	Mechanisms that tune synapse architecture and activity by adjusting postsynaptic receptor abundance and structural size.
+cluster_100	Localization of synaptic and secretory vesicles	Localization of__synaptic & secretory__vesicles	Processes that position and retain synaptic vesicles and dense-core/secretory granules at defined sites.
+cluster_101	Ionic and chemical homeostasis mechanisms	Ionic & chemical__homeostasis__mechanisms	Homeostatic programs maintaining stable levels of inorganic and monatomic ions and overall chemical balance.
+cluster_102	Sensorimotor gating and startle response	Sensorimotor gating__& startle response	Circuits controlling the startle reflex and its suppression by a weak pre-pulse.
+cluster_103	RNA Pol II transcription control	RNA Pol II__transcription control	Control of DNA-templated transcription and RNA biosynthesis by RNA polymerase II.
+cluster_104	Metabolic & biosynthetic process regulation	Metabolic &__biosynthetic process__regulation	Global control of primary metabolic pathways and biosynthetic output.
+cluster_105	Macromolecular gene expression regulation	Macromolecular gene__expression__regulation	Regulation of gene expression and macromolecule metabolism/biosynthesis.
+cluster_106	Recombinase-mediated DNA integration processes	Recombinase-__mediated DNA__integration__processes	Insertion of DNA segments into target genomes by site-specific or homologous recombination.
+cluster_107	Plasma membrane inorganic ion import	Plasma membrane__inorganic ion import	Uptake of inorganic ions across the plasma membrane via dedicated transporters.
+cluster_108	Postsynaptic ACh receptor signaling	Postsynaptic ACh__receptor signaling	Enrichment for postsynaptic acetylcholine receptor signaling, including muscarinic GPCR pathways.
+cluster_109	Cellular responses to acetylcholine	Cellular responses__to acetylcholine	Processes mediating detection of acetylcholine and ensuing cellular responses.
+cluster_11	Anatomical structure and head morphogenesis	Anatomical structure__& head morphogenesis	Programs driving morphogenesis of anatomical structures, including head development.
+cluster_110	Calcium ion homeostasis in cells	Calcium ion__homeostasis in cells	Processes maintaining intracellular Ca2+ concentrations within physiological bounds.
+cluster_111	Cellular responses to metal and calcium	Cellular responses__to metal & calcium	Enrichment for cellular responses to metal ions, notably Ca2+.
+cluster_112	Amino & organic acid transport	Amino & organic__acid transport	Transmembrane transport of amino acids, including acidic species, and other organic acids.
+cluster_113	Cardiac myocyte excitation-contraction coupling	Cardiac myocyte__excitation-__contraction__coupling	Cardiac myocyte action potentials initiate and drive contraction.
+cluster_114	Monoamine GPCR signaling & cellular responses	Monoamine GPCR__signaling & cellular__responses	Cells respond to monoamines via GPCRs, including dopamine- and serotonin-triggered PLC signaling.
+cluster_115	Cellular responses to dopamine & catecholamines	Cellular responses__to dopamine &__catecholamines	Cells mount responses to dopamine and broader catecholamines.
+cluster_116	Dopamine & catecholamine secretion regulation	Dopamine & catechol-__amine secretion__regulation	Dopamine and other catecholamines are secreted via regulated pathways.
+cluster_117	Cellular responses to metal & calcium ions	Cellular responses to__metal & calcium ions	Cells adjust signaling, transcription, and physiology in response to calcium and metal ions.
+cluster_118	Intracellular ion & chemical homeostasis	Intracellular ion &__chemical homeostasis	Mechanisms that maintain intracellular monoatomic cation/ion levels and overall chemical balance.
+cluster_119	Actin-based contraction & filament motility	Actin-based contraction__& filament motility	Actin filaments generate force for cell contraction and drive filament-based movement.
+cluster_12	Regulation of synaptic membrane potential & depolarization	Regulation of synaptic__membrane potential &__depolarization	Pathways that tune pre- and postsynaptic membrane potentials, including controlled depolarization.
+cluster_120	Calcium-mediated intracellular signal transduction	Calcium-mediated__intracellular signal__transduction	Calcium ions act as second messengers to propagate intracellular signaling cascades.
+cluster_121	Membrane repolarization via ion flux	Membrane repolariza-__tion via ion flux	Cells rapidly restore membrane potential after depolarization via coordinated ion channel currents.
+cluster_122	Visual behavior & associative learning	Visual behavior &__associative learning	Vision guides behavioral outputs and supports acquisition of learned responses to visual cues.
+cluster_123	Protein complex oligomerization & homooligomerization	Protein complex__oligomerization &__homooligomerization	Proteins self-associate to form homo- and higher-order oligomeric complexes.
+cluster_124	Cellular response to axon injury	Cellular response to__axon injury	Neurons engage injury-response programs controlling degeneration, repair, and regeneration after axonal damage.
+cluster_125	Pain sensation & nociception	Pain sensation &__nociception	Nociceptive circuits detect, transduce, and perceive noxious stimuli as pain.
+cluster_126	Inhibition of axon growth & extension	Inhibition of axon__growth & extension	Processes that restrict axon initiation and extension, limiting neurite outgrowth.
+cluster_127	Neurotransmitter uptake & reuptake	Neurotransmitter__uptake & reuptake	Transport mechanisms that clear neurotransmitters from the synaptic cleft via uptake and reuptake.
+cluster_128	Organismal stress & fear responses	Organismal stress &__fear responses	Coordinated organismal responses to stressors, including conserved fear-related behaviors.
+cluster_129	Neuronal voltage-gated K+ channel clustering	Neuronal voltage-__gated K+ channel__clustering	Membrane organization that concentrates neuronal ion channels, notably voltage-gated potassium (Kv) channels, to tune excitability.
+cluster_13	Assembly of cell-cell junctions	Assembly of__cell-cell junctions	Ordered assembly of intercellular adhesion complexes to form stable cell-cell junctions.
+cluster_130	Cellular response to alcohol and ethanol	Cellular response__to alcohol & ethanol	Cells mount signaling and transcriptional responses to alcohol, notably ethanol.
+cluster_131	Transport of carboxylic and dicarboxylic acids	Transport of carbox-__ylic & dicarboxylic__acids	Cells mediate membrane transport of carboxylic and dicarboxylic acids.
+cluster_132	Dopamine metabolism and turnover	Dopamine metabolism__& turnover	Enzymatic pathways governing dopamine synthesis, degradation, and recycling.
+cluster_133	Glutamate secretion and release	Glutamate secretion__& release	Controlled export of glutamate from cells, particularly at synapses.
+cluster_134	Behavioral fear and defense responses	Behavioral fear__& defense responses	Defensive and fear behaviors engaged in response to threat.
+cluster_135	Modular intracellular signaling complexes	Modular__intracellular__signaling__complexes	Scaffolded protein modules integrate, amplify, and route intracellular signals.
+cluster_136	Vesicle fusion at plasma membrane	Vesicle fusion at__plasma membrane	SNARE-mediated docking and membrane merger deliver vesicle cargo at the cell surface.
+cluster_137	Hormone transport & secretion	Hormone transport__& secretion	Directional movement of hormones between cells or tissues to coordinate systemic physiology.
+cluster_138	Protein targeting to cell periphery	Protein targeting to__cell periphery	Targets proteins to the cortex and plasma membrane-proximal regions at the cell edge.
+cluster_139	Maintenance of subcellular localization	Maintenance of__subcellular__localization	Active mechanisms retain molecules at defined subcellular sites to preserve spatial organization.
+cluster_14	Multicellular organismal development and function	Multicellular__organismal develop-__ment & function	Coordinated processes that shape, integrate, and sustain multicellular organisms.
+cluster_140	Regulation of responses to stimuli	Regulation of__responses to stimuli	Modulates the magnitude, timing, or quality of cellular and organismal reactions to internal or external cues.
+cluster_15	Assembly of pre- and postsynaptic specializations	Assembly of pre- &__postsynaptic__specializations	Directed construction of presynaptic and postsynaptic membranes, densities, and specialized synaptic architectures.
+cluster_16	Behavioral outputs: locomotion and vocalization	Behavioral outputs:__locomotion &__vocalization	Controls organismal behaviors with emphasis on movement and acoustic communication.
+cluster_17	Developmental processes and maturation	Developmental__processes &__maturation	Programs that drive developmental progression and achieve functional maturation.
+cluster_18	Neuronal projection & dendritic spine organization	Neuronal projection &__dendritic spine__organization	Encompasses organization of plasma membrane-bounded cell projections, notably neuronal neurites and dendritic spines.
+cluster_19	Cellular signal transduction & communication	Cellular signal__transduction &__communication	Captures generic signaling that transduces and relays information within and between cells.
+cluster_2	Synaptic & neuron-glia communication	Synaptic & neuron-glia__communication	Defines intercellular communication with emphasis on synaptic transmission and neuron-glia signaling.
+cluster_20	Learning & memory, associative & nonassociative	Learning & memory,__associative &__nonassociative	Reflects processes underlying learning and memory, including associative and nonassociative forms.
+cluster_21	Cell differentiation & developmental growth	Cell differentiation &__developmental growth	Captures cell fate specification, differentiation, and developmental growth.
+cluster_22	Cognition & neuromuscular balance	Cognition &__neuromuscular__balance	Links cognition with neuromuscular programs controlling postural balance.
+cluster_23	Synapse & postsynapse organization control	Synapse &__postsynapse__organization control	Modulates synaptic architecture with emphasis on postsynaptic organization.
+cluster_24	Cell communication & process regulation	Cell communication__& process regulation	Governs cellular communication and broader processes, including their positive up-regulation.
+cluster_25	Inorganic anion & chloride transmembrane transport	Inorganic anion &__chloride__transmembrane__transport	Mediates transmembrane transport of chloride and other inorganic anions.
+cluster_26	Cadherin-mediated calcium-dependent cell-cell adhesion	Cadherin-mediated__calcium-dependent__cell-cell adhesion	Cadherin-driven, calcium-dependent homophilic cell-cell adhesion at the plasma membrane.
+cluster_27	Regulation of cell signaling	Regulation of__cell signaling	Processes that modulate the rate, timing, or intensity of signaling pathways.
+cluster_28	Striated muscle contraction programs	Striated muscle__contraction programs	System-level and striated muscle contraction processes that generate mechanical force.
+cluster_29	Chloride and inorganic anion transport	Chloride & inorganic__anion transport	Transmembrane transport of monoatomic anions, notably chloride, across cellular membranes.
+cluster_3	Nervous system & CNS development	Nervous system &__CNS development	Gene programs driving development of the nervous system, including central structures like the optic nerve.
+cluster_30	Positive regulation of biological processes	Positive regulation__of biological__processes	Global control of biological processes, including promotion of process rates and regulation of localization.
+cluster_31	Cellular transport, trafficking & secretion	Cellular transport,__trafficking &__secretion	Enriched for cellular cargo movement, uniting neurotransmitter transport, localization, import, and secretion.
+cluster_32	Neurotransmitter receptor signaling via GPCR & channels	Neurotransmitter__receptor signaling__via__GPCR & channels	Integrates glutamatergic, GABAergic & adrenergic signaling via GPCR second messengers and ligand-gated channels.
+cluster_33	Regulation of transport & secretion	Regulation of__transport &__secretion	Coordinates bidirectional control of cargo flow, tuning transport and secretion through positive and negative cues.
+cluster_34	Regulation of cell projection organization	Regulation of cell__projection organiza-__tion	Balances organization of membrane-bounded cell projections, enabling context-specific promotion or restraint.
+cluster_35	Transmembrane transport & plasma membrane import	Transmembrane__transport & plasma__membrane import	Emphasizes solute passage across the plasma membrane, particularly import via dedicated transporters.
+cluster_36	Neural and respiratory process regulation	Neural & respiratory__process regulation	Regulators of organismal, neural, and respiratory functions, including control of gaseous exchange.
+cluster_37	Forebrain and cortical development and cell migration	Forebrain & cortical__development & cell__migration	Genes orchestrating telencephalic growth, cortical and limbic patterning, and directed neuronal migration.
+cluster_38	Synaptic protein and receptor localization	Synaptic protein &__receptor local-__ization	Targets proteins and receptors to synapses, postsynapses, and cell junction complexes.
+cluster_39	Regulation of neural development	Regulation of neural__development	Modulators that promote or restrain nervous system development within organismal programs.
+cluster_4	Synaptic modulation and plasticity	Synaptic modulation__& plasticity	Controls pre- and postsynaptic neurotransmission, spanning glutamatergic/GABAergic signaling and long-term potentiation/depression.
+cluster_40	Calcium-triggered synaptic vesicle exocytosis & control	Calcium-triggered__synaptic vesicle__exocytosis & control	Calcium-dependent fusion of synaptic vesicles at the active zone to release neurotransmitters and its regulation.
+cluster_41	Synaptic signal release mechanisms	Synaptic signal__release mechanisms	Processes controlling the release of signals, including neurotransmitters, from synapses.
+cluster_42	Postsynaptic potential modulation & transmission	Postsynaptic poten-__tial modulation &__transmission	Regulation of excitatory and inhibitory postsynaptic potentials during chemical synaptic transmission.
+cluster_43	Synaptic vesicle transport & cycling	Synaptic vesicle__transport & cycling	Clustering, trafficking, and recycling of synaptic vesicles within synapses.
+cluster_44	Heparan & chondroitin proteoglycan synthesis & turnover	Heparan & chondroi-__tin proteoglycan__synthesis & turnover	Biosynthesis and metabolic remodeling of heparan sulfate and chondroitin sulfate proteoglycans.
+cluster_45	Control of synapse & postsynapse assembly	Control of synapse &__postsynapse assembly	Regulatory pathways that drive synapse formation, including postsynaptic assembly.
+cluster_46	Neuronal impulse transmission & action potentials	Neuronal impulse__transmission &__action potentials	Electrical signaling in neurons spanning action potential generation and nerve impulse transmission.
+cluster_47	Regulation of cell junction assembly	Regulation of cell__junction assembly	Signals that control and enhance assembly of intercellular junctions.
+cluster_48	Cardiac action potential regulation & depolarization	Cardiac action__potential regulation__& depolarization	Processes governing cardiac myocyte action potential generation and membrane depolarization.
+cluster_49	Aminoglycan & glycosaminoglycan biosynthesis	Aminoglycan &__glycosaminoglycan__biosynthesis	Enzymatic pathways synthesizing amino- and glycosaminoglycan polysaccharides.
+cluster_5	Pre- & postsynaptic junction organization	Pre- & postsynaptic__junction organization	Encompasses assembly & remodeling of pre- & postsynaptic specializations at synaptic junctions.
+cluster_50	Cell & neuronal migration & motility	Cell & neuronal__migration & motility	Captures programs driving directional cell movement, including neuronal migration.
+cluster_51	Regulated exocytosis & cellular secretion	Regulated exocytosis__& cellular secretion	Involves vesicle fusion and cargo release from cells, including Ca2+-regulated exocytosis.
+cluster_52	Regulation of development & morphogenesis	Regulation of__development &__morphogenesis	Modulatory programs that control developmental progression and anatomical morphogenesis.
+cluster_53	Metal cation transport: Na+, K+, Ca2+	Metal cation transport__Na+, K+ & Ca2+	Transport of metal cations across membranes, including Na+, K+ fluxes and Ca2+ import.
+cluster_54	Adult behavioral & locomotor control	Adult behavioral__& locomotor control	Processes governing adult behaviors, particularly locomotion.
+cluster_55	Positive & negative regulation of neurogenesis	Positive & negative__regulation of__neurogenesis	Mechanisms that enhance or suppress neurogenesis from progenitors.
+cluster_56	Response to abiotic & general stimuli	Response to abiotic__& general stimuli	Pathways mediating cellular responses to diverse stimuli, with emphasis on abiotic cues.
+cluster_57	Synaptic membrane adhesion machinery	Synaptic membrane__adhesion machinery	Adhesion at pre- & postsynaptic membranes that stabilizes and organizes synapses.
+cluster_58	Control of vesicle traffic & exocytosis	Control of vesicle__traffic & exocytosis	Control of secretory vesicle transport and exocytosis, including Ca2+-dependent release.
+cluster_59	Cell repulsion by negative chemotaxis	Cell repulsion by__negative chemotaxis	Cells actively migrate away from chemoattractant sources.
+cluster_6	Neural lineage specification and maturation	Neural lineage__specification &__maturation	Coordinated programs drive neurogenesis, neuronal/CNS differentiation, and gliogenesis.
+cluster_60	Developmental growth and morphogenesis	Developmental growth__& morphogenesis	Coordinated tissue expansion during morphogenesis.
+cluster_61	Dendritic spine morphogenesis and regulation	Dendritic spine__morphogenesis &__regulation	Formation and control of dendritic spine structure.
+cluster_62	Cardiac contraction and blood circulation	Cardiac contraction__& blood circulation	Processes governing heart pumping and systemic blood flow.
+cluster_63	Sulfur compound metabolism & biosynthesis	Sulfur compound__metabolism &__biosynthesis	Encompasses synthesis and overall metabolism of sulfur-containing compounds.
+cluster_64	Regulation of RNA splicing & processing	Regulation of RNA__splicing &__processing	Controls spliceosome-mediated mRNA splicing and broader RNA processing/metabolism.
+cluster_65	Intraspecies social behavior & interaction	Intraspecies social__behavior &__interaction	Encompasses behaviors and processes mediating interactions among conspecifics.
+cluster_66	Adherens & cell-cell junction organization	Adherens & cell-cell__junction__organization	Directs assembly, maintenance, and remodeling of adherens and other cell-cell junctions.
+cluster_67	Glycosaminoglycan & proteoglycan metabolism	Glycosaminoglycan &__proteoglycan__metabolism	Covers the synthesis, modification, and turnover of glycosaminoglycans/aminoglycans and heparin-bearing proteoglycans.
+cluster_68	Ion transmembrane transport regulation & activity	Ion transmembrane__transport regulation__& activity	Regulators that tune ion passage across membranes by controlling transporter activity and flux, notably for K+.
+cluster_69	Cation transport across membranes	Cation transport__across membranes	Movement of Na+, K+ and Ca2+ across lipid bilayers via channels and carriers.
+cluster_7	Axon & dendrite outgrowth & guidance	Axon & dendrite__outgrowth & guidance	Programs that extend and steer neuronal projections, including CNS projection neuron axonogenesis.
+cluster_70	Positive control of ion & K+ transport	Positive control of__ion & K+ transport	Factors that promote or modulate metal and potassium ion flux across membranes.
+cluster_71	Cellular component organization & biogenesis	Cellular component__organization &__biogenesis	Assembly, arrangement, and remodeling of cellular structures and organelles.
+cluster_72	Exploration & locomotory behavior	Exploration &__locomotory behavior	Behaviors by which organisms explore their environment via locomotion.
+cluster_73	Positive & negative regulation of developmental growth	Positive & negative__regulation of__developmental growth	Processes that increase or decrease growth magnitude during development.
+cluster_74	Cellular responses to chemical stimuli	Cellular responses__to chemical stimuli	Cell-intrinsic programs that detect and respond to diverse chemical cues, including nitrogenous and oxygenated compounds.
+cluster_75	Control of cellular component biogenesis	Control of cellular__component biogenesis	Processes that modulate the formation of cellular structures and organelles.
+cluster_76	Cytosolic calcium influx & release	Cytosolic calcium__influx & release	Processes elevating cytosolic Ca2+ via plasma-membrane entry or mobilization from intracellular stores.
+cluster_77	Alternative mRNA splicing via spliceosome	Alternative mRNA__splicing via__spliceosome	Spliceosome-mediated alternative exon usage diversifies mRNA isoforms.
+cluster_78	Cell growth & expansion	Cell growth &__expansion	Processes that expand cellular mass and volume.
+cluster_79	PSD-95 clustering at postsynapse	PSD-95 clustering__at postsynapse	PSD-95 assembles into postsynaptic density clusters that organize signaling.
+cluster_8	Plasma membrane-bounded cell projection morphogenesis	Plasma membrane-__bounded cell__projection morpho-__genesis	Developmental programs shape plasma membrane-bounded cellular projections.
+cluster_80	Synaptic cytosolic Ca2+ homeostasis & sequestration	Synaptic cytosolic__Ca2+ homeostasis &__sequestration	Networks that buffer, sequester and tune pre- & postsynaptic cytosolic Ca2+ levels.
+cluster_81	Synaptic receptor & NMDA channel clustering	Synaptic receptor &__NMDA channel__clustering	Assembly of neurotransmitter-gated receptors, notably NMDA receptors, into synaptic clusters to tune transmission.
+cluster_82	Cellular localization & transport	Cellular__localization &__transport	Processes that position molecules and organelles within cells via directed transport and retention.
+cluster_83	Neural & hormonal regulation of behavior	Neural & hormonal__regulation of__behavior	Modulation of behavioral outputs through neural, endocrine, and molecular pathways.
+cluster_84	Targeting receptors to postsynaptic membrane	Targeting receptors__to postsynaptic__membrane	Directed delivery of proteins and neurotransmitter receptors to the postsynaptic membrane specializations.
+cluster_85	Cellular responses to chemicals & nicotine	Cellular responses__to chemicals &__nicotine	Cellular programs triggered by chemical stimuli, including nitrogenous, oxygenated compounds and nicotine.
+cluster_86	Ephrin receptor mediated cell signaling	Ephrin receptor__mediated cell__signaling	Eph receptor–ephrin signaling that orchestrates cell positioning, boundary formation, and axon guidance.
+cluster_87	Regulation of amine transport	Regulation of amine__transport	Processes that increase or decrease cellular amine uptake, efflux, and vesicular loading.
+cluster_88	Cardiac conduction & heart rate regulation	Cardiac conduction__& heart rate__regulation	Programs that tune cardiac electrical conduction to set heart rate and sustain effective circulation.
+cluster_89	Regulation of cell differentiation & development	Regulation of cell__differentiation &__development	Mechanisms that modulate cell fate commitment and maturation during development.
+cluster_9	Neuron projection growth, bundling & regeneration	Neuron projection__growth, bundling &__regeneration	Mechanisms promoting neurite outgrowth, fiber bundling (fasciculation), spine maturation, and axon regeneration.
+cluster_90	Cocaine responses and behavioral outcomes	Cocaine responses &__behavioral outcomes	Genes mediating physiological and behavioral responses to cocaine exposure.
+cluster_91	Auditory stimulus response and processing	Auditory stimulus__response &__processing	Genes driving detection and neural processing of acoustic stimuli.
+cluster_92	Camera-type eye retina development	Camera-type eye__retina development	Genes orchestrating morphogenesis and differentiation of the retina in a camera-type eye.
+cluster_93	Regulation of organismal growth	Regulation of__organismal growth	Genes controlling the rate, extent, and timing of organismal growth.
+cluster_94	Regulation of neurotransmitter and NMDA receptor activity	Regulation of__neurotransmitter &__NMDA receptor__activity	Genes tuning neurotransmitter receptor function, including modulation of NMDA receptor activity.
+cluster_95	Monoamine and catecholamine transport	Monoamine &__catecholamine__transport	Genes mediate uptake and efflux of biogenic amines, including dopamine and other catecholamines.
+cluster_96	Cell recognition and identity signaling	Cell recognition &__identity signaling	Cells discriminate and engage appropriate partners via specific surface recognition cues.
+cluster_97	Control of cell and organelle size	Control of cell &__organelle size	Pathways modulate overall cell dimensions and the size of cellular components.
+cluster_98	Control of cell growth magnitude	Control of cell__growth magnitude	Signals tune the rate and extent of cellular growth.
+cluster_99	Cellular responses to amines and alkaloids	Cellular responses__to amines__& alkaloids	Cells mount transcriptional and physiological programs in response to diverse amines, including histamine and amphetamine.

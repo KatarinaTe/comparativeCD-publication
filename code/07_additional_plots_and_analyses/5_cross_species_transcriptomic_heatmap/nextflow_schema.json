@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "07_additional_plots_and_analyses/5_cross_species_transcriptomic_heatmap pipeline parameters",
+    "description": "Extended Data Fig. 3: cross-species transcriptomic concordance heatmap for the 165 OCD/dogCD network genes.",
+    "type": "object",
+    "properties": {
+        "human_dog_rds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "human_dog_5regions.rds -- the collaborator's integrated human-dog-mouse Seurat object, mouse cells already dropped. Fetched from Figshare (10.6084/m9.figshare.33787129) by 07f-fetch-human-dog-5regions -- see this directory's README."
+        },
+        "seed_gene_list": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "165-gene OCD/dogCD network gene list (data/05_network/ocd_ccd_systemsmap_genes.txt) -- deposited, not built by any pipeline."
+        }
+    },
+    "required": [
+        "human_dog_rds",
+        "seed_gene_list"
+    ]
+}

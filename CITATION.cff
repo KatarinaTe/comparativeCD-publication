@@ -1,0 +1,74 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "comparativeCD: analysis pipelines for dog-human compulsive disorder network colocalization"
+type: software
+version: 1.0.0
+license: Apache-2.0
+abstract: >-
+  Nextflow and pixi pipelines behind the genomic and cross-species network analyses of
+  compulsive disorder in dogs (dogCD) and obsessive-compulsive disorder in humans.
+authors:
+  - given-names: Katarina
+    family-names: Tengvall
+    affiliation: Uppsala University
+  - given-names: Vista
+    family-names: Sohrab
+    affiliation: "UMass Chan Medical School/Broad Institute of MIT and Harvard"
+  - given-names: Elinor K.
+    family-names: Karlsson
+    affiliation: "UMass Chan Medical School/Broad Institute of MIT and Harvard"
+  - given-names: Mahesh
+    family-names: Binzer-Panchal
+    affiliation: National Bioinformatics Infrastructure Sweden (NBIS)
+preferred-citation:
+  type: article
+  title: "Dog-human gene network colocalization links synaptic signalling and ubiquitination to compulsive disorders"
+  status: submitted
+  year: 2026
+  authors:
+    - given-names: Katarina
+      family-names: Tengvall
+    - given-names: Vista
+      family-names: Sohrab
+    - given-names: Matthew J.
+      family-names: Christmas
+    - given-names: Gustaf
+      family-names: Brander
+    - given-names: Eric
+      family-names: Pederson
+    - given-names: Raphaela
+      family-names: Pensch
+    - given-names: Brittney
+      family-names: Kenney
+    - given-names: Chengcheng
+      family-names: Song
+    - given-names: Ola
+      family-names: Wallerman
+    - given-names: Elisabeth
+      family-names: Sundström
+    - given-names: Chao
+      family-names: Wang
+    - given-names: Åsa
+      family-names: Karlsson
+    - given-names: Linnéa L.
+      family-names: Monsén
+    - name: "Nordic OCD and Related Disorders Consortium (NORDiC)"
+    - name: "PGC TS/OCD working group"
+    - given-names: Kathryn A.
+      family-names: Lord
+    - given-names: Nora I.
+      family-names: Strom
+    - given-names: Christian
+      family-names: Rück
+    - given-names: David
+      family-names: Mataix-Cols
+    - given-names: Manuel
+      family-names: Mattheisen
+    - given-names: James J.
+      family-names: Crowley
+    - given-names: Jennifer R. S.
+      family-names: Meadows
+    - given-names: Elinor K.
+      family-names: Karlsson
+    - given-names: Kerstin
+      family-names: Lindblad-Toh

@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "07_additional_plots_and_analyses/4_power_analysis pipeline parameters",
+    "description": "Statistical power comparison, dogCD GWAS vs. human OCD GWAS (Strom et al. 2025).",
+    "type": "object",
+    "properties": {
+        "dog_gwas_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "DogCD top GWAS hits per clumped region, all 17 traits (data/07_additional_plots_and_analyses/ST5.dogCD.top_gwas.tsv)."
+        },
+        "human_gwas_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Human OCD GWAS genome-wide-significant loci, Strom et al. 2025 Table 1 (data/07_additional_plots_and_analyses/Strom.Table1.tsv)."
+        }
+    },
+    "required": [
+        "dog_gwas_file",
+        "human_gwas_file"
+    ]
+}

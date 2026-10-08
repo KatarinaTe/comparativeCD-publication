@@ -1,0 +1,4 @@
+project: uppmax2025-2-420
+
+# ── Deposited manuscript input, not built by any pipeline ──
+supp_tables_xlsx: ../../../data/07_additional_plots_and_analyses/SupplementaryTables_ST1_ST4.xlsx

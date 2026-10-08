@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "NetColoc pipeline parameters",
+    "description": "Fetches PCNet2.0 from NDEx, builds the network-propagation matrices, and computes z-scores for the 4 distinct dogCD/human-trait gene sets used across NetColoc's cross-species and single-species analyses.",
+    "type": "object",
+    "properties": {
+        "pcnet_uuid": {
+            "type": "string",
+            "default": "d73d6357-e87b-11ee-9621-005056ae23aa",
+            "description": "NDEx interactome UUID (default: PCNet2.0, 19,267 nodes / 3,852,119 edges)."
+        },
+        "seed_genes_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Directory holding the gene-set seed files (data/05_network/): OCDgenes_v4.txt, CCDgenes_Oct25.txt, human_DEP_noMHC_seed_genes_header.txt, human_schiz_seed_genes_header.txt."
+        },
+        "toga_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "TOGA human-dog 1:1 orthologue mapping (data/05_network/toga_cf4_human_genes.csv) — used by PLOT_NETCOLOC_SCATTER (Fig. 1f)."
+        }
+    },
+    "required": [
+        "seed_genes_dir",
+        "toga_file"
+    ]
+}

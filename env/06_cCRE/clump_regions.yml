@@ -1,0 +1,7 @@
+name: clump_regions
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base
+  - bedtools

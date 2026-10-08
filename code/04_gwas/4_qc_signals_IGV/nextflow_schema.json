@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "IGV signal QC prep pipeline parameters",
+    "description": "Extracts one lead SNP per finemapping credible set, maps BAM-having individuals to their genotype dogID, extracts genotypes at those SNPs, and selects candidate individuals per genotype class for manual IGV read-pileup review.",
+    "type": "object",
+    "properties": {
+        "finemap_results_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "3_finemap_susie's published finemap/ output directory (*_NO_PRIORS.*.gz finemapper.py result files)."
+        },
+        "bam_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "01_mapping's published lowpass/bam/ output directory."
+        },
+        "qc6_plink_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "3_Merging_filtering's published plink/ output directory (holds both QC5 and QC6 files; DA_MERGED_GENCOVE_AXIOM_QC5.{bed,bim,fam} are used here)."
+        },
+        "crosswalk_fam": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Deposited raw data file, not built by any pipeline: DA_MERGED_GENCOVE_AXIOM_QC3modi.fam. Doubles as the sampleID<->dogID crosswalk (has both columns; predates 3_Merging_filtering's dogID relabel)."
+        },
+        "n_per_class": {
+            "type": "integer",
+            "default": 3,
+            "description": "Individuals to select per genotype class (0/1/2) per lead SNP."
+        },
+        "seed": {
+            "type": "integer",
+            "default": 42,
+            "description": "Random seed for reproducible individual selection."
+        },
+        "round": {
+            "type": "integer",
+            "default": 1,
+            "description": "Selection round (1-indexed). Increment for a fresh, non-overlapping batch of individuals if an earlier round's picks had no usable reads at a locus."
+        }
+    },
+    "required": [
+        "finemap_results_dir",
+        "bam_dir",
+        "qc6_plink_dir",
+        "crosswalk_fam"
+    ]
+}

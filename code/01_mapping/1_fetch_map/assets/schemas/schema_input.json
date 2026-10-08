@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "dog10k pipeline — samplesheet schema",
+    "description": "Schema for the samplesheet provided with params.high_pass_samplesheet and params.low_pass_samplesheet. Each row represents one sequencing run. Samples with multiple runs (lanes) must have multiple rows with the same sample value — they are merged automatically after mapping.",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "sample": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample ID must be provided and cannot contain spaces."            },
+            "run_id": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Run ID must be provided and cannot contain spaces (e.g. SRR accession or lane identifier)."
+            },
+            "fastq_1": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.f(ast)?q\\.gz$",
+                "errorMessage": "FastQ file for reads 1 must be provided, cannot contain spaces, and must have extension '.fq.gz' or '.fastq.gz'."
+            },
+            "fastq_2": {
+                "type": "string",
+                "format": "file-path",
+                "pattern": "^\\S+\\.f(ast)?q\\.gz$",
+                "errorMessage": "FastQ file for reads 2 must be provided, cannot contain spaces, and must have extension '.fq.gz' or '.fastq.gz'."
+            }
+        },
+        "required": ["sample", "run_id", "fastq_1", "fastq_2"]
+    }
+}

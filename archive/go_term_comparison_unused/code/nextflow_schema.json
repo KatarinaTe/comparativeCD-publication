@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "05_network 4_Plotting pipeline parameters",
+    "description": "GO-enrichment run1-vs-run2 (single-species-only vs. dogCD/CCD cross-species) difference volcano plots, for OCD, DEP, and SCH.",
+    "type": "object",
+    "properties": {
+        "datadir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Directory holding the deposited GO-enrichment TSVs (data/05_network/)."
+        }
+    },
+    "required": [
+        "datadir"
+    ]
+}

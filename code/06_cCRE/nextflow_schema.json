@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "06_cCRE pipeline parameters",
+    "description": "Chromatin state emission-probability / genome-annotation-enrichment plot.",
+    "type": "object",
+    "properties": {
+        "probabilities": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "emissions_state_probabilities.txt (data/06_cCRE/)."
+        },
+        "annotations": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "emissions_genome_annotations_enrichment.txt (data/06_cCRE/)."
+        }
+    },
+    "required": [
+        "probabilities",
+        "annotations"
+    ]
+}

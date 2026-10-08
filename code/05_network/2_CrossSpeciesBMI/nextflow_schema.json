@@ -1,0 +1,66 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "05_network 2_CrossSpeciesBMI pipeline parameters",
+    "description": "dogCD/CCD-OCD conserved network, colocalization size vs. a permuted null, the control-comparisons bar plot, the dogCD/CCD-OCD systems map hierarchy, and per-pairing MGD significant-community derivation.",
+    "type": "object",
+    "properties": {
+        "ocd_ccd_zcomb_z12": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "1_NetColoc's OCD_CCD_zcomb_z12.tsv (published zcomb_z12/ dir)."
+        },
+        "interactome": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "1_NetColoc's interactome.pkl (published interactome/ dir)."
+        },
+        "dog_seed_genes": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Dog/CCD seed gene CSV, header 'gene' (data/05_network/CCDgenes_Oct25.txt)."
+        },
+        "human_seed_genes": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Human/OCD seed gene CSV, header 'gene' (data/05_network/OCDgenes_v4.txt)."
+        },
+        "control_results": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Deposited control-analysis results (data/05_network/controlanalyses_260521.csv)."
+        },
+        "ocd_ccd_systems_map": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCDv4_CCD_Oct25_systems_map.txt (data/05_network/)."
+        },
+        "ocd_ccd_hierarchy": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "CompulsiveNetwork_hierarchy_data_251022.tsv (data/05_network/)."
+        },
+        "mgd_enrichment_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Directory holding the deposited *_hierarchy_full_MGD_enrichment_results.tsv files (data/05_network/) — see 2_CrossSpeciesBMI.nf's own getMgdPairings() for the exact filenames."
+        }
+    },
+    "required": [
+        "ocd_ccd_zcomb_z12",
+        "interactome",
+        "dog_seed_genes",
+        "human_seed_genes",
+        "control_results",
+        "ocd_ccd_systems_map",
+        "ocd_ccd_hierarchy",
+        "mgd_enrichment_dir"
+    ]
+}

@@ -1,0 +1,5 @@
+GWAS_set	Tissue_category	Overlap_bp	Total_bp
+dogCD	brain	799607	247096600
+dogCD	other	1355669	451830000
+SIZE	brain	710315	247096600
+SIZE	other	1491683	451830000

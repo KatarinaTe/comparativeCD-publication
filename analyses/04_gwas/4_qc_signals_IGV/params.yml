@@ -1,0 +1,21 @@
+project: uppmax2025-2-420
+
+# ── 3_finemap_susie's published finemap/ dir (run that pipeline first) ──
+finemap_results_dir: ../../../data/results/04_gwas/3_finemap_susie/finemap
+
+# ── LowPass BAM directory ──
+# Not published under data/results/01_mapping — 2_cohort_genotyping doesn't publish per-sample
+# BAMs (see its own header comment). mapping-batched materializes these into
+# data/raw-data/mapped/low/ instead (one flat directory, all LowPass samples' BAMs side by side).
+bam_dir: ../../../data/raw-data/mapped/low
+
+# ── 3_Merging_filtering's published plink/ dir (holds both QC5 and QC6 files) ──
+qc6_plink_dir: ../../../data/results/02_data_processing/3_Merging_filtering/plink
+
+# ── Deposited raw data file, not built by any pipeline — doubles as the sampleID<->dogID crosswalk ──
+crosswalk_fam: ../../../data/02_data_processing/DA_MERGED_GENCOVE_AXIOM_QC3modi.fam
+
+# ── Individual-selection tuning ──
+n_per_class: 3
+seed: 42
+round: 1

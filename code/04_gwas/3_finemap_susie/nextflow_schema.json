@@ -1,0 +1,59 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Finemap (SuSiE) pipeline parameters",
+    "description": "Shared genofile creation, sumstats harmonization/munging, and PolyFun SuSiE finemapping (no functional priors) for the 18 GWAS'd dogCD phenotypes (3 factors + 14 items + SIZE).",
+    "type": "object",
+    "properties": {
+        "qc6_plink_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "3_Merging_filtering's published plink/ output directory (holds both QC5 and QC6 files; DA_MERGED_GENCOVE_AXIOM_QC5.{bed,bim,fam} are used here)."
+        },
+        "mlma_sumstats_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "1_mlma-loco's published sumstats/ output directory (CCD{F1,F2,F3}_sumstats.txt)."
+        },
+        "polmm_sumstats_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "2_polmm's published sumstats/ output directory (ITEM{N}_sumstats.txt)."
+        },
+        "size_sumstats_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "1_mlma-loco's published sumstats/size/ subdirectory (SIZE_sumstats.txt) — kept separate from mlma_sumstats_dir per 1_mlma-loco's own SIZE-vs-factors publish split."
+        },
+        "size_fam": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Deposited raw data file, not built by any pipeline: SIZE_DA_MERGED_GENCOVE_AXIOM_QC6.fam."
+        },
+        "stuck_fam": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Deposited raw data file, not built by any pipeline: STUCK_DA_MERGED_GENCOVE_AXIOM_QC6.fam. Used only as a sample-inclusion mask for the shared genofile, not as an analysed phenotype."
+        },
+        "allfam_fam": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Deposited raw data file, not built by any pipeline: ALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.fam."
+        }
+    },
+    "required": [
+        "qc6_plink_dir",
+        "mlma_sumstats_dir",
+        "polmm_sumstats_dir",
+        "size_sumstats_dir",
+        "size_fam",
+        "stuck_fam",
+        "allfam_fam"
+    ]
+}

@@ -1,0 +1,14 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs7000423,21542789,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/21542789/study,2e-7,2,-7,NA,0.1318,SD units,KCNV1
+rs570754094,63693307,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/63693307/study,5e-8,5,-8,NA,0.051592,unit,KCNV1
+rs74423990,119149824,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/119149824/study,4.9999999999999996e-6,5,-6,NA,0.1630147,unit,KCNV1
+rs58365105,93892625,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93892625/study,3.0000000000000004e-8,3,-8,NA,2.539,unit,KCNV1
+rs76604733,168932940,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/168932940/study,4.9999999999999996e-6,5,-6,NA,NA,NA,KCNV1
+rs182997997,214253704,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/214253704/study,4.9999999999999996e-6,5,-6,NA,2.05901,unit,KCNV1
+rs10088160,62077561,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/62077561/study,9e-8,9,-8,NA,NA,NA,KCNV1
+rs13268357,119145567,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/119145567/study,7e-7,7,-7,NA,0.153059,unit,KCNV1
+rs72671073,131339733,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/131339733/study,3e-26,3,-26,NA,NA,NA,KCNV1
+rs1901175,165201524,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/165201524/study,2e-8,2,-8,NA,0.109,unit,KCNV1
+rs12682334,56294309,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/56294309/study,6e-7,6,-7,1.073,NA,NA,KCNV1
+rs11997465,47179505,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/47179505/study,3e-6,3,-6,1.22,NA,NA,KCNV1
+rs144882124,30797819,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/30797819/study,4e-6,4,-6,NA,0.776207,unit,KCNV1

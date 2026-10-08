@@ -1,0 +1,10 @@
+project: uppmax2025-2-420
+
+# ── NDEx interactome UUID (default: PCNet2.0) ──
+pcnet_uuid: d73d6357-e87b-11ee-9621-005056ae23aa
+
+# ── Deposited raw seed-gene files, not built by any pipeline ──
+seed_genes_dir: ../../../data/05_network
+
+# ── Deposited TOGA human-dog orthologue mapping, used by PLOT_NETCOLOC_SCATTER (Fig. 1f) ──
+toga_file: ../../../data/05_network/toga_cf4_human_genes.csv

@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "07_additional_plots_and_analyses/3_cross_species_expression pipeline parameters",
+    "description": "Fig 4a-b dogCD/OCD network gene-set enrichment against the Siletti et al. 2023 human brain snRNA-seq atlas.",
+    "type": "object",
+    "properties": {
+        "siletti_rds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Siletti_human_subset_normalised.rds (data/07_additional_plots_and_analyses/, fetched by fetch-siletti-subset.sh). The script that derived this subset from the full Siletti et al. 2023 atlas cannot be provided — see REPRODUCIBILITY_AUDIT.md."
+        }
+    },
+    "required": [
+        "siletti_rds"
+    ]
+}

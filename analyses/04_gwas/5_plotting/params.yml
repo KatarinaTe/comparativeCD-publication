@@ -1,0 +1,5 @@
+project: uppmax2025-2-420
+
+# ── 1_mlma-loco / 2_polmm outputs (run those pipelines first) ──
+mlma_dir: ../../../data/results/04_gwas/1_mlma-loco/gwas
+polmm_dir: ../../../data/results/04_gwas/2_polmm/gwas

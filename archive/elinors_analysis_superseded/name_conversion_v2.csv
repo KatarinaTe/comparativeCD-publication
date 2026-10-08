@@ -1,0 +1,469 @@
+reported_trait,short,category,include
+Accumbens iron levels (R2* MRI),Neuroimaging,Other,True
+Addiction,Substance use disorder,Disorder,True
+Addiction risk factors,Substance use,Other,True
+ADHD vs Tourette's syndrome and other tic disorders (ordinary least squares (OLS)),,,False
+Adjustment reaction (PheCode 304),,,False
+Adventurousness,Openness,Other,True
+Age at first sexual intercourse,Other temperament,Temperament,True
+Age of smoking initiation,Other temperament,Temperament,True
+Age of smoking initiation (MTAG),Other temperament,Temperament,True
+"Alcohol consumption (drinks per month) (UKB data field 1578, 4424)",Substance use,Other,True
+Alcohol consumption in current drinkers,Substance use,Other,True
+Alcohol consumption x traumatic event in childhood (felt hated by family member) interaction,,,False
+Alcohol dependence (age at onset),Substance use disorder,Disorder,True
+Alcohol dependence symptom count,Substance use disorder,Disorder,True
+Alcohol liking,Other temperament,Temperament,True
+Alcohol use and misuse (confirmatory factor analysis Factor 22),Substance use disorder,Disorder,True
+Alcohol use disorder,Substance use disorder,Disorder,True
+Alcohol use disorder (consumption score),Substance use disorder,Disorder,True
+Alcohol use disorder (MTAG),Substance use disorder,Disorder,True
+Alcohol withdrawal factor score,Substance use disorder,Disorder,True
+Alcohol-related disorders (PheCode 317),Substance use disorder,Disorder,True
+Alcoholism (PheCode 317.1),Substance use disorder,Disorder,True
+Alzheimer disease (MTAG),Alzheimer's disease,Disorder,True
+Alzheimer disease and age of onset,Alzheimer's disease,Disorder,True
+Alzheimer's disease,Alzheimer's disease,Disorder,True
+Alzheimer's disease (age of onset),Alzheimer's disease,Disorder,True
+Alzheimer's disease (APOE e4 interaction),Alzheimer's disease,Disorder,True
+Alzheimer's disease (late onset),Alzheimer's disease,Disorder,True
+Alzheimer's disease (PheCode 290.11),Alzheimer's disease,Disorder,True
+Alzheimer's disease or educational attainment (pleiotropy),,,False
+Alzheimer's disease or family history of Alzheimer's disease,Alzheimer's disease,Disorder,True
+Alzheimer's disease or gastroesophageal reflux disease and/or peptic ulcer disease,Alzheimer's disease,Disorder,True
+Alzheimer’s disease polygenic risk score (upper quantile vs lower quantile),Alzheimer's disease,Disorder,True
+Anorexia nervosa,Anorexia nervosa,Disorder,True
+"Anorexia nervosa, attention-deficit/hyperactivity disorder, autism spectrum disorder, bipolar disorder, major depression, obsessive-compulsive disorder, schizophrenia, or Tourette syndrome (pleiotropy)",Multiple disorders,Disorder,True
+Anxiety,Neuroticism,Other,True
+Anxiety disorder,Anxiety,Disorder,True
+Anxiety disorder (PheCode 300.1),Anxiety,Disorder,True
+Anxiety disorders,Anxiety,Disorder,True
+Anxiety disorders (PheCode 300),Anxiety,Disorder,True
+Anxiety score,Neuroticism,Other,True
+Anxiety severity x hours spent watching television interaction,,,False
+Anxiety severity x playing computer games interaction,,,False
+Anxiety x maternal smoking during pregnancy interaction,,,False
+Anxiety/tension (special factor of neuroticism),Neuroticism,Other,True
+Anxious temperament,Neuroticism,Other,True
+Asthma and major depressive disorder,Depression,Disorder,True
+Attention deficit hyperactivity disorder,Attention deficit hyperactivity disorder,Disorder,True
+Attention deficit hyperactivity disorder (ADuLT model adjusted for sex),Attention deficit hyperactivity disorder,Disorder,True
+Attention deficit hyperactivity disorder (MTAG),Attention deficit hyperactivity disorder,Disorder,True
+Attention deficit hyperactivity disorder or autism spectrum disorder or intelligence (pleiotropy),Multiple disorders,Disorder,True
+Attention deficit hyperactivity disorder or cannabis use,,,False
+Attention deficit hyperactivity disorder or intracranial volume (pleiotropy),,,False
+Attention deficit hyperactivity disorder or putamen volume (pleiotropy),,,False
+Attention deficit hyperactivity disorder or risk-taking behavior (pleiotropy),Multiple disorders,Disorder,True
+Autism spectrum disorder (MTAG),Autism spectrum disorder,Disorder,True
+Autism spectrum disorder or schizophrenia,Multiple disorders,Disorder,True
+"Autism spectrum disorder, attention deficit-hyperactivity disorder, bipolar disorder, major depressive disorder, and schizophrenia (combined)",Multiple disorders,Disorder,True
+Automobile speeding propensity,Other temperament,Other,True
+Basal ganglia structure,Neuroimaging,Other,True
+Baseline memory in normal cognition,Cognitive function,Other,True
+Biological Father: Bipolar Disorder,Bipolar disorder,Disorder,True
+Bipolar disorder,Bipolar disorder,Disorder,True
+Bipolar disorder (age of onset <21) or attention deficit hyperactivity disorder,Multiple disorders,Disorder,True
+Bipolar disorder (early vs late onset),Bipolar disorder,Disorder,True
+Bipolar disorder (MTAG),Bipolar disorder,Disorder,True
+Bipolar disorder lithium response (categorical) or schizophrenia,Treatment-response,Disorder,True
+Bipolar disorder lithium response (continuous) or schizophrenia,Treatment-response,Disorder,True
+Bipolar disorder or Crohn's disease (MTAG),,,False
+Bipolar disorder or glomerular filtration rate estimated from creatine (MTAG),,,False
+Bipolar disorder or glomerular filtration rate estimated from cystatin (MTAG),,,False
+Bipolar disorder or inflammatory bowel disease (MTAG),,,False
+Bipolar disorder or major depressive disorder,Multiple disorders,Disorder,True
+Bipolar disorder or ulcerative colitis (MTAG),,,False
+Bipolar disorder vs ADHD (ordinary least squares (OLS)),,,False
+Bipolar disorder vs anorexia nervosa (ordinary least squares (OLS)),,,False
+Bipolar disorder vs major depressive disorder (ordinary least squares (OLS)),,,False
+Bipolar disorder vs Tourette's syndrome and other tic disorders (ordinary least squares (OLS)),,,False
+Bipolar I disorder,Bipolar disorder,Disorder,True
+Brain age gap,Neuroimaging,Other,True
+Brain rsFMRI measurement (functional connectivity) (Net_Edge_ICA3),Neuroimaging,Other,True
+Brain shape (segment 1),Neuroimaging,Other,True
+Brain shape (segment 117),Neuroimaging,Other,True
+Brain shape (segment 15),Neuroimaging,Other,True
+Brain shape (segment 62),Neuroimaging,Other,True
+Broad depression or major depressive disorder (self-reported),Depression,Disorder,True
+Broad depression or schizophrenia,Depression or schizophrenia,Disorder,True
+Cannabis smoking or cigarette smoking or schizophrenia,,,False
+Cannabis use,Substance use,Other,True
+Cannabis use cessation (current vs former) in HIV,,,False
+Cannabis use disorder,Substance use disorder,Disorder,True
+Cannabis use disorder (MTAG),Substance use disorder,Disorder,True
+Cerebrospinal fluid biomarker levels,Molecular brain biomarkers,Other,True
+Cerebrospinal fluid guanosine levels,Molecular brain biomarkers,Other,True
+Cerebrospinal fluid inosine levels,Molecular brain biomarkers,Other,True
+Cerebrospinal fluid t-tau:AB1-42 ratio,Molecular brain biomarkers,Other,True
+Cerebrospinal fluid unidentified metabolite levels (HILIC Metabolomics ID: 6.32_137.05),Molecular brain biomarkers,Other,True
+Cerebrospinal fluid unidentified metabolite levels (HILIC Metabolomics ID: 6.32_269.09),Molecular brain biomarkers,Other,True
+Cerebrospinal fluid unidentified metabolite levels (HILIC Metabolomics ID: 6.32_313.12),Molecular brain biomarkers,Other,True
+Cerebrospinal fluid unidentified metabolite levels (HILIC Metabolomics ID: 6.32_327.14),Molecular brain biomarkers,Other,True
+Chronic fatigue syndrome (PheCode 798.1),,,False
+Chronic lymphocytic leukemia or multiple sclerosis,,,False
+Chronic pain (confirmatory factor analysis Factor 18),Pain,Other,True
+Chronotype,Other temperament,Temperament,True
+Cognition and processing speed (confirmatory factor analysis Factor 34),Cognitive function,Other,True
+Cognitive ability,Cognitive function,Other,True
+"Cognitive ability, years of educational attainment or schizophrenia (pleiotropy)",,,False
+Cognitive decline (residual change score),Cognitive function,Other,True
+Cognitive decline rate in late mild cognitive impairment,,,False
+Cognitive domain scores for language or memory (pleiotropy),,,False
+Cognitive empathy,Cognitive function,Other,True
+Cognitive function,Cognitive function,Other,True
+Cognitive function (baseline),Cognitive function,Other,True
+Cognitive function (delayed memory) x major depressive disorder interaction (2df),,,False
+Cognitive function (executive function) x major depressive disorder interaction (2df),,,False
+Cognitive function (generalized correlation coefficient),Cognitive function,Other,True
+Cognitive function (processing speed) x major depressive disorder interaction (2df),,,False
+Cognitive function and pulse pressure,,,False
+Cognitive performance (MTAG),Cognitive function,Other,True
+Cognitive processing accuracy,Cognitive function,Other,True
+Cognitive traits (MTAG),Cognitive function,Other,True
+Common executive function,Cognitive function,Other,True
+Corpus callosum central posterior subregion volume,Neuroimaging,Other,True
+Corpus callosum fractional anisotropy (body),Neuroimaging,Other,True
+Corpus callosum fractional anisotropy (genu),Neuroimaging,Other,True
+Corpus callosum fractional anisotropy (MOSTest),Neuroimaging,Other,True
+Corpus callosum mid anterior subregion volume,Neuroimaging,Other,True
+Corpus callosum mid-anterior volume,Neuroimaging,Other,True
+Corpus callosum volume (MOSTest),Neuroimaging,Other,True
+Cortical surface area,Neuroimaging,Other,True
+Cortical surface area (MOSTest),Neuroimaging,Other,True
+Cortical thickness (MOSTest),Neuroimaging,Other,True
+Creative achievement,Openness,Temperament,True
+Daytime nap,Sleep,Other,True
+Daytime sleep phenotypes,Sleep,Other,True
+Decaffeinated coffee consumption and/or lifetime cannabis use,,,False
+Decaffeinated coffee consumption and/or neuroticism,,,False
+Decaffeinated coffee consumption or major depression disorder,,,False
+Depressed affect,Depression,Disorder,True
+Depression,Depression,Disorder,True
+Depression (broad),Depression,Disorder,True
+Depression (PheCode 296.2),Depression,Disorder,True
+Depression severity  x hours spent watching television interaction,,,False
+Depression severity  x playing computer games interaction,,,False
+Depression/anxiety (standard GWA),Depression,Disorder,True
+Depressive symptom (anhedonia) (binary trait),Depression,Disorder,True
+Depressive symptom (anhedonia) (ordinal trait),Depression,Disorder,True
+Depressive symptoms,Depression,Disorder,True
+Depressive symptoms (binary sum-score),Depression,Disorder,True
+Depressive symptoms (MTAG),Depression,Disorder,True
+Depressive symptoms (sum-score),Depression,Disorder,True
+Disrupted circadian rhythm (low relative amplitude of rest-activity cycles),Sleep,Other,False
+Disruptive behavior (multivariate analysis),Other temperament,Other,True
+DTI TBSS L2 Sagittal stratum R,Neuroimaging,Other,True
+DTI TBSS MD Anterior corona radiata R,Neuroimaging,Other,True
+Duration to complete alphanumeric path task (baseline),Cognitive function,Other,True
+Dyslexia,Learning disorder,Disorder,False
+Early onset major depressive disorder,Depression,Disorder,True
+Early response to risperidone in schizophrenia,Treatment-response,Disorder,True
+Ease of getting up in the morning,Sleep,Other,True
+Ebbinghaus illusion (underestimation),,,False
+Education attainment or alcohol use disorders,,,False
+Education attainment or anorexia nervosa,,,False
+Education attainment or attention deficit hyperactivity disorder,,,False
+Education attainment or cannabis use disorder,,,False
+Endometriosis or depression (pleiotropy),,,False
+Epilepsy,Epilepsy,Disorder,True
+Episodic memory (pairs-matching),Cognitive function,Other,True
+Essential tremor,Essential tremor,Disorder,False
+Executive function (trail making test B),Cognitive function,Other,True
+Executive inhibition (color interference time),Cognitive function,Other,True
+Experiencing mood swings,Neuroticism,Other,True
+Externalizing behaviour (multivariate analysis),Other temperament,Other,True
+Extremely high intelligence,Other temperament,Temperament,True
+F-strong vegetable liking (derived food-liking factor),Other temperament,Temperament,True
+Family history of Alzheimer's disease,Alzheimer's disease,Disorder,True
+Feeling fed-up,Neuroticism,Other,True
+Feeling guilty,Neuroticism,Other,True
+Feeling hurt,Neuroticism,Other,True
+Feeling lonely,Extraversion,Other,True
+Feeling miserable,Neuroticism,Other,True
+Feeling nervous,Neuroticism,Other,True
+Feeling tense,Neuroticism,Other,True
+Feeling worry,Neuroticism,Other,True
+FEV1 or irritable bowel syndrome (pleiotropy),,,False
+FEV1/FVC or irritable bowel syndrome (pleiotropy),,,False
+Frailty (Factor 5 - Poorer Cognition),,,False
+GAD score x Polysocial risk score (PsRS) interaction,,,False
+Gastroesophageal reflux disease or attention-deficit/hyperactivity disorder (pleiotropy),,,False
+General factor of neuroticism,Neuroticism,Other,True
+General risk tolerance (MTAG),Other temperament,Other,True
+Generalized anxiety disorder (phenotype risk score),Anxiety,Disorder,True
+Generalized epilepsy,Epilepsy,Disorder,True
+Genetically independent pain phenotypes (GIP1),,,False
+Headache,Headache or migraine,Disorder,True
+Headache or fasting glucose levels,,,False
+Headache or glucose levels,,,False
+Headache or HbA1c levels,,,False
+Headache or migraine,Headache or migraine,Disorder,True
+Help-seeking from a psychiatrist,,,False
+Highest math class taken (MTAG),Other temperament,Temperament,True
+Hippocampal subfield left CA1 volume (body),Neuroimaging,Other,True
+Hippocampal subfield left CA3 volume (body),Neuroimaging,Other,True
+Hippocampal subfield left CA4 volume (body),Neuroimaging,Other,True
+Hippocampal tail volume,Neuroimaging,Other,True
+HippSubfield lh volume Hippocampal-tail,Neuroimaging,Other,True
+IDP dMRI TBSS FA Posterior limb of internal capsule L,Neuroimaging,Other,True
+IDP dMRI TBSS FA Posterior limb of internal capsule R,Neuroimaging,Other,True
+IDP dMRI TBSS L2 Posterior limb of internal capsule L,Neuroimaging,Other,True
+IDP dMRI TBSS L2 Posterior limb of internal capsule R,Neuroimaging,Other,True
+Illnesses of mother: Alzheimer's disease/dementia (UKB data field 20110_10),Alzheimer's disease,Disorder,True
+Inflammatory bowel disease or anorexia nervosa (pleiotropy),,,False
+Information processing speed,Cognitive function,Other,True
+Initial pursuit acceleration in psychotic disorders,,,False
+Insomnia,Sleep,Other,True
+Insomnia (standard GWA),Sleep,Other,True
+Insomnia symptoms (never/rarely vs. sometimes/usually),Sleep,Other,True
+Insomnia symptoms (never/rarely vs. usually),Sleep,Other,True
+Intelligence,Cognitive function,Other,True
+Internet addiction disorder,Substance use disorder,Disorder,True
+Irritable bowel syndrome or bipolar disorder (pleiotropy),,,False
+Irritable bowel syndrome or major depressive disorder (pleiotropy),,,False
+Irritable bowel syndrome or schizophrenia (pleiotropy),,,False
+Irritable mood,Neuroticism,Other,True
+Isthmus-cingulate cortex volume,Neuroimaging,Other,True
+Juvenile myoclonic epilepsy,Epilepsy,Disorder,True
+Late onset major depressive disorder,Depression,Disorder,True
+Late postpartum perinatal depression,Depression,Disorder,True
+Late-onset Alzheimer's disease,Alzheimer's disease,Disorder,True
+LDL x anxiety interaction (2df test),,,False
+LDL x depression interaction (2df test),,,False
+Left hippocampal volume (tail),Neuroimaging,Other,True
+Left subiculum volume (body),Neuroimaging,Other,True
+Left-handedness,Other temperament,Temperament,True
+Left-hemisphere control network to putamen white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere default mode network to right-hemisphere control network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere dorsal attention network to right-hemisphere control network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere dorsal attention network to right-hemisphere default mode network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere dorsal attention network to right-hemisphere dorsal attention network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere limbic network to thalamus white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere somatomotor network to left-hemisphere control network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere somatomotor network to right-hemisphere dorsal attention network white-matter structural connectivity,Neuroimaging,Other,True
+Left-hemisphere somatomotor network to right-hemisphere somatomotor network white-matter structural connectivity,Neuroimaging,Other,True
+Leisure sedentary behaviour (television watching),,,False
+Life satisfaction,Other temperament,Other,True
+Lifetime anxiety disorder,Anxiety,Disorder,True
+Lifetime major depressive disorder (AutoComplete Impute and observed),Depression,Disorder,True
+Lifetime major depressive disorder (AutoComplete Impute),Depression,Disorder,True
+Lifetime major depressive disorder (MTAG),Depression,Disorder,True
+Lifetime major depressive disorder (SoftImpute and observed),Depression,Disorder,True
+Lifetime smoking index,Other temperament,Temperament,True
+Logical memory (delayed recall) in mild cognitive impairment,,,False
+Loneliness,Extraversion,Other,True
+Loneliness (MTAG),Extraversion,Other,True
+Longitudinal brain connectivity change (global efficiency),Neuroimaging,Other,True
+Longitudinal brain connectivity change (Louvain modularity),Neuroimaging,Other,True
+Major depressive disorder,Depression,Disorder,True
+Major depressive disorder (broad),Depression,Disorder,True
+Major depressive disorder (MTAG),Depression,Disorder,True
+Major depressive disorder (PheCode 296.22),Depression,Disorder,True
+Major depressive disorder or COVID-19 infection (pleiotropy),,,False
+Major depressive disorder or glomerular filtration rate estimated from creatine (MTAG),,,False
+Major depressive disorder or glomerular filtration rate estimated from cystatin (MTAG),,,False
+Major depressive disorder or hospitalized COVID-19 (pleiotropy),,,False
+Major depressive disorder or stress-related disorder,Multiple disorders,Disorder,True
+Major depressive disorder vs ADHD (ordinary least squares (OLS)),,,False
+Major depressive disorder vs anorexia nervosa (ordinary least squares (OLS)),,,False
+Major depressive episode treated with electroconvulsive therapy,Depression,Disorder,True
+Mean arterial pressure x depressive symptoms interaction (2df test),,,False
+Medication use (opioids),,,False
+Memory decline,Cognitive function,Other,True
+Mental health study participation (provided email address),,,False
+Migraine,Headache or migraine,Disorder,True
+Migraine with aura (age at onset),Headache or migraine,Disorder,True
+Migraine without aura,Headache or migraine,Disorder,True
+Mood disorders (PheCode 296),Mood disorder,Disorder,True
+Mood instability,Neuroticism,Other,True
+Morning person,Other temperament,Temperament,True
+Morningness,Other temperament,Temperament,True
+Motor premotor area,Neuroimaging,Other,True
+Multisite chronic pain,Pain,Other,True
+Narcolepsy,Narcolepsy,Disorder,True
+Neurociticism,Neuroticism,Other,True
+Neurological blood protein biomarker levels,Molecular brain biomarkers,Other,True
+Neuropsychiatric disorders,Multiple disorders,Disorder,True
+Neuroticism,Neuroticism,Other,True
+Neuroticism (MTAG),Neuroticism,Other,True
+Neuroticism conditioned on average household income before tax (multi-trait conditioning and joint analysis),,,False
+Neuroticism conditioned on cognitive performance (multi-trait conditioning and joint analysis),,,False
+Neuroticism conditioned on educational attainment (multi-trait conditioning and joint analysis),,,False
+Neuroticism conditioned on highest math class (multi-trait conditioning and joint analysis),,,False
+Neuroticism conditioned on self-rated math ability (multi-trait conditioning and joint analysis),,,False
+Neuroticism conditioned on Townsend deprivation index (multi-trait conditioning and joint analysis),,,False
+Neuroticism general factor,Neuroticism,Other,True
+Nicotine dependence and major depression (severity of comorbidity),,,False
+Non-REM sleep duration,Sleep,Other,True
+Noncognitive aspects of educational attainment,,,False
+Number of sexual partners in opposite-sex sexual behavior,,,False
+Obesity class II and Anorexia nervosa or Major depressive disorder or Obsesive-compulsive disorder,,,False
+Obesity class II and Anorexia nervosa or Major depressive disorder or Obsesive-compulsive disorder or Schizophrenia,,,False
+Obesity class II and Anorexia nervosa or Major depressive disorder or Schizophrenia,,,False
+Obesity class II and Anorexia nervosa or Schizophrenia,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Anorexia nervosa or Major depressive disorder or Obsesive-compulsive disorder or Schizophrenia,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Anorexia nervosa or Major depressive disorder or Schizophrenia,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Anorexia nervosa or Obsesive-compulsive disorder or Schizophrenia,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Major depressive disorder,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Major depressive disorder or Schizophrenia,,,False
+Obesity class II and Attention deficit hyperactivity disorder or Schizophrenia,,,False
+Obesity class II and Major depressive disorder,,,False
+Obesity class II and Obsesive-compulsive disorder or Schizophrenia,,,False
+Obesity class II and Schizophrenia,,,False
+Occupational creativity,,,False
+Opioid use disorder (broad),Substance use disorder,Disorder,True
+Opioid use disorder (MTAG),Substance use disorder,Disorder,True
+Orbitofrontal area,Neuroimaging,Other,True
+OXT protein levels,Molecular brain biomarkers,Other,True
+Parent of origin effect on language impairment (paternal),,,False
+Parkinson's disease,Parkinson's disease,Disorder,True
+Parkinson's disease or first degree relation to individual with Parkinson's disease,Parkinson's disease,Disorder,True
+Perisylvian thickness (unadjusted for global measures),Neuroimaging,Other,True
+Personality traits or cognitive traits (multivariate analysis),,,False
+PHQ score x Polysocial risk score (PsRS) interaction,,,False
+Physical activity,,,False
+Plasma cortisol levels in alcohol use disorder,,,False
+Plasma cortisone levels in alcohol use disorder,,,False
+Positive affect,Extraversion,Other,True
+Post-traumatic stress disorder,Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder (mental health questionnaire or predicted),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder (MTAG),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder (phenotype risk score),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder symptom severity (avoidance),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder symptom severity (hyperarousal),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder symptom severity (re-experiencing),Post-traumatic stress disorder,Disorder,True
+Post-traumatic stress disorder symptom severity (total),Post-traumatic stress disorder,Disorder,True
+Precuneus area,Neuroimaging,Other,True
+Problematic alcohol use,Substance use disorder,Disorder,True
+Problematic alcohol use (MTAG),Substance use disorder,Disorder,True
+Problematic tobacco use,Substance use disorder,Disorder,True
+Psycho-cardiometabolic multimorbidity (multivariate analysis),,,False
+Psychosis in Alzheimer's disease,Alzheimer's disease,Disorder,True
+Putamen iron levels (R2* MRI),Neuroimaging,Other,True
+Putamen volume,Neuroimaging,Other,True
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 1),Alzheimer's disease,Disorder,True
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 2),Alzheimer's disease,Disorder,True
+Rapidly progressive Alzheimer's disease (clinical vs typical) (case-control set 3),Alzheimer's disease,Disorder,True
+Rapidly progressive Alzheimer's disease (clinical) (case-control set 3),Alzheimer's disease,Disorder,True
+Rate of cognitive decline in Alzheimer's disease,Alzheimer's disease,Disorder,True
+"Red wine consumption (glasses per month) (UKB data field 1578, 4419)",Other temperament,Temperament,True
+Regional cortical thickness (bankssts),Neuroimaging,Other,True
+Regional cortical thickness (parahippocampal),Neuroimaging,Other,True
+Regional cortical thickness (parstriangularis),Neuroimaging,Other,True
+Regional cortical thickness (superiorfrontal),Neuroimaging,Other,True
+Regular attendance at a pub or social club,Extraversion,Temperament,True
+Regular attendance at a religious group,Other temperament,Temperament,True
+REM sleep duration,Sleep,Other,True
+Remission after SSRI treatment in MDD or neuroticism,Treatment-response,Disorder,True
+Response to antipsychotic treatment,Treatment-response,Disorder,True
+Response to antipsychotic treatment in schizophrenia,Treatment-response,Disorder,True
+Response to paliperidone in schizophrenia (positive Marder score),Treatment-response,Disorder,True
+Response to serotonin reuptake inhibitors in major depressive disorder (plasma drug and metabolite levels),Treatment-response,Disorder,True
+Resting-state network 12 amplitude (Motor),Neuroimaging,Other,True
+Resting-state network 13 amplitude (blood oxygenation level dependent) (Language),Neuroimaging,Other,True
+Resting-state network 15 amplitude (Cerebellum),Neuroimaging,Other,True
+Resting-state network 16 amplitude (blood oxygenation level dependent) (Executive control),Neuroimaging,Other,True
+Resting-state network 21 amplitude (blood oxygenation level dependent) (Language),Neuroimaging,Other,True
+Resting-state network 5 amplitude (blood oxygenation level dependent) (Fronto-parietal),Neuroimaging,Other,True
+Resting-state network 6 amplitude (blood oxygenation level dependent) (Fronto-parietal),Neuroimaging,Other,True
+Resting-state network 9 amplitude (blood oxygenation level dependent) (Language),Neuroimaging,Other,True
+Restless legs syndrome,Restless legs syndrome,Disorder,True
+Restless legs syndrome (PheCode 327.71),Restless legs syndrome,Disorder,True
+Right hippocampal volume (tail),Neuroimaging,Other,True
+Right subiculum volume (body),Neuroimaging,Other,True
+Right-hemisphere control network to right-hemisphere default mode network white-matter structural connectivity,Neuroimaging,Other,True
+Right-hemisphere dorsal attention network to right-hemisphere control network white-matter structural connectivity,Neuroimaging,Other,True
+Right-hemisphere limbic network to thalamus white-matter structural connectivity,Neuroimaging,Other,True
+Risk taking (standard GWA),Other temperament,Other,True
+Risk-taking behavior (multivariate analysis),Other temperament,Other,True
+Risk-taking tendency (4-domain principal component model),Other temperament,Other,True
+Risky sexual behaviors (alcohol dependence interaction),,,False
+Risky sexual behaviors in alcohol dependence,,,False
+Salami liking,Other temperament,Temperament,True
+Schizophrenia,Schizophrenia,Disorder,True
+Schizophrenia (MTAG),Schizophrenia,Disorder,True
+Schizophrenia or bipolar disorder,Multiple disorders,Disorder,True
+Schizophrenia or breast cancer (pleiotropy),,,False
+Schizophrenia or ER positive breast cancer (pleiotropy),,,False
+Schizophrenia vs ADHD (ordinary least squares (OLS)),,,False
+Schizophrenia vs anorexia nervosa (ordinary least squares (OLS)),,,False
+Schizophrenia vs Tourette's syndrome and other tic disorders (ordinary least squares (OLS)),,,False
+"Schizophrenia, schizoaffective disorder or bipolar disorder",Multiple disorders,Disorder,True
+Scientific occupational creativity,,,False
+Self-harm x Caesarean-section interaction,,,False
+Self-rated health,Other temperament,Temperament,True
+Self-reported math ability (MTAG),Other temperament,Temperament,True
+Self-reported risk-taking behaviour,Other temperament,Other,True
+Sensitivity to environmental stress and adversity,Neuroticism,Other,True
+Severe depressive disorders in coronary artery disease,,,False
+Sexual abuse,,,False
+Short sleep duration (<5 hours),Sleep,Other,True
+Sleep (1/3-day periodicity),Sleep,Other,True
+Sleep duration,Sleep,Other,True
+Sleep duration (long sleep),Sleep,Other,True
+Sleep duration (short sleep),Sleep,Other,True
+Sleep medication purchases,Sleep,Other,True
+Sleep related movement disorders (PheCode 327.7),Sleep,Other,True
+Sleep-related phenotypes,Sleep,Other,True
+Smoking behaviour (age at first cigarette),,,False
+Smoking cessation,Substance use,Other,True
+Smoking status (current vs never),Other temperament,Temperament,True
+Sociability score,Extraversion,Other,True
+Spirits liking,,,False
+Stuttering,Tics and stuttering,Disorder,True
+Subcortical brain region volumes,Neuroimaging,Other,True
+Subcortical volume (MOSTest),Neuroimaging,Other,True
+Subjective well-being,Other temperament,Other,True
+Subjective well-being (MTAG),Other temperament,Other,True
+Substance addiction and disorders (PheCode 316),Substance use disorder,Disorder,True
+Substance use disorder,Substance use disorder,Disorder,True
+Substance use disorder (pleiotropy),Substance use disorder,Disorder,True
+Substance use disorders (time to event),Substance use disorder,Disorder,True
+Suffering from nerves,Neuroticism,Other,True
+Suicide,Suicide,Disorder,True
+Suicide attempt,Suicide,Disorder,True
+Systemising,Openness,Other,False
+Systolic blood pressure x depressive symptoms (quantitative) interaction (1df test),,,False
+Systolic blood pressure x depressive symptoms (quantitative) interaction (2df test),,,False
+T2 brain MRIs Unsupervised Deep learning derived Imaging Phenotypes (dimension 75),Neuroimaging,Other,True
+ThalamNuclei lh volume MDl,Neuroimaging,Other,True
+ThalamNuclei rh volume MDl,Neuroimaging,Other,True
+Tics and stuttering (PheCode 313.2),Tics and stuttering,Disorder,True
+Tobacco use disorder,Substance use disorder,Disorder,True
+Tobacco use disorder (PheCode 318),Substance use disorder,Disorder,True
+Total amyloid (SNP x SNP interaction),,,False
+Total protein levels x insomnia interaction,,,False
+Triglyceride levels x SSRI defined daily dose interaction in schizophrenia or bipolar disorder,,,False
+Triglycerides x anxiety interaction (2df test),,,False
+Triglycerides x low social support interaction (2df test),,,False
+Type 1 narcolepsy,Narcolepsy,Disorder,True
+Type 2 diabetes and Anorexia nervosa or schyzophrenia or obsessive compulsive disorder,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or Anorexia nervosa or Major depressive disorder or schyzophrenia,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or Major depressive disorder,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or obsessive compulsive disorder,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or schyzophrenia,,,False
+Type 2 diabetes and Attention deficit hiperactivty disorder or schyzophrenia or obsessive compulsive disorder,,,False
+Type 2 diabetes and schyzophrenia or obsessive compulsive disorder,,,False
+Type 2 diabetes or schizophrenia (pleiotropy),,,False
+Type 2 diabetes with neurological manifestations (PheCode 250.24),,,False
+Typical-onset anorexia nervosa,Anorexia nervosa,Disorder,True
+Verbal short term memory,Cognitive function,Other,True
+Vertex-wise cortical surface area,Neuroimaging,Other,True
+Vertex-wise sulcal depth,Neuroimaging,Other,True
+Volume of right cortico-amygdaloid transition area,Neuroimaging,Other,True
+Well-being spectrum (multivariate analysis),Other temperament,Other,True
+Wellbeing index,Other temperament,Other,True
+wg lh intensity-contrast cuneus,Neuroimaging,Other,True
+wg lh intensity-contrast lingual,Neuroimaging,Other,True
+wg rh intensity-contrast cuneus,Neuroimaging,Other,True
+White matter hyperintensities,Neuroimaging,Other,True
+White matter hyperintensity volume,Neuroimaging,Other,True
+White matter hyperintensity volume (adjusted for hypertension),Neuroimaging,Other,True
+White matter hyperintensity volume x hypertension interaction (2df),Neuroimaging,Other,True
+White matter microstructure (axial diusivities),Neuroimaging,Other,True
+White matter microstructure (fractional anisotropy),Neuroimaging,Other,True
+White matter microstructure (mode of anisotropy),Neuroimaging,Other,True
+Whole brain free water diffusion (multivariate analysis),Neuroimaging,Other,True
+Worry,Neuroticism,Other,True
+Worry too long after an embarrassing experience,Neuroticism,Other,True

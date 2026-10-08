@@ -1,0 +1,143 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "05_network/4_Plotting pipeline parameters",
+    "description": "Fig. 2a-b: genes captured per network hierarchy, and unique/shared genes between the OCD/dogCD cross-species network and the human-only Depression/Schizophrenia networks.",
+    "type": "object",
+    "properties": {
+        "ocd_ccd_genes": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Cross-species OCD/dogCD systems-map gene list (data/05_network/ocd_ccd_systemsmap_genes.txt). Also used as the hierarchy gene list for Fig. 2a's OCD/dogCD row."
+        },
+        "gene_level_network_basis_table": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Gene-level network/hierarchy membership table, one row per gene with an in_hierarchy_<Network> boolean column per network -- the deposited source data for Supplementary Table 8 (data/05_network/gene_level_network_basis_table.csv). Feeds Fig. 2b's Venn diagrams."
+        },
+        "dogcd_z": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "dogCD single-species propagation z-scores (data/05_network/z_D2_CCD_Oct25_z-scores_pcnet2_251022.csv)."
+        },
+        "dogcd_seeds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "dogCD seed genes, header row 'gene' (data/05_network/CCDgenes_Oct25.txt)."
+        },
+        "dogcd_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "dogCD single-species systems-map gene list (data/05_network/ccd_systemsmap_genes.txt)."
+        },
+        "ocd_z": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCD single-species propagation z-scores (data/05_network/z_D1_OCD_z-scores_pcnet2_251022.csv)."
+        },
+        "ocd_seeds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCD seed genes, header row 'gene' (data/05_network/OCDgenes_v4.txt)."
+        },
+        "ocd_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCD single-species systems-map gene list (data/05_network/ocd_systemsmap_genes.txt)."
+        },
+        "dep_z": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Depression single-species propagation z-scores (data/05_network/z_D1_DEP_z-scores_pcnet2.csv)."
+        },
+        "dep_seeds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Depression seed genes, no header (data/05_network/human_DEP_noMHC_seed_genes.txt)."
+        },
+        "dep_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Depression single-species systems-map gene list (data/05_network/dep_systemsmap_genes.txt)."
+        },
+        "sch_z": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Schizophrenia single-species propagation z-scores (data/05_network/z_D1_SCH_z-scores_pcnet2.csv)."
+        },
+        "sch_seeds": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Schizophrenia seed genes, no header (data/05_network/human_schiz_seed_genes.txt)."
+        },
+        "sch_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Schizophrenia single-species systems-map gene list (data/05_network/sch_systemsmap_genes.txt)."
+        },
+        "ocd_ccd_zcomb": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "OCD/dogCD cross-species combined z-scores (data/05_network/ocd_ccd_zcomb_z12_251022.txt)."
+        },
+        "dep_ccd_zcomb": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Depression/dogCD cross-species combined z-scores (data/05_network/DEP_CCD_Oct25_zcomb_z12.txt)."
+        },
+        "dep_ccd_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Depression/dogCD cross-species systems-map gene list (data/05_network/dep_ccd_systemsmap_genes.txt)."
+        },
+        "sch_ccd_zcomb": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Schizophrenia/dogCD cross-species combined z-scores (data/05_network/SCH_CCD_zcomb_z12.txt)."
+        },
+        "sch_ccd_hier": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Schizophrenia/dogCD cross-species systems-map gene list (data/05_network/sch_ccd_systemsmap_genes.txt)."
+        }
+    },
+    "required": [
+        "ocd_ccd_genes",
+        "gene_level_network_basis_table",
+        "dogcd_z",
+        "dogcd_seeds",
+        "dogcd_hier",
+        "ocd_z",
+        "ocd_seeds",
+        "ocd_hier",
+        "dep_z",
+        "dep_seeds",
+        "dep_hier",
+        "sch_z",
+        "sch_seeds",
+        "sch_hier",
+        "ocd_ccd_zcomb",
+        "dep_ccd_zcomb",
+        "dep_ccd_hier",
+        "sch_ccd_zcomb",
+        "sch_ccd_hier"
+    ]
+}

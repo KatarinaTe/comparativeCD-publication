@@ -1,0 +1,17 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs191407208,20228816,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/20228816/study,2e-6,2,-6,NA,0.8159,unit,PCSK1N
+rs113119541,61691655,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/61691655/study,1e-11,1,-11,NA,NA,NA,PCSK1N
+rs112710029,64342854,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/64342854/study,3.0000000000000003e-13,3,-13,NA,0.023383902,unit,PCSK1N
+rs782100977,44510609,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/44510609/study,5e-9,5,-9,1.06,NA,NA,PCSK1N
+rs5906709,64202875,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/64202875/study,5e-9,5,-9,NA,0.01384087,unit,PCSK1N
+rs782602858,64418051,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/64418051/study,6e-16,6,-16,NA,0.14864437,unit,PCSK1N
+rs141584560,24775248,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/24775248/study,6e-6,6,-6,NA,0.2026,unit,PCSK1N
+rs6520383,93464924,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93464924/study,1e-11,1,-11,NA,0.058226593,unit,PCSK1N
+rs741932,93504444,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93504444/study,2e-8,2,-8,NA,0.0097,unit,PCSK1N
+rs6609798,64719450,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/64719450/study,1e-9,1,-9,1.0478771,NA,NA,PCSK1N
+rs61735967,102456677,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/102456677/study,7e-101,7,-101,NA,0.666,unit,PCSK1N
+rs61735967,101156572,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/101156572/study,4e-80,4,-80,NA,0.71,unit,PCSK1N
+rs200010896,93525175,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93525175/study,2e-8,2,-8,NA,0.0345,unit,PCSK1N
+rs146587548,93506068,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/93506068/study,7e-25,7,-25,NA,0.0807,unit,PCSK1N
+rs146587548,101286507,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/101286507/study,1e-41,1,-41,NA,0.13390116,unit,PCSK1N
+rs146587548,64202870,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/64202870/study,1e-29,1,-29,NA,0.11422114,unit,PCSK1N

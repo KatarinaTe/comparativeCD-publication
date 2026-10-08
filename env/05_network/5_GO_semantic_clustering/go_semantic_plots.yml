@@ -1,0 +1,20 @@
+name: go_semantic_plots
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base
+  - r-tidyverse
+  - r-glue
+  - r-httr2
+  - r-jsonlite
+  - r-googlesheets4
+  - r-cowplot
+  - r-tidytext
+  - r-scales
+  - r-ape
+  - r-cluster
+  - bioconductor-gosemsim
+  - bioconductor-org.hs.eg.db
+  - bioconductor-go.db
+  - bioconductor-annotationdbi

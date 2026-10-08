@@ -1,0 +1,19 @@
+project: uppmax2025-2-420
+
+# ── Input data ──
+# Affy_merged is the raw Darwin's Ark Axiom array genotype set (canFam3, 804 dogs).
+# Not distributed in this repository — point this at wherever it is stored.
+axiom_bfile_prefix: ../../../data/raw-data/axiom/axiom_411_canfam3
+ind_to_keep: ../../../data/02_data_processing/ind_to_keep_round3.txt
+
+# ── Reference data ──
+liftover_chain: ../../../data/raw-data/references/canFam3ToCanFam4.over.chain.gz
+assembly_ref: ../../../data/raw-data/references/UU_Cfam_GSD_1.0_ROSY.fa
+glimpse_ref_panel: ../../../data/raw-data/references/AutoAndXPAR.Dog10K.phased.bcf
+chr_start_stop: ../../../data/02_data_processing/cf4_chr_start_stop.bed
+chr_rename_map: ../../../data/02_data_processing/chromosomes.txt
+genetic_maps_dir: ../../../data/02_data_processing/mapfiles
+
+# ── Imputation tools (fetch with: pixi run fetch-axiom-jars) ──
+conform_gt_jar: ../../../code/02_data_processing/2_Axiom_imputation/bin/conform-gt.24May16.cee.jar
+beagle_jar: ../../../code/02_data_processing/2_Axiom_imputation/bin/beagle.22Jul22.46e.jar

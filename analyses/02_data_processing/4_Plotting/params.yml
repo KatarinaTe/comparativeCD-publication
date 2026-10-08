@@ -1,0 +1,13 @@
+project: uppmax2025-2-420
+
+# ── 3_Merging_filtering outputs (run that pipeline first) ──
+# Assumes 3_Merging_filtering's own analyses/ dir follows the same outputDir convention as this
+# one (../../../data/results/02_data_processing/3_Merging_filtering) — adjust if it publishes
+# elsewhere.
+eigenvec: ../../../data/results/02_data_processing/3_Merging_filtering/population_structure/prunedALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.eigenvec
+eigenval: ../../../data/results/02_data_processing/3_Merging_filtering/population_structure/prunedALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.eigenval
+qc6_fam_dir: ../../../data/results/02_data_processing/3_Merging_filtering/plink
+
+# ── Frozen inputs (data/02_data_processing) ──
+data6: ../../../data/02_data_processing/data6_2024-10-14.txt
+dog_breeds_csv: ../../../data/02_data_processing/DarwinsArk_20220715_dogs_genotyped_breed_sex.csv

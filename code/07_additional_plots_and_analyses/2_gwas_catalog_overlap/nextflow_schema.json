@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "07_additional_plots_and_analyses/2_gwas_catalog_overlap pipeline parameters",
+    "description": "Mechanical half of the '12 of 27 dogCD GWAS regions overlap a GWAS-catalog psychiatric gene' claim.",
+    "type": "object",
+    "properties": {
+        "catalog_hits_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Raw GWAS Catalog query results (data/07_additional_plots_and_analyses/gwas_catalog_hits.csv)."
+        },
+        "name_conversion_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Local mirror of the 'name conversion' sheet (data/07_additional_plots_and_analyses/name_conversion_v2.tsv)."
+        },
+        "frozen_overlap_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "The one manual export of the merged gene-list/catalog-overlap result (data/07_additional_plots_and_analyses/gene_list_gwas_catalog_overlap_with_region.csv), used for the crosscheck output only."
+        },
+        "frozen_gene_list_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen master gene list, a stand-in for the Google-Sheet-only 'gene list' tab (data/07_additional_plots_and_analyses/gene_list_frozen.csv)."
+        }
+    },
+    "required": [
+        "catalog_hits_file",
+        "name_conversion_file",
+        "frozen_overlap_file",
+        "frozen_gene_list_file"
+    ]
+}

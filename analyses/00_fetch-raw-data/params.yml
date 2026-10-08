@@ -1,0 +1,17 @@
+project: uppmax2025-2-420
+input: ./sra_accession_list.csv
+outdir: ../../data/source/fetchngs
+# Tried ftp 2026-10-03 to avoid SRATOOLS_PREFETCH's intermittent NCBI SRA Data Locator bug
+# ("Cannot nest groups near index 72", hit on a different accession each time across 4 job runs
+# 2026-10-01 to 2026-10-03, surviving the existing fetchngs retry wrapper). Reverted the same day:
+# ftp's SRA_FASTQ_FTP process uses biocontainers' wget:1.20.1 image, which has no /etc/resolv.conf
+# in its filesystem at all (confirmed via `apptainer exec <image> getent hosts ...` -> exit 255,
+# and apptainer can't even bind-mount one in -- no destination path exists) -- it cannot resolve
+# any hostname, ever, not an intermittent issue. That's strictly worse than the SDL bug, which
+# only hits specific accessions and still lets most batches complete. Back to sratools: the SDL
+# bug is real but has an existing retry wrapper and batches do complete across it over time (see
+# sacct history -- multi-hour/day successful stretches before hitting a bad accession). Full
+# history: sratools (original) -> aspera (2026-06-17, didn't work) -> sratools (2026-06-18) ->
+# ftp (2026-10-03, dead end, see above) -> sratools.
+download_method: sratools
+publish_dir_mode: symlink

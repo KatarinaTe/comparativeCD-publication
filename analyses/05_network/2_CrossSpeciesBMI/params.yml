@@ -1,0 +1,13 @@
+project: uppmax2025-2-420
+
+# ── 1_NetColoc's published outputs (run that pipeline first) ──
+ocd_ccd_zcomb_z12: ../../../data/results/05_network/1_NetColoc/zcomb_z12/OCD_CCD_zcomb_z12.tsv
+interactome: ../../../data/results/05_network/1_NetColoc/interactome/interactome.pkl
+
+# ── Deposited seed-gene and control-analysis files (data/05_network/), not built by any pipeline ──
+dog_seed_genes: ../../../data/05_network/CCDgenes_Oct25.txt
+human_seed_genes: ../../../data/05_network/OCDgenes_v4.txt
+control_results: ../../../data/05_network/controlanalyses_260521.csv
+ocd_ccd_systems_map: ../../../data/05_network/OCDv4_CCD_Oct25_systems_map.txt
+ocd_ccd_hierarchy: ../../../data/05_network/CompulsiveNetwork_hierarchy_data_251022.tsv
+mgd_enrichment_dir: ../../../data/05_network

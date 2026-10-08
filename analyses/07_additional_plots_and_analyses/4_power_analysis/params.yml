@@ -1,0 +1,5 @@
+project: uppmax2025-2-420
+
+# ── Frozen inputs, not built by any pipeline ──
+dog_gwas_file: ../../../data/07_additional_plots_and_analyses/ST5.dogCD.top_gwas.tsv
+human_gwas_file: ../../../data/07_additional_plots_and_analyses/Strom.Table1.tsv

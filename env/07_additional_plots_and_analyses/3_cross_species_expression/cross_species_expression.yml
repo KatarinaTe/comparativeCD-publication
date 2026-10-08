@@ -1,0 +1,12 @@
+name: cross_species_expression
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base==4.5.3
+  - r-seurat==5.5.1
+  - r-dplyr==1.2.1
+  - bioconductor-fgsea==1.36.2
+  - bioconductor-ucell==2.14.0
+  - bioconductor-complexheatmap==2.26.1
+  - r-circlize==0.4.18

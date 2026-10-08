@@ -1,0 +1,34 @@
+term
+DNA integration
+DNA-templated transcription
+RNA biosynthetic process
+RNA metabolic process
+T cell receptor signaling pathway
+biosynthetic process
+carboxylic acid metabolic process
+gene expression
+immune response
+immune system process
+macromolecule biosynthetic process
+macromolecule metabolic process
+nucleic acid biosynthetic process
+nucleic acid metabolic process
+nucleobase-containing compound biosynthetic process
+nucleobase-containing compound metabolic process
+organic acid metabolic process
+oxoacid metabolic process
+positive regulation of synapse assembly
+primary metabolic process
+regulation of DNA-templated transcription
+regulation of RNA biosynthetic process
+regulation of RNA metabolic process
+regulation of biosynthetic process
+regulation of cellular process
+regulation of gene expression
+regulation of macromolecule biosynthetic process
+regulation of macromolecule metabolic process
+regulation of metabolic process
+regulation of nucleobase-containing compound metabolic process
+regulation of primary metabolic process
+regulation of transcription by RNA polymerase II
+transcription by RNA polymerase II

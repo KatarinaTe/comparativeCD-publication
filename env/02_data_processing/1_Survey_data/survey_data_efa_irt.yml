@@ -1,0 +1,14 @@
+name: survey_data_efa_irt
+channels:
+  - conda-forge
+platforms:
+  - linux-64
+dependencies:
+  - r-base==4.5.3
+  - r-dplyr==1.2.1
+  - r-data.table==1.18.4
+  - r-psych==2.6.5
+  - r-mirt==1.47
+  - r-lavaan==0.7_2
+  - r-ggplot2==4.0.3
+  - r-remotes==2.5.0

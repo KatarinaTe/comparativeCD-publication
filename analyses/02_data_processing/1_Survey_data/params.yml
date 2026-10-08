@@ -1,0 +1,4 @@
+project: uppmax2025-2-420
+
+response_df: ../../../data/02_data_processing/response_df_dogCDitems.txt
+survey_questions_csv: ../../../data/02_data_processing/DarwinsArk_20220315_questions.csv

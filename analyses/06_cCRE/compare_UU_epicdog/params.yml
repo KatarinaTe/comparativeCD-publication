@@ -1,0 +1,15 @@
+project: uppmax2025-2-420
+
+# ── EpicDog side, fetched by analyses/06_cCRE/fetch-epicdog-chromatin-states-bed.sh (pixi task 06d-fetch-epicdog-bed) ──
+epic_cerebellum_bed: ../../../data/06_cCRE/epicdog_chromatin_states_bed_canfam4/cerebellum_13_dense.bed
+epic_cerebrum_bed: ../../../data/06_cCRE/epicdog_chromatin_states_bed_canfam4/cerebrum_13_dense.bed
+
+# ── UU side, fetched by analyses/06_cCRE/fetch-chromatin-states-bed.sh (pixi task 06e-fetch-chromatin-states-bed) ──
+uu_acg_bed: ../../../data/06_cCRE/chromatin_states_bed/ACG_9_dense.bed
+uu_cerebellum_bed: ../../../data/06_cCRE/chromatin_states_bed/cerebellum_9_dense.bed
+uu_frontal_lobe_bed: ../../../data/06_cCRE/chromatin_states_bed/frontal_lobe_9_dense.bed
+uu_hypothalamus_bed: ../../../data/06_cCRE/chromatin_states_bed/hypothalamus_9_dense.bed
+uu_occipital_cortex_bed: ../../../data/06_cCRE/chromatin_states_bed/occipital_cortex_9_dense.bed
+uu_striatum_bed: ../../../data/06_cCRE/chromatin_states_bed/striatum_9_dense.bed
+uu_temporal_cortex_bed: ../../../data/06_cCRE/chromatin_states_bed/temporal_cortex_9_dense.bed
+uu_thalamus_bed: ../../../data/06_cCRE/chromatin_states_bed/thalamus_9_dense.bed

@@ -1,0 +1,10 @@
+Feature	Category	Count
+Promoters	Unique Epic	10266
+Promoters	Unique UU	23116
+Promoters	Shared	25660
+Enhancers	Unique Epic	87774
+Enhancers	Unique UU	53233
+Enhancers	Shared	50851
+Repressed	Unique Epic	39365
+Repressed	Unique UU	76817
+Repressed	Shared	36651

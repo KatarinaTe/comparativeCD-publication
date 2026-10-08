@@ -1,0 +1,110 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Merging & filtering pipeline parameters",
+    "description": "Merges the LowPass GENCOVE and Axiom genotype datasets, filters samples/variants, and produces per-phenotype GWAS-ready PLINK datasets.",
+    "type": "object",
+    "properties": {
+        "gencove_bfile_prefix": {
+            "type": "string",
+            "description": "Path prefix (no extension) of 01_mapping's merged LowPass PLINK dataset (DA_IMP_GENCOVE_ALLCHR).",
+            "fa_icon": "fas fa-file"
+        },
+        "axiom_bfile_prefix": {
+            "type": "string",
+            "description": "Path prefix (no extension) of 2_Axiom_imputation's merged, imputed PLINK dataset (DA_AFFYimp_ALLCHR).",
+            "fa_icon": "fas fa-file"
+        },
+        "fam_qc3modi": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen fam file with both sampleID and dogID columns (DA_MERGED_GENCOVE_AXIOM_QC3modi.fam).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "depth_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Per-sample mean depth from 01_mapping (DarwinsDogs_N-3285_bam_meandepths.txt).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "duplicates_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen known-duplicates keep/exclude decision list (Duplicates_to_keep_DarwinsDogs_N-9_21samples_bam_meandepths.txt).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "exclude_list_round2": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen, manually-curated second-round KING relatedness exclusion list (list_exclude_secondexclusion.txt).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "dogid_relabel_fam": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen, manually-prepared sampleID -> dogID crosswalk fam file (modi_DA_MERGED_GENCOVE_AXIOM_QC4C_forDogIDchange.fam).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "exclude_list_round3": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen, manually-decided third-round exclusion list (list_exclude_thirdexclusion.txt).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "covariates": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Height/age/sex/batch covariates TSV (DarwinsDogs_Q121_height_age_sex_batch_GENCOVE_AXIOM_QC4.tsv).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "fam_2584dogs": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen, manually-decided final ALLFAM sample-set fam file (fam_2584dogs.txt).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "data6": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen data1+factor-score+item checkpoint (data6_2024-10-14.txt) consumed as-is rather than recomputed — see the pipeline README's Stage E notes.",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "exclude_list_lowpass12": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "12 LowPass samples with no Darwin's Ark dogID and no phenotypes (exclude_12_LowPass_samples.txt, data/01_mapping), removed in RELABEL_AND_EXCLUDE_ROUND3.",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "size_pheno_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Darwin's Ark's own SIZE control phenotype (data/02_data_processing/Q121A.pheno). Not part of this pipeline's original sources — see data/04_gwas/getSIZE_pheno_genofiles.r and process_definitions.nf's SIZE section header.",
+            "fa_icon": "fas fa-file-csv"
+        }
+    },
+    "required": [
+        "gencove_bfile_prefix",
+        "axiom_bfile_prefix",
+        "fam_qc3modi",
+        "depth_file",
+        "duplicates_file",
+        "exclude_list_round2",
+        "dogid_relabel_fam",
+        "exclude_list_round3",
+        "covariates",
+        "fam_2584dogs",
+        "data6",
+        "exclude_list_lowpass12",
+        "size_pheno_file"
+    ]
+}

@@ -1,0 +1,14 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs113300903,36055310,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/36055310/study,3.0000000000000003e-30,3,-30,NA,0.0262908,unit,TREX2
+rs11796997,35939488,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/35939488/study,6e-10,6,-10,NA,0.06176,unit,TREX2
+rs112151463,103988994,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/103988994/study,4e-7,4,-7,NA,NA,NA,TREX2
+rs111162038,165675806,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/165675806/study,6e-11,6,-11,NA,6.553,z score,TREX2
+rs768863,63822922,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/63822922/study,3e-14,3,-14,NA,0.00833812,unit,TREX2
+rs3020940,94042105,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/94042105/study,4e-10,4,-10,NA,0.13,unit,TREX2
+rs2980077,191268939,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/191268939/study,3e-10,3,-10,NA,0.0501,unit,TREX2
+rs67596711,165676408,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/165676408/study,6e-11,6,-11,NA,6.538,z score,TREX2
+rs67596711,63825400,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/63825400/study,2e-43,2,-43,NA,0.0386841,unit,TREX2
+rs67596711,166116209,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/166116209/study,4e-36,4,-36,NA,0.0374,unit,TREX2
+rs67596711,165677010,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/165677010/study,1e-11,1,-11,NA,6.809,z score,TREX2
+rs193203210,97201258,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/97201258/study,2e-9,2,-9,NA,0.052,unit,TREX2
+rs184885934,165676011,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/165676011/study,5e-10,5,-10,NA,6.236,z score,TREX2

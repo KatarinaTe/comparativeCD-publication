@@ -1,0 +1,10 @@
+project: uppmax2025-2-420
+
+# ── 04_gwas/1_mlma-loco outputs (run that pipeline first) ──
+clumping_dir: ../../../data/results/04_gwas/1_mlma-loco/clumping
+clumping_size_dir: ../../../data/results/04_gwas/1_mlma-loco/clumping/size
+mlma_dir: ../../../data/results/04_gwas/1_mlma-loco/gwas
+
+# ── 04_gwas/2_polmm outputs (run that pipeline first) — 14 item traits, pooled into "dogCD" ──
+polmm_clumping_dir: ../../../data/results/04_gwas/2_polmm/clumping
+polmm_gwas_dir: ../../../data/results/04_gwas/2_polmm/gwas

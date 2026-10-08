@@ -1,0 +1,9 @@
+Region Overlap Total
+ACG 538 147391
+cerebellum 767 233139
+frontal 756 222903
+hypothalamus 766 211778
+occipital 781 232913
+striatum 769 216043
+temporal 652 191674
+thalamus 984 284012

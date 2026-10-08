@@ -1,0 +1,4 @@
+project: uppmax2025-2-420
+
+# ── Deposited GO-enrichment TSVs (data/05_network/), not built by any pipeline ──
+datadir: ../../../data/05_network

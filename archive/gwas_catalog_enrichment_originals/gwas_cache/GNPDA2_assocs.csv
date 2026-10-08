@@ -1,0 +1,24 @@
+variant_id,association_id,study_id,study_url,pvalue,pvalue_mantissa,pvalue_exponent,or_per_copy,beta_num,beta_unit,queried_gene
+rs10517119,98438850,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/98438850/study,4e-11,4,-11,NA,0.008,unit,GNPDA2
+rs10517119,98426818,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/98426818/study,2e-8,2,-8,NA,0.005,unit,GNPDA2
+rs2173108,97474126,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/97474126/study,5e-9,5,-9,NA,0.00894438,unit,GNPDA2
+rs769805766,188271168,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188271168/study,4e-262,4,-262,NA,0.20800947,unit,GNPDA2
+rs36153619,102104591,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/102104591/study,2e-14,2,-14,NA,0.00669,unit,GNPDA2
+rs36153619,102088358,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/102088358/study,8e-13,8,-13,NA,0.00702,unit,GNPDA2
+rs1496981,188271133,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188271133/study,5e-32,5,-32,NA,0.09246182,unit,GNPDA2
+rs184490947,188271138,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188271138/study,3e-200,3,-200,NA,1.0358642,unit,GNPDA2
+rs73249441,188271163,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/188271163/study,2e-21,2,-21,NA,0.23854248,unit,GNPDA2
+rs77132247,34719690,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/34719690/study,2e-8,2,-8,NA,0.0197,unit,GNPDA2
+rs143515557,80072830,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/80072830/study,5e-8,5,-8,NA,5.3069,mmHg,GNPDA2
+rs143515557,80071113,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/80071113/study,5e-8,5,-8,NA,5.3069,mmHg,GNPDA2
+rs7698109,62086736,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/62086736/study,7e-8,7,-8,NA,NA,NA,GNPDA2
+rs138088650,214252538,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/214252538/study,4.9999999999999996e-6,5,-6,NA,2.68462,unit,GNPDA2
+rs1496991,218408633,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/218408633/study,1e-10,1,-10,NA,NA,NA,GNPDA2
+rs28526098,218408637,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/218408637/study,2e-30,2,-30,NA,NA,NA,GNPDA2
+rs28526098,61689616,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/61689616/study,5e-18,5,-18,NA,NA,NA,GNPDA2
+rs10938371,218407388,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/218407388/study,7e-13,7,-13,NA,0.03063976,SD unit,GNPDA2
+rs16857657,34991035,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/34991035/study,3e-6,3,-6,NA,NA,NA,GNPDA2
+rs1439358,217269672,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/217269672/study,6e-6,6,-6,NA,0.097412,unit,GNPDA2
+rs12499960,98438845,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/98438845/study,1e-8,1,-8,NA,0.008,unit,GNPDA2
+rs1497008,100197921,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/100197921/study,2e-6,2,-6,NA,0.31358144,unit,GNPDA2
+rs1497008,100191455,NA,https://www.ebi.ac.uk/gwas/rest/api/associations/100191455/study,3e-6,3,-6,NA,0.30772924,unit,GNPDA2

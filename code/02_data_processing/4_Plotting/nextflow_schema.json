@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Plotting pipeline parameters",
+    "description": "Terminal diagnostic plots (PCA by breed, factor-score distributions, per-item/per-factor response histograms) over 3_Merging_filtering's outputs.",
+    "type": "object",
+    "properties": {
+        "eigenvec": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "3_Merging_filtering's ALLFAM PCA eigenvectors (prunedALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.eigenvec).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "eigenval": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "3_Merging_filtering's ALLFAM PCA eigenvalues (prunedALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.eigenval).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "data6": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Frozen data1+factor-score+item checkpoint (data6_2024-10-14.txt), same file 3_Merging_filtering consumes.",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "dog_breeds_csv": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Per-dog breed/purebred metadata (DarwinsArk_20220715_dogs_genotyped_breed_sex.csv; dog, purebred, breed1_inputted, sex columns — a subset of Darwin's Ark's DarwinsArk_20220715_dogs.csv, deposited on Figshare).",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "qc6_fam_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Directory containing 3_Merging_filtering's published per-factor/per-item QC6 fam files (that pipeline's plink/ output directory).",
+            "fa_icon": "fas fa-folder"
+        }
+    },
+    "required": [
+        "eigenvec",
+        "eigenval",
+        "data6",
+        "dog_breeds_csv",
+        "qc6_fam_dir"
+    ]
+}

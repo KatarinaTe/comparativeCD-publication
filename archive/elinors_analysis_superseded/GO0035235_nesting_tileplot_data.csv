@@ -1,0 +1,33 @@
+go,term,gene,fold_enrichment
+GO:0007215,glutamate receptor signaling pathway,GRM7,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRM3,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,KCNB1,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIN2B,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRM5,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIK1,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIA3,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIK3,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIN2A,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIA4,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIA2,32.54798761609907
+GO:0007215,glutamate receptor signaling pathway,GRIK2,32.54798761609907
+GO:0007216,G protein-coupled glutamate receptor signaling pathway,GRM7,36.887719298245614
+GO:0007216,G protein-coupled glutamate receptor signaling pathway,GRM3,36.887719298245614
+GO:0007216,G protein-coupled glutamate receptor signaling pathway,GRM5,36.887719298245614
+GO:0007216,G protein-coupled glutamate receptor signaling pathway,GRIK3,36.887719298245614
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIN2B,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIK1,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIA3,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIK3,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIN2A,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIA4,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIA2,48.11441647597253
+GO:0035235,ionotropic glutamate receptor signaling pathway,GRIK2,48.11441647597253
+GO:1990806,ligand-gated ion channel signaling pathway,GRIN2B,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIK1,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIA3,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIK3,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIN2A,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIA4,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIA2,29.90896159317212
+GO:1990806,ligand-gated ion channel signaling pathway,GRIK2,29.90896159317212

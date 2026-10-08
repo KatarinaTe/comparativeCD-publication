@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "06_cCRE/cre_overlap pipeline parameters",
+    "description": "GWAS-region overlap with cCREs: EpicDog tissue-specificity (Results text) and UU per-brain-region overlap (Fig. 4e).",
+    "type": "object",
+    "properties": {
+        "epicdog_states_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Per-tissue EpicDog 13-state chromatin BEDs, CanFam4 (data/06_cCRE/epicdog_chromatin_states_bed_canfam4/), fetched by analyses/06_cCRE/fetch-epicdog-chromatin-states-bed.sh."
+        },
+        "uu_states_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "Per-region UU 9-state chromatin BEDs (data/06_cCRE/chromatin_states_bed/), 8 dog brain regions."
+        },
+        "dogcd_gwas_regions": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "dogCD GWS clump regions +/-100kb, pooled across all 17 dogCD-related GWAS traits -- 06b-clump-regions-100kb's live output (data/results/06_cCRE/clump_regions_100kb/gws100kb_regions/dogCD_gws100kb_regions.bed), wired 2026-09-23. Was a deposited reference copy before 06b was extended to include POLMM's 14 item traits -- see this substage's README Notes."
+        },
+        "size_gwas_regions": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "SIZE GWS clump regions +/-100kb -- 06b-clump-regions-100kb's live output (data/results/06_cCRE/clump_regions_100kb/gws100kb_regions/SIZE_gws100kb_regions.bed), wired 2026-09-23."
+        }
+    },
+    "required": [
+        "epicdog_states_dir",
+        "uu_states_dir",
+        "dogcd_gwas_regions",
+        "size_gwas_regions"
+    ]
+}

@@ -1,0 +1,10 @@
+name: emission_state
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-ggplot2
+  - r-patchwork
+  - r-dplyr
+  - r-tidyr
+  - r-scales

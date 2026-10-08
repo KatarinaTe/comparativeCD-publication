@@ -1,0 +1,27 @@
+project: uppmax2025-2-420
+
+# ── Reference files (same as 01_mapping) ──
+assembly_ref: ../../data/raw-data/references/UU_Cfam_GSD_1.0_ROSY.fa
+known_variants: ../../data/raw-data/references/UU_Cfam_GSD_1.0.BQSR.DB.bed.gz
+chunks_dir: ../../data/raw-data/references/chunks_10
+glimpse_ref_panel: ../../data/raw-data/references/AutoAndXPAR.Dog10K.phased.bcf
+
+# ── HighPass cohort (01_mapping/2_cohort_genotyping outputs) ──
+highpass_snp_vcf: ../../data/results/01_mapping/2_cohort_genotyping/highpass/snp_vcf/SNP.HF.ann.id.vcf.gz
+# Not published under data/results/01_mapping — 2_cohort_genotyping doesn't publish per-sample
+# BAMs (see its own header comment). mapping-batched materializes these into
+# data/raw-data/mapped/high/ instead (one flat directory, all HighPass samples' BAMs side by side).
+highpass_bam_dir: ../../data/raw-data/mapped/high
+
+# ── LowPass cohort (01_mapping/2_cohort_genotyping outputs) ──
+lowpass_qc_vcf_dir: ../../data/results/01_mapping/2_cohort_genotyping/lowpass/vcf
+
+# ── Axiom cohort (02_data_processing/2_Axiom_imputation outputs) ──
+axiom_lowpass_vcf_dir: ../../data/results/02_data_processing/2_Axiom_imputation/vcf
+
+# ── Sample lists and pair samplesheets ──
+samples_highpass_11: ../../data/03_qc/samples_to_extract.txt
+samples_downsampling_10: ../../data/03_qc/samples_to_extract_down.txt
+downsample_p_at_1x: ../../data/03_qc/downsample_p_at_1x.csv
+concordance_highpass_lowpass_pairs: ../../data/03_qc/concordance_highpass_lowpass_pairs.csv
+concordance_axiom_lowpass_pairs: ../../data/03_qc/concordance_axiom_lowpass_pairs.csv

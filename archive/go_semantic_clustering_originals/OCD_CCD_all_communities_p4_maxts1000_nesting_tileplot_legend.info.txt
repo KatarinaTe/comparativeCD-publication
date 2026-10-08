@@ -1,0 +1,69 @@
+Abbreviation legend for: OCD_CCD_all_communities_p4_maxts1000_nesting_tileplot.pdf
+Generated: 2026-06-25 12:07:28.236798
+
+--- Glossary (all defined abbreviations) ---
+mGluR    = G protein-coupled glutamate receptor
+GPCR     = G protein-coupled receptor
+AC       = adenylate cyclase
+PM       = plasma membrane
+Ca-dep.  = calcium-dependent
+adh.     = adhesion
+reg.     = regulation
+
+--- Terms abbreviated in this figure ---
+  trans-synaptic signaling  ->  Trans-synaptic signaling
+  anterograde trans-synaptic signaling  ->  Anterograde trans-synaptic signaling
+  chemical synaptic transmission  ->  Chemical synaptic transmission
+  regulation of membrane potential  ->  Reg. of membrane potential
+  synaptic signaling  ->  Synaptic signaling
+  synapse organization  ->  Synapse organization
+  cell junction organization  ->  Cell junction organization
+  modulation of chemical synaptic transmission  ->  Modulation of chemical synaptic transmission
+  regulation of trans-synaptic signaling  ->  Reg. of trans-synaptic signaling
+  synaptic transmission, glutamatergic  ->  Synaptic transmission, glutamatergic
+  regulation of postsynaptic membrane potential  ->  Reg. of postsynaptic membrane potential
+  synapse assembly  ->  Synapse assembly
+  cell junction assembly  ->  Cell junction assembly
+  glutamate receptor signaling pathway  ->  Glutamate receptor signaling
+  regulation of synaptic transmission, glutamatergic  ->  Reg. of synaptic transmission, glutamatergic
+  regulation of synapse organization  ->  Reg. of synapse organization
+  regulation of synapse structure or activity  ->  Reg. of synapse structure or activity
+  ionotropic glutamate receptor signaling pathway  ->  Ionotropic glutamate receptor signaling
+  regulation of synaptic plasticity  ->  Reg. of synaptic plasticity
+  cell projection morphogenesis  ->  Cell projection morphogenesis
+  synaptic transmission, GABAergic  ->  Synaptic transmission, GABAergic
+  cell morphogenesis  ->  Cell morphogenesis
+  action potential  ->  Action potential
+  regulation of presynaptic membrane potential  ->  Reg. of presynaptic membrane potential
+  neuron projection morphogenesis  ->  Neuron projection morphogenesis
+  plasma membrane bounded cell projection morphogenesis  ->  PM bounded cell projection morphogenesis
+  ligand-gated ion channel signaling pathway  ->  Ligand-gated ion channel signaling
+  axon development  ->  Axon development
+  cell morphogenesis involved in neuron differentiation  ->  Cell morphogenesis involved in neuron differentiation
+  axonogenesis  ->  Axonogenesis
+  inhibitory synapse assembly  ->  Inhibitory synapse assembly
+  gamma-aminobutyric acid signaling pathway  ->  Gamma-aminobutyric acid signaling
+  positive regulation of synaptic transmission  ->  Positive reg. of synaptic transmission
+  axon guidance  ->  Axon guidance
+  neuron projection guidance  ->  Neuron projection guidance
+  regulation of plasma membrane bounded cell projection organization  ->  Reg. of PM bounded cell projection organization
+  homophilic cell adhesion via plasma membrane adhesion molecules  ->  Homophilic cell adh. via PM adh. molecules
+  neuron recognition  ->  Neuron recognition
+  regulation of cell projection organization  ->  Reg. of cell projection organization
+  cell-cell adhesion  ->  Cell-cell adh.
+  regulation of postsynapse organization  ->  Reg. of postsynapse organization
+  regulation of neuron projection development  ->  Reg. of neuron projection development
+  synaptic membrane adhesion  ->  Synaptic membrane adh.
+  postsynapse organization  ->  Postsynapse organization
+  presynapse organization  ->  Presynapse organization
+  regulation of synapse assembly  ->  Reg. of synapse assembly
+  calcium-dependent cell-cell adhesion via plasma membrane cell adhesion molecules  ->  Ca-dep. cell-cell adh. via PM cell adh. molecules
+  presynapse assembly  ->  Presynapse assembly
+  protein ubiquitination  ->  Protein ubiquitination
+  adenylate cyclase-activating G protein-coupled receptor signaling pathway  ->  AC-activating GPCR signaling
+  adenylate cyclase-modulating G protein-coupled receptor signaling pathway  ->  AC-modulating GPCR signaling
+  regulation of axonogenesis  ->  Reg. of axonogenesis
+  cell recognition  ->  Cell recognition
+  regulation of cell junction assembly  ->  Reg. of cell junction assembly
+  axon extension  ->  Axon extension
+  postsynaptic specialization organization  ->  Postsynaptic specialization organization

@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "07_additional_plots_and_analyses/1_heritability_plot pipeline parameters",
+    "description": "Fig 1b per-question heritability boxplot by CCD factor, from Supplementary Tables ST1/ST4.",
+    "type": "object",
+    "properties": {
+        "supp_tables_xlsx": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "SupplementaryTables_ST1_ST4.xlsx (data/07_additional_plots_and_analyses/) — sheets ST1 and ST4 of the manuscript's Supplementary Tables."
+        }
+    },
+    "required": [
+        "supp_tables_xlsx"
+    ]
+}

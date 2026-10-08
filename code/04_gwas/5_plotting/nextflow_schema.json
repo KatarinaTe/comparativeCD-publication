@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "04_gwas/5_plotting pipeline parameters",
+    "description": "Fig 1c Manhattan + QQ plots for all 4 mlma-loco phenotypes and all 14 polmm survey items.",
+    "type": "object",
+    "properties": {
+        "mlma_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "1_mlma-loco's published gwas/ output directory (data/results/04_gwas/1_mlma-loco/gwas)."
+        },
+        "polmm_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "2_polmm's published gwas/ output directory (data/results/04_gwas/2_polmm/gwas)."
+        }
+    },
+    "required": [
+        "mlma_dir",
+        "polmm_dir"
+    ]
+}

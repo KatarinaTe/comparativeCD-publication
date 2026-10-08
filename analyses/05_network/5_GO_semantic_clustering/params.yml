@@ -1,0 +1,15 @@
+project: uppmax2025-2-420
+
+# ── Real GO enrichment TSVs (data/05_network/), not built by any pipeline ──
+dep_only_go: ../../../data/05_network/DEP_ONLY_hierarchy_full_GO_enrichment.tsv
+dep_ccd_go: ../../../data/05_network/DEP_CCD_hierachy_full_GO_enrichment.tsv
+ocd_only_go: ../../../data/05_network/OCD_ONLY_hierachy_full_GO_enrichment.tsv
+ocd_ccd_go: ../../../data/05_network/Compulsive_hierachy_full_GO_enrichment_251023.tsv
+sch_only_go: ../../../data/05_network/SCH_ONLY_hierachy_full_GO_enrichment.tsv
+sch_ccd_go: ../../../data/05_network/SCH_CCD_hierachy_full_GO_enrichment.tsv
+dogcd_go: ../../../data/05_network/CCD_ONLY_hierachy_full_GO_enrichment.tsv
+
+# ── Frozen inputs (data/05_network/5_GO_semantic_clustering/) ──
+cache_gpt_labels: ../../../data/05_network/5_GO_semantic_clustering/cache_gpt_labels.top_community.cut60.txt
+goa_human_gaf: ../../../data/05_network/5_GO_semantic_clustering/goa_human.gaf.gz
+seed_genes_csv: ../../../data/07_additional_plots_and_analyses/gene_list_gwas_catalog_overlap_with_region.csv

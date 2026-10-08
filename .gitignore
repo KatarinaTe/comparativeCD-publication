@@ -1,0 +1,119 @@
+# OS generated files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python / Jupyter
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.whl
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+checkpoint*
+
+# R
+
+*.RData
+*.Rds
+*.rds
+*.Rhistory
+# same files saved without the leading dot (e.g. copied out of an RStudio project)
+RData
+Rhistory
+*.Rproj.user/
+renv/
+renovict/
+shiny/
+.Ruserdata
+
+# Credentials / local configs
+
+# Never commit secrets or machine-specific paths
+*private*paths*
+*.local.env
+.env
+config.yaml
+config.yml
+config.json
+secrets/
+credentials/
+My_private_paths.sh
+My_private_paths_and_code.sh
+
+# IDE / Editor
+
+.vscode/
+.vs/**
+*.vscode/settings.json
+Codium/
+*~
+\#*\#
+/.dir.local
+*.svk
+
+# Slurm / HPC scheduler logs
+
+slurm-*.out
+slurm-*.err
+slurm-*.log
+slurm-%j.out
+slurm-%j.err
+slurm-%j.log
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# Nextflow
+.nextflow*
+null/
+results/
+tmp/
+work/
+
+# Apptainer/Singularity image cache — shared across all pipelines, see env/*/nextflow.config's
+# own apptainer.cacheDir setting. Cached .sif images are large and machine/pull-specific, never
+# committed.
+/env/apptainer_cache/
+
+# Large project data files
+/data/source
+/data/raw-data/references
+# fetched by 00c-fetch-scilifelab-deposit / derived by 00a-fetch-reference-data
+/data/raw-data/axiom/
+/data/raw-data/genes6_UU_Cfam_GSD_1.0_ROSY.txt
+/data/06_cCRE/chromatin_states_bed
+/data/06_cCRE/epicdog_chromatin_states_bed_canfam4
+# Reconstructible (69 MB) via code/06_cCRE/build_all_tissues_filtered.sh from the
+# chromatin_states_bed/ files above -- same reasoning as those, not committed.
+/data/06_cCRE/all_tissues_filtered.bed
+*.fastq.gz
+code/02_data_processing/2_Axiom_imputation/bin/*.jar
+
+# 01_mapping batched fetch+map (analyses/00_fetch-raw-data/run_batched.sh): materialized
+# per-sample BAM/gVCF/depth archives are large binary data, never committed. The cohort
+# samplesheet CSVs one level up (data/raw-data/mapped/*_pass_cohort_samplesheet.csv) are
+# small generated manifests and are intentionally NOT covered by this rule.
+/data/raw-data/mapped/high/
+/data/raw-data/mapped/low/
+
+# run_batched.sh's own per-run resumability state (batch samplesheets/accession lists,
+# .done markers) — regenerated per run, not meant to be version-controlled.
+/analyses/00_fetch-raw-data/batch_state/
+
+# Per explicit standing instruction: this file must never be committed, moved, or archived.
+/data/raw-data/darwinsark_sraRunTable.csv

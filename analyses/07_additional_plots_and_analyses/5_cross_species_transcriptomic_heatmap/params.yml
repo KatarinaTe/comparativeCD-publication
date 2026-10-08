@@ -1,0 +1,10 @@
+project: uppmax2025-2-49
+
+# ── Deposited inputs ──
+# human_dog_rds: fetched from Figshare (10.6084/m9.figshare.33787129) by 07f-fetch-human-dog-5regions
+# -- same path a cluster-local copy fetched manually via gdown on 2026-09-30 already occupied,
+# confirmed byte-identical to the official deposit (same size and md5) on 2026-10-05. Verified
+# 2026-09-30, against that same-byte-content file: reproduces the published Extended Data Fig. 3
+# exactly (all 400 correlation-matrix cells match).
+human_dog_rds: ../../../data/07_additional_plots_and_analyses/human_dog_5regions.rds
+seed_gene_list: ../../../data/05_network/ocd_ccd_systemsmap_genes.txt

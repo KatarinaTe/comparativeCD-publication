@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "06_cCRE/clump_regions_100kb pipeline parameters",
+    "description": "Per-phenotype-group 100kb-padded GWAS clump regions, from 04_gwas/1_mlma-loco's and 04_gwas/2_polmm's clumping output.",
+    "type": "object",
+    "properties": {
+        "clumping_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "04_gwas/1_mlma-loco's published clumping/ output directory (CCD{F1,F2,F3}_clump250.clumped)."
+        },
+        "clumping_size_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "04_gwas/1_mlma-loco's published clumping/size/ output directory (SIZE_clump250.clumped)."
+        },
+        "mlma_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "04_gwas/1_mlma-loco's published gwas/ output directory (*_LOCO.loco.mlma, all 4 phenotypes) — used to look up secondary SNPs' own BP positions (plink's .clumped file only gives these by SNP ID, not position)."
+        },
+        "polmm_clumping_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "04_gwas/2_polmm's published clumping/ output directory (polmmCCDitem<id>_clump250.clumped, all 14 items) — pooled into the \"dogCD\" region set alongside F1/F2/F3."
+        },
+        "polmm_gwas_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "04_gwas/2_polmm's published gwas/ output directory (modi_simuMarkerOutput_POLMM_item<id>_FULLGRM_fullGeno.txt, all 14 items) — used the same way as mlma_dir, to look up secondary SNPs' own BP positions."
+        }
+    },
+    "required": [
+        "clumping_dir",
+        "clumping_size_dir",
+        "mlma_dir",
+        "polmm_clumping_dir",
+        "polmm_gwas_dir"
+    ]
+}

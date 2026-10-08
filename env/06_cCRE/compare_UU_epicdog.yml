@@ -1,0 +1,10 @@
+name: compare_UU_epicdog
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-readr
+  - r-dplyr
+  - r-tidyr
+  - r-ggplot2
+  - r-valr

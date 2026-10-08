@@ -1,0 +1,14 @@
+project: uppmax2025-2-420
+
+# ── 3_Merging_filtering's published plink/ dir (holds both QC5 and QC6 files) ──
+qc6_plink_dir: ../../../data/results/02_data_processing/3_Merging_filtering/plink
+
+# ── 1_mlma-loco / 2_polmm's published sumstats/ dirs (run those pipelines first) ──
+mlma_sumstats_dir: ../../../data/results/04_gwas/1_mlma-loco/sumstats
+polmm_sumstats_dir: ../../../data/results/04_gwas/2_polmm/sumstats
+size_sumstats_dir: ../../../data/results/04_gwas/1_mlma-loco/sumstats/size
+
+# ── Deposited raw data files, not built by any pipeline ──
+size_fam: ../../../data/04_gwas/SIZE_DA_MERGED_GENCOVE_AXIOM_QC6.fam
+stuck_fam: ../../../data/04_gwas/STUCK_DA_MERGED_GENCOVE_AXIOM_QC6.fam
+allfam_fam: ../../../data/04_gwas/ALLFAM_DA_MERGED_GENCOVE_AXIOM_QC6.fam

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Survey data EFA/IRT pipeline parameters",
+    "description": "Exploratory factor analysis and per-factor IRT fitting of the 14-item Darwin's Ark dogCD survey, producing F1/F2/F3 factor scores.",
+    "type": "object",
+    "properties": {
+        "response_df": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "pattern": "^\\S+\\.txt$",
+            "description": "Recoded 14-item survey response table (response_df_dogCDitems.txt).",
+            "help_text": "Already-recoded checkpoint — the raw Darwin's Ark answers CSV this was originally built from isn't in this repo.",
+            "fa_icon": "fas fa-file-csv"
+        },
+        "survey_questions_csv": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "pattern": "^\\S+\\.csv$",
+            "description": "Survey item metadata (DarwinsArk_20220315_questions.csv), used to label the EFA uniqueness plot.",
+            "fa_icon": "fas fa-file-csv"
+        }
+    },
+    "required": [
+        "response_df",
+        "survey_questions_csv"
+    ]
+}

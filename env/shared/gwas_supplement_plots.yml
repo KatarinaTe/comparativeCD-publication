@@ -1,0 +1,11 @@
+name: gwas_supplement_plots
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base
+  - r-tidyverse
+  - r-data.table
+  - r-readxl
+  - r-ggrepel
+  - r-qqman

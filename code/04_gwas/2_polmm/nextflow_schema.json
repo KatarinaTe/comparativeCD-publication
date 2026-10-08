@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "POLMM GWAS pipeline parameters",
+    "description": "Per-item POLMM null model fit + full-genome marker test for all 14 dogCD survey items, plus plink clumping and sumstats export.",
+    "type": "object",
+    "properties": {
+        "qc6_plink_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "3_Merging_filtering's published plink/ output directory (CCDitem{N}_..._QC6.{bed,bim,fam} and CCDitem{N}_EigenInput.{bed,bim,fam})."
+        },
+        "phenotypes_dir": {
+            "type": "string",
+            "format": "directory-path",
+            "exists": true,
+            "description": "3_Merging_filtering's published phenotypes/ output directory (grabCCDitem{N}_..._QC6.txt files)."
+        },
+        "gene_range_file": {
+            "type": "string",
+            "format": "file-path",
+            "exists": true,
+            "description": "Gene-range file for plink --clump-range, UU_Cfam_GSD_1.0_ROSY assembly (genes6_UU_Cfam_GSD_1.0_ROSY.txt), derived from the Dog10K NCBI v106 gene models by 00a-fetch-reference-data."
+        }
+    },
+    "required": [
+        "qc6_plink_dir",
+        "phenotypes_dir",
+        "gene_range_file"
+    ]
+}
